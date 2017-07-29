@@ -1,0 +1,580 @@
+#shop-doc.keno #shop-panel {
+    margin-right: 0;
+}
+#shop-doc.keno #slip-wrapper {
+    display: none;
+}
+#keno-sell {
+    position: relative;
+    background: url('../images/keno/sell_bg5.png') center center no-repeat;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+}
+
+#sale-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 768px;
+}
+#sale-right {
+    position: absolute;
+    top: 0;
+    left: 750px;
+    width: 274px;
+    height: 768px;
+}
+#sale-quotes {
+    position: absolute;
+    top: 0;
+    left: 1024px;
+    width: 342px;
+    height: 768px;
+}
+#sale-quotes-inner {
+    position: relative;
+    margin: 2px 4px;
+    height: 756px;
+}
+#shop-jackpot {
+    position: absolute;
+    top: 165px;
+    left: 140px;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    font: bold 16px/60px Anton,Arial;
+}
+#site-jackpot {
+    position: absolute;
+    top: 180px;
+    left: 140px;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    font: bold 28px/60px Anton,Arial;
+}
+
+#tips,
+#tips-input {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    height: 60px;
+    width: 734px;
+}
+#numbers-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    background: url('../images/keno/sell_numbers_overlay3.png') center center no-repeat;
+    overflow: hidden;
+}
+#systems,
+#systems-input {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 734px;
+    height: 55px;
+}
+#keno-sell div.tip {
+    position: absolute;
+    height: 46px;
+    width: 55px;
+    top: 10px;
+    font: 32px/46px Verdana;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+div.tip-1 { left:   6px; }
+div.tip-2 { left:  68px; }
+div.tip-3 { left: 128px; }
+div.tip-4 { left: 189px; }
+div.tip-5 { left: 250px; }
+div.tip-6 { left: 312px; }
+div.tip-7 { left: 374px; }
+div.tip-8 { left: 436px; }
+div.tip-9 { left: 497px; }
+div.tip-10 { left: 558px; }
+div.tip-11 { left: 619px; }
+div.tip-12 { left: 681px; }
+#tips div.selected {
+    background: url('../images/keno/tipsel2.png') center center no-repeat;
+}
+
+#keno-sell div.system {
+    position: absolute;
+    height: 51px;
+    width: 80px;
+    top: 0px;
+    font: 32px/46px Verdana;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+div.system-0-5 { left:   1px; }
+div.system-1 { left:  83px; }
+div.system-2 { left: 165px; }
+div.system-3 { left: 247px; }
+div.system-4 { left: 329px; }
+div.system-5 { left: 411px; }
+div.system-6 { left: 493px; }
+div.system-7 { left: 575px; }
+div.system-8 { left: 657px; }
+#systems div.selected {
+    background: url('../images/keno/systemsel3.png') center center no-repeat;
+}
+
+#numbers,
+#numbers-bg,
+#numbers-input {
+    position: absolute;
+    top: 74px;
+    left: 2px;
+    width: 734px;
+    height: 612px;
+}
+div.number {
+    position: absolute;
+    height: 65px;
+    width: 68px;
+    font: 0px Verdana;
+    text-indent: -999px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+#numbers div.selected {
+    background-image: url('../images/keno/numbersel3.png');
+    opacity: 0.85;
+}
+div.number-row-1 { top:   6px; }
+div.number-row-2 { top:  72px; }
+div.number-row-3 { top: 138px; }
+div.number-row-4 { top: 205px; }
+div.number-row-5 { top: 335px; }
+div.number-row-6 { top: 402px; }
+div.number-row-7 { top: 469px; }
+div.number-row-8 { top: 535px; }
+div.number-col-1  { left:  18px; }
+div.number-col-2  { left:  90px; }
+div.number-col-3  { left: 162px; }
+div.number-col-4  { left: 234px; }
+div.number-col-5  { left: 304px; }
+div.number-col-6  { left: 376px; }
+div.number-col-7  { left: 447px; }
+div.number-col-8  { left: 519px; }
+div.number-col-9  { left: 590px; }
+div.number-col-10 { left: 662px; }
+
+
+#shop-name {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    height: 30px;
+    width: 270px;
+    font: bold 16px/30px Verdana;
+    color: #fff;
+}
+#draw-info {
+    position: absolute;
+    height: 140px;
+    width: 262px;
+    left: 0;
+}
+#clock {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font: bold 18px/20px Verdana;
+    color: #fff;
+}
+#draw-info table.info {
+    margin-top: 5px;
+    width: 100%;
+}
+#draw-info table.info td {
+    padding: 2px 6px;
+    font: bold 24px/40px Anton,Verdana;
+    color: #fff;
+    white-space: nowrap;
+    width: 50%;
+}
+#draw-info table.info td.label {
+    text-align: right;
+}
+#draw-info table.info td.value {
+    text-align: left;
+}
+div.ticket-info table.info {
+    width: 97%;
+    margin: 4px auto;
+}
+div.ticket-info table.info td {
+    padding: 1px 4px 1px 4px;
+    font: 12px Verdana;
+    color: #000;
+}
+div.ticket-info table.info th {
+    padding: 2px 4px;
+    font: bold 12px Verdana;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+div.ticket-info table.info td.label {
+    text-align: right;
+}
+div.ticket-info table.info td.value {
+    text-align: left;
+}
+div.ticket-info table.info tr.emphasis td.value {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+table.tickets {
+    margin: 20px auto;
+}
+table.tickets th {
+    padding: 4px 8px;
+    font: bold 15px Verdana;
+}
+table.tickets td {
+    padding: 5px 16px;
+    text-align: left;
+    font: 14px Verdana;
+}
+table.tickets td.num {
+    text-align: right;
+    font: 14px Verdana;
+}
+
+#sale {
+    position: absolute;
+    height: 326px;
+    width: 262px;
+    top: 245px;
+    left: 0;
+}
+#draws {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 262px;
+    height: 64px;
+}
+#stake {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 262px;
+    height: 95px;
+}
+#sale div.label {
+    background-color: #888;
+    font: bold 12px/18px Verdana;
+    color: #fff;
+    text-align: center;
+}
+#sale div.value {
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    width: 110px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    font: bold 32px/50px Anton,Verdana;
+}
+#sale div.draws-plus,
+#sale div.draws-minus {
+    position: absolute;
+    top: 0px;
+    left: 188px;
+    width: 72px;
+    height: 64px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#sale div.draws-plus {
+    left: 112px;
+}
+#sale #total-stake {
+    position: absolute;
+    width: 262px;
+    top: 35px;
+    left: 0;
+    height: 60px;
+    line-height: 60px;
+    font: bold 42px/60px Anton,Arial;
+    text-align: center;
+}
+#sell {
+    position: absolute;
+    left: 4px;
+    top: 195px;
+    height: 70px;
+    width: 262px;
+    font: bold 0/50px Verdana;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+#clear {
+    position: absolute;
+    left: 8px;
+    top: 277px;
+    height: 110px;
+    width: 120px;
+    color: #fff;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+#showsystem{
+    position: absolute;
+    display: block;
+    left: 8px;
+    top: 397px;
+    height: 110px;
+    width: 120px;
+    color: #fff;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.showsystem-selected {
+    background: url('../images/keno/All_Win_Selected.png') center center no-repeat;
+}
+.showsystem-unselected {
+    background: url('../images/keno/All_Win.png') center center no-repeat;
+}
+
+#search {
+    position: absolute;
+    left: 140px;
+    top: 277px;
+    height: 110px;
+    width: 120px;
+    color: #fff;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+#redeem {
+    position: relative;
+    height: 50px;
+    width: 254px;
+    color: #fff;
+    margin: 2px auto;
+    font: bold 20px/50px Verdana;
+    cursor: pointer;
+    background: url('../images/keno/sell.png') center center no-repeat;
+}
+#cancel {
+    position: relative;
+    height: 50px;
+    width: 254px;
+    color: #fff;
+    font: bold 20px/50px Verdana;
+    margin: 2px auto;
+    cursor: pointer;
+    background: url('../images/keno/clear.png') center center no-repeat;
+}
+
+#print-ticket {
+    display: none;
+}
+
+#numpad {
+    position: absolute;
+    display: none;
+    top: 62px;
+    left: 4px;
+    width: 254px;
+    height: 315px;
+    background: url('../images/keno/numpad2.png') center center no-repeat;
+}
+#number-type {
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    height: 48px;
+    width: 221px;
+    text-align: right;
+    font: bold 36px/48px Verdana;
+    cursor: pointer;
+}
+
+#numpad div.keys {
+    position: absolute;
+    width: 254px;
+    height: 260px;
+    top: 55px;
+    left: 0px;
+}
+#numpad div.key {
+    position: absolute;
+    width: 75px;
+    height: 58px;
+    cursor: pointer;
+}
+
+#numpad div.num-0   { left: 10px; top: 192px; }
+#numpad div.num-1   { left: 10px; top: 131px; }
+#numpad div.num-2   { left: 89px; top: 131px; }
+#numpad div.num-3   { left: 168px; top: 131px; }
+#numpad div.num-4   { left: 10px; top: 70px; }
+#numpad div.num-5   { left: 89px; top: 70px; }
+#numpad div.num-6   { left: 168px; top: 70px; }
+#numpad div.num-7   { left: 10px; top: 9px; }
+#numpad div.num-8   { left: 89px; top: 9px; }
+#numpad div.num-9   { left: 168px; top: 9px; }
+#numpad div.enter  { left: 89px; top: 192px; }
+#numpad div.cancel { left: 168px; top: 192px; }
+
+
+#sale-quotes div.tip-quotes {
+    margin: 4px;
+}
+#sale-quotes div.tip-quotes div.head {
+    background-color: #888;
+    color: #fff;
+    height: 24px;
+    text-align: center;
+    font: bold 18px/24px Verdana;
+}
+#sale-quotes div.tip-quotes table.quotes {
+    width: 97%;
+    margin: 4px auto;
+}
+#sale-quotes div.tip-quotes table.quotes td {
+    padding: 2px;
+    font: bold 15px/15px Verdana;
+    color: #fff;
+}
+#sale-quotes div.tip-quotes table.quotes td.hit {
+    width: 30%;
+}
+#sale-quotes div.tip-quotes table.quotes td.quote {
+    width: 70%;
+}
+
+div.ticket-info button.ticket-action {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 254px;
+    color: #fff;
+    margin: 20px auto 10px auto;
+    font: bold 20px/50px Verdana;
+    cursor: pointer;
+}
+div.ticket-info button.redeem-ticket {
+    background: url('../images/keno/sell.png') center center no-repeat;
+}
+div.ticket-info button.cancel-ticket {
+    background: url('../images/keno/clear.png') center center no-repeat;
+}
+div.ticket-info button.repeat-ticket {
+    background: url('../images/keno/repeat.png') center center no-repeat;
+}
+
+#system {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000 url('../images/keno/bgplain_blue.png') center center no-repeat;
+}
+#system #toolbar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 75px;
+}
+#system #toolbar div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 146px;
+    height: 75px;
+    background: center center no-repeat;
+    cursor: pointer;
+}
+#system #toolbar #system-back-to-sales {
+    background-image: url('../images/keno/toolbar_sales.png');
+}
+#system #toolbar #system-register {
+    left: 146px;
+    background-image: url('../images/keno/toolbar_register.png');
+}
+#system #toolbar #system-statement {
+    left: 292px;
+    background-image: url('../images/keno/toolbar_statement.png');
+}
+#system #toolbar #system-draws {
+    left: 438px;
+    background-image: url('../images/keno/toolbar_draws.png');
+}
+#system #toolbar #system-tickets {
+    left: 584px;
+    background-image: url('../images/keno/toolbar_tickets.png');
+}
+#system #toolbar #system-winners {
+    left: 730px;
+    background-image: url('../images/keno/toolbar_winners.png');
+}
+#system #toolbar #system-exit {
+    left: 876px;
+    background-image: url('../images/keno/toolbar_exit.png');
+}
+
+#system #system-content {
+    position: absolute;
+    width: 100%;
+    height: 675px;
+    left: 0;
+    bottom: 0;
+}
+#system #system-content iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#system table.register td {
+    padding: 4px 8px;
+}
+#system table.register td.value {
+    text-align: right;
+}
+
+#keno-sell.system #system {
+    display: block;
+}
+
+.yui-skin-sam .yui-panel .hd {
+    text-align: left;
+}
+
+
+div.sell-multi-tickets {
+    margin-top: 50px;
+    font: bold 36px/65px Verdana;
+    color: #080;
+}
+

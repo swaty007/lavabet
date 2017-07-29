@@ -1,0 +1,20 @@
+
+$color-1: rgba(38, 39, 50, 0.85);
+$color-2: #ffffff;
+
+$font-1: 'Poppins', sans-serif;
+
+html body {
+  font-size: 13px;
+
+}
+@import "loaded";
+@import "global";
+@import "shop_lib.css";
+@import "sale_lib.css";
+@import "kenolib.css";
+@import "top_and_slip";
+@import "shop-panel";
+@import "shop-panel-content";
+@import "skin_namebet_lib.css";
+//@import "";

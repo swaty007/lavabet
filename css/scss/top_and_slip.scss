@@ -1,0 +1,339 @@
+#shop-page {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #0076c0 center center no-repeat;
+}
+
+#shop-doc {
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #424242;
+  color: #fff;
+}
+
+#shop-hd {
+  height: 35px;
+  background: url(../images/shop/hd_bg.png) repeat-x;
+  position: relative;
+  div.sale-terminal {
+    padding-left: 125px;
+    background-image: url(../images/kiosk/lavabet/logo_small.png);
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+  }
+  #cashier-settings {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    right: 140px;
+    color: #fff;
+    font: bold 12px/25px Verdana;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: url(../images/shop/settings.png) center center no-repeat;
+  }
+  #logout {
+    display: block;
+    width: 120px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    color: #fff;
+    font: bold 12px/25px Verdana;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: url(../images/shop/exit.png) center center no-repeat;
+  }
+}
+#keysearch.show-search {
+  width: 384px;
+  z-index: 100;
+  display: block;
+  position: fixed;
+  height: 35px;
+  top: 40px;
+  right: 20px;
+  padding: 0 8px;
+  background-color: #eee;
+  text-align: right;
+  line-height: 35px;
+  span.label {
+    font: bold 12px/35px Verdana;
+    color: #222;
+  }
+  input.text {
+    width: 250px;
+    position: relative;
+    height: 19px;
+    border: 1px solid #444;
+    padding: 2px 6px;
+    font: bold 16px Verdana;
+    color: #888;
+  }
+  input.go {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 27px;
+    border: 1px #888 outset;
+    padding: 0 6px;
+    font: bold 14px/27px Verdana;
+    background-color: #333;
+    color: #fff;
+  }
+}
+#slip-wrapper{
+  &.show-search {
+    margin-top: 37px;
+    position: relative;
+    float: right;
+    width: 420px;
+    overflow: auto;
+  }
+  #slip.closed .content {
+    display: block;
+  }
+
+  #slip {
+    position: relative;
+    height: auto;
+    right: auto;
+    top: auto;
+    margin-top: 10px;
+    .top {
+      background-color: #626262;
+      .empty {
+        text-align: center;
+      }
+      .info {
+        display: none;
+        .label {
+          position: absolute;
+          height: 100%;
+          width: 150px;
+          top: 0;
+          left: 10px;
+          text-align: left;
+        }
+        .amount {
+          position: absolute;
+          height: 100%;
+          width: 60px;
+          top: 0;
+          right: 85px;
+          text-align: right;
+        }
+        .odds {
+          position: absolute;
+          height: 100%;
+          width: 75px;
+          top: 0;
+          right: 10px;
+          text-align: right;
+        }
+      }
+      div.slip-minimize {
+        display: none;
+      }
+
+    }
+    div.saved-bets {
+      position: relative;
+      height: 35px;
+      padding: 0 35px 0 85px;
+      div.save-bet-button {
+        position: absolute;
+        background-color: #060;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        left: 5px;
+        top: 5px;
+        height: 25px;
+        width: 75px;
+        font: 12px/25px Arial;
+        cursor: pointer;
+      }
+      div.save-bet-list {
+        position: relative;
+        padding-top: 5px;
+        height: 25px;
+      }
+      div.save-bet-clear {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-color: #666;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        font: bold 14px/25px Verdana;
+        cursor: pointer;
+      }
+    }
+
+  }
+  #slip-errors {
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: visible;
+  }
+  #slip-message {
+    padding: 8px 16px 8px 58px;
+    min-height: 50px;
+    width: 300px;
+    font: 12px Verdana;
+    margin: 25px auto;
+  }
+  div.spacer {
+    height: 0;
+    font-size: 0;
+    clear: both;
+  }
+}
+#slip-wrapper #slip .bottom, #slip-wrapper #slip .content, #slip-wrapper #slip .content .selections .page, #slip-wrapper #slip {
+  background-color: #eee;}
+#slip .content .selections {
+  position: relative;
+}
+#shop-doc #slip .content .selections .page .lines {
+  background-color: transparent;
+}
+#slip .content .systems {
+  padding-top: 12px;
+}
+#slip-wrapper #slip.empty .content .totals {
+  display: none;
+}
+#slip .content .totals .total-cost {
+  width: 57%;
+  left: 2%;
+}
+#slip .content .totals .total-line {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  font: bold 12px/25px Arial;
+}
+#slip .content .totals .total-line {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  font: bold 12px/25px Arial;
+}
+#slip .content .totals .payout {
+  left: 55%;
+}
+#slip .content .totals .total-line {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  font: bold 12px/25px Arial;
+}
+#slip-wrapper #slip.empty .actions {
+  display: none;
+}
+#slip .actions .submitslip, #slip .actions .clearslip {
+  width: 180px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: bold 13px/26px Verdana;
+  color: #fff;
+  text-align: center;
+  background: url(../images/admin/slip_submit.png) center center no-repeat;
+}
+#slip .actions .clearslip {
+  left: 210px;
+  background: url(../images/admin/slip_cancel.png);
+}
+#slip-wrapper #slip .bottom {
+  display: none;
+}
+#slip-wrapper #slip.empty .bottom div {
+  display: none;
+}
+#slip .bottom div.expand {
+  background: url(../images/kiosk/sprite.png) -350px -500px no-repeat;
+}
+#slip-wrapper #slip .bottom div.expand {
+  display: none;
+}
+#slip .bottom div.recover {
+  position: absolute;
+  display: none;
+  width: 90px;
+  height: 30px;
+  bottom: 2px;
+  right: 4px;
+  background: url(../images/kiosk/sprite.png) -280px -190px no-repeat;
+  overflow: hidden;
+  text-indent: -99999px;
+}
+#slip-wrapper #slip.empty .bottom div {
+  display: none;
+}
+#slip-errors {
+  position: absolute;
+  display: none;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+#slip-wrapper #slip-message {
+  padding: 8px 16px 8px 58px;
+  min-height: 50px;
+  width: 300px;
+  font: 12px Verdana;
+  margin: 25px auto;
+}
+#shop-doc {
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #424242;
+  color: #fff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*:not(input) {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:not(input) {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+#shop-hd div.sale-terminal {
+  height: 35px;
+  font: bold 18px/25px "Courier New";
+  color: #000;
+}

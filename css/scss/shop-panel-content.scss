@@ -1,0 +1,48 @@
+#shop-doc .yui-content {
+  background: none;
+  border: 0;
+  overflow: auto;
+  position: relative;
+  height: 898px;
+  padding: .25em .5em;
+}
+.yui-navset .yui-content, .yui-navset .yui-content div {
+  zoom: 1;
+}
+.yui-navset .yui-content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#shop-doc ul.slips-menu li:hover {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  background-color: #f58516;
+}
+#shop-panel ul.shop-panel-nav li:hover {
+  background-color: #323232;
+  border-color: #121212 #727272 #727272 #121212;
+}
+#shop-panel-content ul.sport-menu li:hover {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #555;
+  border-top: 1px solid #555;
+  background-color: #f58516;
+}
+#shop-coupon ul.market-menu li:hover {
+  background: url(../images/shop/market_index_selected.png) center center no-repeat;
+}
+
+#keysearch.show-search input.go:hover {
+  cursor: pointer;
+  background: #000;
+}
+#slip-wrapper #slip div.saved-bets div.save-bet-clear:hover {
+  background-color: #333;
+}
+#slip-wrapper #slip div.saved-bets div.save-bet-button:hover {
+  background-color: #040;
+}

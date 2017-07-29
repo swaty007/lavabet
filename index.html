@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <!-- Bootstrap -->
+    <!--<link href="css/settings/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="yui-skin-sam  shop-menu-small">
+<div id="loader-wrapper" style="">
+    <div id="loader"></div>
+    <div class="loader-section-center">Loaded</div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<div id="shop-page">
+    <div id="shop-doc">
+
+        <div id="shop-hd">
+            <div class="sale-terminal">
+                Msturkey - mst mst (ms00) -
+                <span id="funds">$19,952.00</span>
+                <span id="holdfunds"></span>
+            </div>
+            <a id="cashier-settings" title="Settings" href="#"></a>
+            <a id="logout" href="#">EXIT</a>
+        </div>
+        <div id="keysearch" class="show-search yui-ac">
+            <span class="label">Search:</span>
+            <input type="text" class="text yui-ac-input" tabindex="-1" autocomplete="off">
+            <input type="submit" class="go" value="Go">
+        </div>
+        <div id="slip-wrapper" class="show-search">
+            <div id="slip" class="closed empty">
+                <div class="top">
+                    <div class="empty translate">Betting Slip Empty</div>
+                    <div class="info">
+                        <div class="label"></div>
+                        <div class="amount">$0.00</div>
+                        <div class="odds">2.20</div>
+                    </div>
+                    <div class="slip-minimize">Hide</div>
+                </div>
+                <div class="content">
+                    <div class="selections">
+                        <div class="page page-1">
+                            <div class="lines"></div>
+                        </div>
+                    </div>
+                    <div class="systems"></div>
+                    <div class="groups"></div>
+                    <div class="group-systems"></div>
+                    <div class="totals">
+                        <div class="total-line total-cost">
+                            <span class="label"><span class="translate">Total Stake</span> (<span
+                                    class="nr-lines">0</span> <span class="translate">Lines</span>):</span>&nbsp;&nbsp;&nbsp;
+                            <span class="value">$0.00</span>
+                        </div>
+                        <div class="total-line total-bonus" style="display: none;">
+                            <span class="label"><span class="translate">Total Bonus</span>:</span>&nbsp;&nbsp;&nbsp;
+                            <span class="value">$0.00</span>
+                        </div>
+                        <div class="total-line payout">
+                            <span class="label"><span class="translate">Max. Payout</span>:</span>&nbsp;&nbsp;&nbsp;
+                            <span class="value">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="saved-bets">
+                    <div class="save-bet-button">SAVE BET</div>
+                    <div class="save-bet-list"></div>
+                    <div class="save-bet-clear">X</div>
+                </div>
+                <div class="actions">
+                    <div class="submitslip submit-place translate">Place Bet</div>
+                    <div class="submitslip submit-print translate">Print Bet</div>
+                    <div class="clearslip translate">Clear Slip</div>
+                    <div class="waitplacebets">Please Wait While Placing Bets</div>
+                    <div class="confirm-submitslip">Confirm Place Bet</div>
+                </div>
+                <div class="bottom">
+                    <div class="status"></div>
+                    <div class="expand"></div>
+                    <div class="recover">LOAD LAST SLIP</div>
+                </div>
+            </div>
+            <div id="slip-errors"></div>
+            <div id="slip-message"></div>
+            <div class="spacer"></div>
+        </div>
+
+        <div id="shop-panel" class="yui-navset no-cancel no-reprint yui-navset-left">
+
+        <ul class="yui-nav shop-panel-nav">
+            <li class="menu-shifts selected"><a id="menu_shifts" href="#"><em>Terminals</em></a></li>
+            <li class="menu-online"><a id="menu_online" href="#"><em>Online</em></a></li>
+            <li class="menu-matches"><a id="menu_shop_coupon" href="#"><em>Matches</em></a></li>
+            <li class="menu-outrights"><a id="menu_outrights" href="#"><em>Ante Post</em></a></li>
+            <li class="menu-races"><a id="menu_shop_races" href="#"><em>Racing</em></a></li>
+            <li class="menu-virtual"><a id="menu_shop_virtual" href="#"><em>Virtual Sports</em></a></li>
+            <li class="menu-keno"><a id="menu_shop_keno" href="#"><em>Keno</em></a></li>
+            <li class="menu-register"><a id="menu_cashregister" href="#"><em>Cash Register</em></a></li>
+            <li class="menu-sold"><a id="menu_placedslips" href="#"><em>Betting Slips</em></a></li>
+            <li class="menu-auth"><a id="menu_authslips" href="#"><em>Authorisations</em></a></li>
+        </ul>
+
+
+
+            <div id="shop-panel-content" class="yui-content">
+
+                <div id="shopman-shifts"><!--shopman-shifts -->
+                    <ul class="slips-menu" id="yui-gen42">
+                        <li class="slips-menu-item slips-menu-item-long selected"><a id="shopman_terminals" href="#"
+                                                                                     class="shopman-terminals">Terminals</a>
+                        </li>
+                        <li class="slips-menu-item slips-menu-item-long"><a id="shopman_shifts" href="#"
+                                                                            class="shopman-shifts">Shifts</a></li>
+                        <li class="slips-menu-item slips-menu-item-long"><a id="shopman_reports" href="#"
+                                                                            class="shopman-reports">Reports</a></li>
+                        <li class="slips-menu-item slips-menu-item-long"><a id="shopman_transfers" href="#"
+                                                                            class="shopman-transfers">Transfers</a></li>
+                    </ul>
+                    <!--shopman-shift-content 1 -->
+                    <div class="shopman-shift-content" id="yui-gen2"><h1 class="content-title">Shop Terminals</h1>
+                        <h1>Manager Balance: $19,952.00</h1>
+                        <h1>Total Cashier Terminal Cash: $0.00</h1>
+                        <h1>Shop Cash: / </h1>
+                        <div class="report-wrapper">
+                            <table class="report terminals no-fixed">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Cashier</th>
+                                    <th>Balance</th>
+                                    <th>Transfer</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="r0">
+                                    <td>8897</td>
+                                    <td>testc (testc00)</td>
+                                    <td class="money">10,000.00</td>
+                                    <td style="white-space: nowrap">
+                                        <form class="inline-form" action="/shopman/index/cashiertransfer" method="post">
+                                            <input type="hidden" name="cashier" value="8897">&nbsp;&nbsp;Amount:<input
+                                                type="text" name="amount" size="8">&nbsp;<input type="hidden"
+                                                                                                name="direction"
+                                                                                                value=""><input
+                                                class="submit" type="submit" name="transferfrom"
+                                                value="From">&nbsp;<input class="submit" name="transferto" type="submit"
+                                                                          value="To"></form>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h1 style="margin-top: 40px;" class="content-title">Fixture Coupons</h1>
+                        <div class="pdf">
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1270">
+                                <div class="image"></div>
+                                <div class="label">Friday 28/7</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1272">
+                                <div class="image"></div>
+                                <div class="label">Saturday 29/7</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1274">
+                                <div class="image"></div>
+                                <div class="label">Sunday 30/7</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1276">
+                                <div class="image"></div>
+                                <div class="label">Monday 31/7</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1278">
+                                <div class="image"></div>
+                                <div class="label">Tuesday 1/8</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1280">
+                                <div class="image"></div>
+                                <div class="label">Wednesday 2/8</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1281">
+                                <div class="image"></div>
+                                <div class="label">Friday 28/7 Extra Live</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/couponpdf/id/1282">
+                                <div class="image"></div>
+                                <div class="label">Thursday 3/8</div>
+                            </a>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <h1 style="margin-top: 20px;" class="content-title">Results</h1>
+                        <div class="pdf">
+                            <a class="coupon-download" href="/shopman/index/resultpdf/date/2017-07-29">
+                                <div class="image"></div>
+                                <div class="label">Today</div>
+                            </a>
+                            <a class="coupon-download" href="/shopman/index/resultpdf/date/2017-07-28">
+                                <div class="image"></div>
+                                <div class="label">Fri 28/07</div>
+                            </a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div><!--shopman- shift-content end 1-->
+
+                    <!--shopman-shifts-content 2-->
+                    <div class="shopman-shift-content yui-hidden" id="yui-gen2"><h1 class="content-title">Closed Shifts</h1>
+                        <div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>ID</th><th>Name</th><th>Start</th><th>End</th><th>Start Cash</th><th>Cash In</th><th>Cash Out</th><th>Net Cash</th><th>Balance</th></tr></thead><tbody><tr><td colspan="9">Empty Result</td></tr></tbody></table></div>
+                    </div>
+                    <!--shopman-shifts-content end 2-->
+
+                    <!--shopman-shifts-content 3-->      <div class="shopman-shift-content yui-hidden" id="yui-gen2">
+                        <h1 class="content-title">Sale Reports</h1>
+                        <h1>Daily Sales</h1>
+                        <div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>Day</th><th>Slip Sales</th><th>Slip Payout</th><th>Cash</th><th>Total Settled</th><th>Total Wins</th><th>Profit</th><th>Commission</th><th>Net Profit</th><th>Outstanding</th><th>Cancelled</th></tr></thead><tbody><tr class="r0"><td><a href="/shopman/reports?day=20170723&amp;shop=131">23/07</a></td><td style="text-align: center;">3(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; border-right: 2px solid #000;">3</td><td style="text-align: center;">3(1)</td><td style="text-align: center;">25.09(1)</td><td style="text-align: center; color: #900;">-22.09 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #900;">-22.09</td><td style="text-align: center;">25.09(1)</td><td style="text-align: center;">0(0)</td></tr><tr class="r1"><td><a href="/shopman/reports?day=20170712&amp;shop=131">12/07</a></td><td style="text-align: center;">3(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; border-right: 2px solid #000;">3</td><td style="text-align: center;">3(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; color: #080;">3 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #080;">3</td><td style="text-align: center;">0(0)</td><td style="text-align: center;">0(0)</td></tr><tr class="r0"><td><a href="/shopman/reports?day=20170711&amp;shop=131">11/07</a></td><td style="text-align: center;">3(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; border-right: 2px solid #000;">3</td><td style="text-align: center;">3(1)</td><td style="text-align: center;">4.95(1)</td><td style="text-align: center; color: #900;">-1.95 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #900;">-1.95</td><td style="text-align: center;">4.95(1)</td><td style="text-align: center;">0(0)</td></tr><tr class="r1"><td><a href="/shopman/reports?day=20170710&amp;shop=131">10/07</a></td><td style="text-align: center;">3(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; border-right: 2px solid #000;">3</td><td style="text-align: center;">3(1)</td><td style="text-align: center;">120.90(1)</td><td style="text-align: center; color: #900;">-117.90 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #900;">-117.90</td><td style="text-align: center;">120.90(1)</td><td style="text-align: center;">0(0)</td></tr><tr class="r0"><td><a href="/shopman/reports?day=20170702&amp;shop=131">02/07</a></td><td style="text-align: center;">5(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; border-right: 2px solid #000;">5</td><td style="text-align: center;">5(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; color: #080;">5 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #080;">5</td><td style="text-align: center;">0(0)</td><td style="text-align: center;">0(0)</td></tr><tr class="r1"><td><a href="/shopman/reports?day=20170701&amp;shop=131">01/07</a></td><td style="text-align: center;">4(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; border-right: 2px solid #000;">4</td><td style="text-align: center;">4(1)</td><td style="text-align: center;">0(0)</td><td style="text-align: center; color: #080;">4 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #080;">4</td><td style="text-align: center;">0(0)</td><td style="text-align: center;">0(0)</td></tr><tr class="totals"><td class="empty">&nbsp;</td><td style="text-align: center;">21(6)</td><td style="text-align: center;">0(0)</td><td style="text-align: center;">21</td><td style="text-align: center;">21(6)</td><td style="text-align: center;">150.94(3)</td><td style="text-align: center; color: #900;">-129.94 (0)</td><td style="text-align: center;">0</td><td style="text-align: center; color: #900;">-129.94</td><td style="text-align: center;">150.94(3)</td><td style="text-align: center;">0(0)</td></tr></tbody></table></div>    <h1 style="margin-top: 20px;">Today's Paid out tickets</h1>
+                        <div class="noreport">No data found matching your criteria</div><h1 style="margin-top: 20px;">Yesterday's Paid out tickets</h1>
+                        <div class="noreport">No data found matching your criteria</div><h1 style="margin-top: 20px;">Today's Cancelled tickets</h1>
+                        <div class="noreport">No data found matching your criteria</div><h1 style="margin-top: 20px;">Yesterday's Cancelled tickets</h1>
+                        <div class="noreport">No data found matching your criteria</div></div> <!--shopman-shifts end 3-->
+
+                    <!--shopman-shifts-content 4-->
+                    <div class="shopman-shift-content yui-hidden" id="yui-gen2"><h1 class="content-title">Pending Transfers</h1>
+                        <div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>ID</th><th>Transfer Type</th><th>From</th><th>To</th><th>Amount</th><th>Time</th></tr></thead><tbody><tr><td colspan="6">Empty Result</td></tr></tbody></table></div><h1 class="content-title" style="margin-top: 30px">Completed Transfers</h1><div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>ID</th><th>Transfer Type</th><th>From</th><th>To</th><th>Amount</th><th>Time</th></tr></thead><tbody><tr><td colspan="6">Empty Result</td></tr></tbody></table></div><h1 class="content-title" style="margin-top: 30px">Pending Cashier Transfers</h1><div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>ID</th><th>Transfer Type</th><th>From</th><th>To</th><th>Amount</th><th>Time</th></tr></thead><tbody><tr><td colspan="6">Empty Result</td></tr></tbody></table></div><h1 class="content-title" style="margin-top: 30px">Completed Cashier Transfers</h1><div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>ID</th><th>Transfer Type</th><th>From</th><th>To</th><th>Amount</th><th>Time</th></tr></thead><tbody><tr><td colspan="6">Empty Result</td></tr></tbody></table></div><h1 class="content-title" style="margin-top: 30px">Expense Requests</h1><form action="/shopman/transfers/addexpense" method="post">
+                            <table class="settings" style="margin-bottom: 20px">
+                                <tbody><tr><td class="label">Item:</td><td><select name="expense-type" id="expense-type">
+                                    <option value="">Select Expese Type</option>
+                                    <option value="0">Other</option>
+                                </select></td></tr>
+                                <tr><td class="label">For Month (Only for Monthly expenses):</td><td><select name="expensemonth" id="expensemonth">
+                                    <option value=""></option>
+                                    <option value="201710">October 2017</option>
+                                    <option value="201709">September 2017</option>
+                                    <option value="201708">August 2017</option>
+                                    <option value="201707" selected="selected">July 2017</option>
+                                    <option value="201706">June 2017</option>
+                                    <option value="201705">May 2017</option>
+                                    <option value="201704">April 2017</option>
+                                </select><!--1td--></td></tr>
+                                <tr><td class="label">Message:</td><td><input type="text" name="message" size="50"></td></tr>
+                                <tr><td class="label">Amount:</td><td><input type="text" name="amount"></td></tr>
+                                <tr><td class="label">&nbsp;</td><td><input type="submit" value="Request Expense"></td></tr>
+                                </tbody></table></form>
+                        <div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>ID</th><th>Item</th><th>Message</th><th>Requested</th><th>Amount</th><th>Status</th><th>Response</th><th> </th></tr></thead><tbody><tr><td colspan="8">Empty Result</td></tr></tbody></table></div>
+                    </div><!--shopman-shifts-content end 4-->
+
+                </div>  <!--shopman- shift end-->
+
+                <!--shopman-online-->
+<div id="shopman-online" class="yui-hidden">
+    <ul class="slips-menu">
+        <li class="slips-menu-item slips-menu-item-long selected"><a id="shopman_deposit" href="#"
+                                                                     class="shopman-deposit">Deposit</a></li>
+        <li class="slips-menu-item slips-menu-item-long"><a id="shopman_withdraw" href="#" class="shopman-withdraw">Withdraw</a>
+        </li>
+        <li class="slips-menu-item slips-menu-item-long"><a id="shopman_customer_transfers" href="#"
+                                                            class="shopman-customer-transfers">Customer Transfers</a>
+        </li>
+        <li class="slips-menu-item slips-menu-item-long"><a id="shopman_customers" href="#" class="shopman-customers">Create
+            Customer</a></li>
+    </ul>
+
+    <!--shop-man content 1-->
+    <div class="shopman-online-content" id="yui-gen40"><h1 class="content-title">Deposit for Online Customer</h1>
+        <form action="/shopman/customers/deposit" method="post">
+            <table class="settings">
+                <tbody><tr><td>Customer ID: </td><td> <input type="text" size="8" name="user"></td></tr>
+                <tr><td>Amount: </td><td> <input type="text" size="20" class="amount-field" name="amount"></td></tr>
+                <tr><td>&nbsp;</td>
+                    <td>
+                        <input type="submit" value="Complete Deposit"></td></tr>
+                </tbody></table>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="/shopman/customers/reprintdepositauth" method="post">
+            <input type="submit" value="Reprint Last Deposit">
+        </form>
+
+    </div>
+    <!--shop-man-content 1 end-->
+
+    <!--shop-man content 2-->
+    <div class="shopman-online-content yui-hidden" id="yui-gen40"><h1 class="content-title">Withdrawal for Online Customer</h1>
+        <form action="/shopman/customers/withdraw" method="post">
+            <table class="settings">
+                <tbody><tr><td>Customer ID: </td><td> <input type="text" size="4" name="user"></td></tr>
+                <tr><td>TRANSER CODE: </td><td>
+                    <input type="text" class="num-code num-code-1" name="code1" size="3" value=""> -
+                    <input type="text" class="num-code num-code-2" name="code2" size="3" value=""> -
+                    <input type="text" class="num-code num-code-3" name="code3" size="3" value=""> -
+                    <input type="text" class="num-code num-code-4" name="code4" size="3" value=""></td></tr>
+
+                <tr><td>&nbsp;</td>
+                    <td>
+                        <input type="submit" value="Complete Withdrawal"></td></tr>
+                </tbody></table>
+        </form>
+    </div>
+    <!--shop-man-content 2 end-->
+
+    <!--shop-man content 3-->
+    <div class="shopman-online-content yui-hidden" id="yui-gen40"><h1 class="content-title">Customer Transfers</h1>
+        <div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>Time</th><th>Type</th><th>Deposit</th><th>Withdrawal</th></tr></thead><tbody><tr><td colspan="4">Empty Result</td></tr></tbody></table></div></div>
+    <!--shop-man-content 3 end-->
+
+    <!--shop-man content 4-->
+    <div class="shopman-online-content yui-hidden" id="yui-gen40"><h1 class="content-title">Add Online Customer</h1>
+        <form enctype="application/x-www-form-urlencoded" method="post" label="Add New Customer" action="/shopman/customers/add" class="styled-form table-form">
+            <div class="bd">
+                <table class="form">
+                    <thead><tr><td colspan="3" class="hd">Add New Customer</td></tr></thead>
+                    <tbody><tr class="r0"><td class="label">Name</td><td colspan="2">
+                        <input type="text" name="name" id="name" value=""><span class="required">&nbsp;*</span></td></tr><tr class="r1"><td class="label">Username</td><td colspan="2">
+                        <input type="text" name="username" id="username" value=""><span class="required">&nbsp;*</span></td></tr><tr class="r0"><td class="label">Email</td><td colspan="2">
+                        <input type="text" name="email" id="email" value=""></td></tr><tr class="r1"><td class="label">Telephone</td><td colspan="2">
+                        <input type="text" name="phone" id="phone" value=""></td></tr><tr class="r0"><td class="label">Password</td><td colspan="2">
+                        <input type="password" name="password" id="password" value=""><span class="required">&nbsp;*</span></td></tr><tr class="r1"><td class="label">Verify Password</td><td colspan="2">
+                        <input type="password" name="password2" id="password2" value=""><span class="required">&nbsp;*</span></td></tr>        <tr class="form-controls">
+                        <td>&nbsp;</td>
+                        <td colspan="2">
+
+                            <input type="submit" name="submit" id="submit" value="Add Customer">            </td>
+                    </tr>
+                    <tr class="legend">
+                        <td colspan="3" style="padding: 20px; color: #f00;">* Required field</td>
+                    </tr>
+                    </tbody></table>
+            </div>
+
+        </form></div>
+    <!--shop-man-content 4 end-->
+</div><!--shopman-online end-->
+                <!--shop-coupon-->
+<div id="shop-coupon" class="yui-hidden">
+
+    <ul class="sport-menu sport-menu-matches">
+        <!--<li class="sport-menu-item"><a href="#" class="sport sport-kiosk" sport="kiosk">KIOSK Mode</a></li>-->
+        <li class="sport-menu-item"><a href="#" class="sport sport-live" sport="live">Live</a></li>
+        <li class="sport-menu-item selected"><a href="#" class="sport sport-soccer" sport="3">Football</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-basketball" sport="1">Basketball</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-baseball" sport="7">Baseball</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-ice-hockey" sport="4">Ice Hockey</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-tennis" sport="2">Tennis</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-handball" sport="8">Handball</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-golf" sport="11">Golf</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-boxing" sport="33">Boxing</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-rugby" sport="9">Rugby</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-american-football" sport="6">Am Football</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-snooker" sport="16">Snooker</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-cricket" sport="20">Cricket</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-darts" sport="17">Darts</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-volleyball" sport="5">Volleyball</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-waterpolo" sport="15">Waterpolo</a></li>
+        <li class="sport-menu-item"><a href="#" class="sport sport-beach-volley" sport="38">Beach Volley</a></li>
+    </ul>
+    <div class="coupon-content yui-hidden" mid="">
+        <div class="sport-coupon matches-coupon">
+            <div id="shop-couponview">
+                <ul class="market-menu" sport="live">
+                    <li class="selected"><a class="coupon-index market-index" mid="10" href="#">Match Odds</a></li>
+                    <li><a class="coupon-index market-index" mid="56" href="#">Under/Over</a></li>
+                    <li><a class="coupon-index market-index" mid="1004" href="#">Rest of Match</a></li>
+                    <li><a class="coupon-index market-index" mid="1013" href="#">Next Goal</a></li>
+                    <br>
+                    <li><a class="coupon-index market-index" mid="842" href="#">HT Match Odds</a></li>
+                    <li><a class="coupon-index market-index" mid="984" href="#">HT Under/Over</a></li>
+                    <li><a class="coupon-index market-index" mid="1020" href="#">HT Rest Of Match</a></li>
+                    <li><a class="coupon-index market-index" mid="1107" href="#">HT Next Goal</a></li>
+                </ul>
+                <table class="coupon matches">
+                    <thead class="coupon-head">
+                    <tr class="coupon-head">
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td>Code</td>
+                        <td>&nbsp;</td>
+                        <td>Time</td>
+                        <td>Info</td>
+                        <td>&nbsp;</td>
+                        <td>1.</td>
+                        <td>&nbsp;</td>
+                        <td>X</td>
+                        <td>&nbsp;</td>
+                        <td>2.</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="r0-live match-ended no-bets" mid="589438">
+                        <td class="sport sport-volleyball">&nbsp;</td>
+                        <td class="code">5419</td>
+                        <td class="league flag-bg flag-bg-philippines" title="Philippines PVL, Women, Open Conference">
+                            PHI
+                        </td>
+                        <td class="time">FT 2:3</td>
+                        <td class="status betstop">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">LAOAG POWER SMASHERS</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">UPD LADY MAROONS</span></td>
+                        <td>&nbsp;</td>
+                        <td class="more-markets">+50</td>
+                    </tr>
+                    <tr class="r1-live" mid="589488">
+                        <td class="sport sport-ice-hockey">&nbsp;</td>
+                        <td class="code">5469</td>
+                        <td class="league flag-bg flag-bg-international" title="International Club Friendly Games">INT
+                        </td>
+                        <td class="time">59' 4:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">HK DINAMO MINSK</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">DINAMO RIGA</span></td>
+                        <td>&nbsp;</td>
+                        <td class="more-markets">+82</td>
+                    </tr>
+                    <tr class="r0-live no-bets" mid="589441">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5422</td>
+                        <td class="league flag-bg flag-bg-thailand" title="Thailand Thai League 3">THA</td>
+                        <td class="time">72' 1:2</td>
+                        <td class="status betstop">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187814831">47.00</div>
+                        </td>
+                        <td><span class="match-team-name">RAJ PRACHA NONTHABURI FC</span></td>
+                        <td>
+                            <div class="selection" sid="1187814832">6.90</div>
+                        </td>
+                        <td><span class="match-team-name">SAMUT SAKHON FC</span></td>
+                        <td>
+                            <div class="selection" sid="1187814833">1.11</div>
+                        </td>
+                        <td class="more-markets">+72</td>
+                    </tr>
+                    <tr class="r1-live" mid="589442">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5423</td>
+                        <td class="league flag-bg flag-bg-international-clubs"
+                            title="International Clubs Club Friendly Games">CF
+                        </td>
+                        <td class="time">78' 1:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187804945">8.70</div>
+                        </td>
+                        <td><span class="match-team-name">CF GETAFE B</span></td>
+                        <td>
+                            <div class="selection" sid="1187804946">1.55</div>
+                        </td>
+                        <td><span class="match-team-name">CD TOLEDO</span></td>
+                        <td>
+                            <div class="selection" sid="1187804947">3.30</div>
+                        </td>
+                        <td class="more-markets">+88</td>
+                    </tr>
+                    <tr class="r0-live" mid="589443">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5424</td>
+                        <td class="league flag-bg flag-bg-international-clubs"
+                            title="International Clubs Club Friendly Games">CF
+                        </td>
+                        <td class="time">75' 1:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187803690">1.39</div>
+                        </td>
+                        <td><span class="match-team-name">CD GETXO</span></td>
+                        <td>
+                            <div class="selection" sid="1187803691">3.80</div>
+                        </td>
+                        <td><span class="match-team-name">SD AMOREBIETA</span></td>
+                        <td>
+                            <div class="selection" sid="1187803692">11.75</div>
+                        </td>
+                        <td class="more-markets">+68</td>
+                    </tr>
+                    <tr class="r1-live" mid="589444">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5425</td>
+                        <td class="league flag-bg flag-bg-international-clubs"
+                            title="International Clubs Club Friendly Games">CF
+                        </td>
+                        <td class="time">78' 1:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187800650">7.10</div>
+                        </td>
+                        <td><span class="match-team-name">UNIA RACIBORZ</span></td>
+                        <td>
+                            <div class="selection" sid="1187800651">1.95</div>
+                        </td>
+                        <td><span class="match-team-name">GKS PNIOWEK PAWLOWICE</span></td>
+                        <td>
+                            <div class="selection" sid="1187800652">2.40</div>
+                        </td>
+                        <td class="more-markets">+96</td>
+                    </tr>
+                    <tr class="r0-live" mid="586726">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6060</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">73' 2:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection selection-na">0.00</div>
+                        </td>
+                        <td><span class="match-team-name">Avispa Fukuoka</span></td>
+                        <td>
+                            <div class="selection" sid="1187806640">10.50</div>
+                        </td>
+                        <td><span class="match-team-name">Montedio Yamagata</span></td>
+                        <td>
+                            <div class="selection" sid="1187806641">50.00</div>
+                        </td>
+                        <td class="more-markets">+63</td>
+                    </tr>
+                    <tr class="r1-live" mid="586725">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6061</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">74' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187801489">5.90</div>
+                        </td>
+                        <td><span class="match-team-name">Kamatamare Sanuki</span></td>
+                        <td>
+                            <div class="selection" sid="1187801490">1.60</div>
+                        </td>
+                        <td><span class="match-team-name">Oita Trinita</span></td>
+                        <td>
+                            <div class="selection" sid="1187801491">3.65</div>
+                        </td>
+                        <td class="more-markets">+65</td>
+                    </tr>
+                    <tr class="r0-live" mid="586724">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6062</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">75' 3:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection selection-na">0.00</div>
+                        </td>
+                        <td><span class="match-team-name">Matsumoto Yamaga FC</span></td>
+                        <td>
+                            <div class="selection" sid="1187810891">9.75</div>
+                        </td>
+                        <td><span class="match-team-name">Zweigen Kanazawa</span></td>
+                        <td>
+                            <div class="selection" sid="1187810892">50.00</div>
+                        </td>
+                        <td class="more-markets">+71</td>
+                    </tr>
+                    <tr class="r1-live" mid="586723">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6064</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">75' 1:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187809203">5.60</div>
+                        </td>
+                        <td><span class="match-team-name">Mito Hollyhock</span></td>
+                        <td>
+                            <div class="selection" sid="1187809204">1.55</div>
+                        </td>
+                        <td><span class="match-team-name">Tokyo Verdy</span></td>
+                        <td>
+                            <div class="selection" sid="1187809205">4.10</div>
+                        </td>
+                        <td class="more-markets">+66</td>
+                    </tr>
+                    <tr class="r0-live" mid="587492">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6115</td>
+                        <td class="league flag-bg flag-bg-australia" title="Australia NPL, Victoria">AUS</td>
+                        <td class="time">71' 1:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187874687">1.43</div>
+                        </td>
+                        <td><span class="match-team-name">Pascoe Vale</span></td>
+                        <td>
+                            <div class="selection" sid="1187874688">3.60</div>
+                        </td>
+                        <td><span class="match-team-name">South Melbourne</span></td>
+                        <td>
+                            <div class="selection" sid="1187874689">11.00</div>
+                        </td>
+                        <td class="more-markets">+80</td>
+                    </tr>
+                    <tr class="r1-live" mid="588215">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6165</td>
+                        <td class="league flag-bg flag-bg-australia" title="Australia NPL, New South Wales">AUS</td>
+                        <td class="time">71' 0:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187805651">14.00</div>
+                        </td>
+                        <td><span class="match-team-name">Bonnyrigg W. E.</span></td>
+                        <td>
+                            <div class="selection" sid="1187805652">4.20</div>
+                        </td>
+                        <td><span class="match-team-name">Wollongong Wolves</span></td>
+                        <td>
+                            <div class="selection" sid="1187805653">1.32</div>
+                        </td>
+                        <td class="more-markets">+70</td>
+                    </tr>
+                    <tr class="r0-live" mid="588892">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6278</td>
+                        <td class="league flag-bg flag-bg-australia" title="Australia Brisbane Premier League">AUS</td>
+                        <td class="time">73' 1:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187810288">1.17</div>
+                        </td>
+                        <td><span class="match-team-name">Queensland Lions</span></td>
+                        <td>
+                            <div class="selection" sid="1187810289">5.80</div>
+                        </td>
+                        <td><span class="match-team-name">Eastern Suburbs Brisbane</span></td>
+                        <td>
+                            <div class="selection" sid="1187810290">24.00</div>
+                        </td>
+                        <td class="more-markets">+75</td>
+                    </tr>
+                    <tr class="r1-live" mid="588973">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6296</td>
+                        <td class="league flag-bg flag-bg-australia" title="Australia Brisbane Premier League">AUS</td>
+                        <td class="time">77' 1:6</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Souths United FC</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Peninsula Power FC</span></td>
+                        <td>&nbsp;</td>
+                        <td class="more-markets">+111</td>
+                    </tr>
+                    <tr class="r0-live no-bets" mid="589765">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6516</td>
+                        <td class="league flag-bg flag-bg-international-clubs"
+                            title="International Clubs Club Friendly Games">CF
+                        </td>
+                        <td class="time">82' 0:4</td>
+                        <td class="status betstop">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">GKS BELCHATOW II</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">UNIA SKIERNIEWICE</span></td>
+                        <td>&nbsp;</td>
+                        <td class="more-markets">+97</td>
+                    </tr>
+                    <tr class="r1-live" mid="589446">
+                        <td class="sport sport-ice-hockey">&nbsp;</td>
+                        <td class="code">5427</td>
+                        <td class="league flag-bg flag-bg-international" title="International Club Friendly Games">INT
+                        </td>
+                        <td class="time">PAUSE2 4:2</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187833752">1.08</div>
+                        </td>
+                        <td><span class="match-team-name">ZVEZDA CHEKHOV</span></td>
+                        <td>
+                            <div class="selection" sid="1187833753">7.00</div>
+                        </td>
+                        <td><span class="match-team-name">HC KHIMIK VOSKRESENSK</span></td>
+                        <td>
+                            <div class="selection" sid="1187833754">25.00</div>
+                        </td>
+                        <td class="more-markets">+80</td>
+                    </tr>
+                    <tr class="r0-live" mid="589307">
+                        <td class="sport sport-basketball">&nbsp;</td>
+                        <td class="code">8116</td>
+                        <td class="league flag-bg flag-bg-philippines" title="Philippines PBA, Governors Cup">PHI</td>
+                        <td class="time">35' 61:58</td>
+                        <td class="status betstart"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground"
+                                                         style="cursor: pointer;"></td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187882562">1.14</div>
+                        </td>
+                        <td><span class="match-team-name">Meralco Bolts</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Rain Or Shine Elasto</span></td>
+                        <td>
+                            <div class="selection" sid="1187882563">4.30</div>
+                        </td>
+                        <td class="more-markets">+180</td>
+                    </tr>
+                    <tr class="r1-live" mid="586413">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6025</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League">JPN</td>
+                        <td class="time">HT 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187987261">1.75</div>
+                        </td>
+                        <td><span class="match-team-name">Kashima Antlers</span></td>
+                        <td>
+                            <div class="selection" sid="1187987262">2.80</div>
+                        </td>
+                        <td><span class="match-team-name">Ventforet Kofu</span></td>
+                        <td>
+                            <div class="selection" sid="1187987263">7.10</div>
+                        </td>
+                        <td class="more-markets">+61</td>
+                    </tr>
+                    <tr class="r0-live" mid="589399">
+                        <td class="sport sport-tennis">&nbsp;</td>
+                        <td class="code">8129</td>
+                        <td class="league flag-bg flag-bg-atp" title="ATP Gstaad, Switzerland">ATP</td>
+                        <td class="time">Set 2 1:0</td>
+                        <td class="status betstart"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground"
+                                                         style="cursor: pointer;"></td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187987284">1.15</div>
+                        </td>
+                        <td><span class="match-team-name">Haase, Robin</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Hanfmann, Yannick</span></td>
+                        <td>
+                            <div class="selection" sid="1187987285">4.15</div>
+                        </td>
+                        <td class="more-markets">+64</td>
+                    </tr>
+                    <tr class="r1-live" mid="589398">
+                        <td class="sport sport-tennis">&nbsp;</td>
+                        <td class="code">8132</td>
+                        <td class="league flag-bg flag-bg-challenge" title="Challenge Cortina, Italy">CHA</td>
+                        <td class="time">Set 1 0:0</td>
+                        <td class="status betstart"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground"
+                                                         style="cursor: pointer;"></td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188145528">4.50</div>
+                        </td>
+                        <td><span class="match-team-name">Carballes Baena, Roberto</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Granollers, Marcel</span></td>
+                        <td>
+                            <div class="selection" sid="1188145529">1.12</div>
+                        </td>
+                        <td class="more-markets">+22</td>
+                    </tr>
+                    <tr class="r0-live" mid="589456">
+                        <td class="sport sport-volleyball">&nbsp;</td>
+                        <td class="code">5437</td>
+                        <td class="league flag-bg flag-bg-international" title="International Asian Championship">INT
+                        </td>
+                        <td class="time">Set 3 1:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1187992243">3.55</div>
+                        </td>
+                        <td><span class="match-team-name">KAZAKHSTAN</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">SOUTH KOREA</span></td>
+                        <td>
+                            <div class="selection" sid="1187992244">1.20</div>
+                        </td>
+                        <td class="more-markets">+79</td>
+                    </tr>
+                    <tr class="r1-live" mid="589457">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5438</td>
+                        <td class="league flag-bg flag-bg-estonia" title="Estonia II Liiga Ida/Phi">EST</td>
+                        <td class="time">28' 1:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188452127">1.65</div>
+                        </td>
+                        <td><span class="match-team-name">TARTU FC SANTOS II</span></td>
+                        <td>
+                            <div class="selection" sid="1188452128">4.60</div>
+                        </td>
+                        <td><span class="match-team-name">NARVA UNITED FC</span></td>
+                        <td>
+                            <div class="selection" sid="1188452129">4.10</div>
+                        </td>
+                        <td class="more-markets">+1</td>
+                    </tr>
+                    <tr class="r0-live" mid="589458">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5439</td>
+                        <td class="league flag-bg flag-bg-international-clubs"
+                            title="International Clubs Club Friendly Games">CF
+                        </td>
+                        <td class="time">32' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188255565">1.85</div>
+                        </td>
+                        <td><span class="match-team-name">SD LEIOA</span></td>
+                        <td>
+                            <div class="selection" sid="1188255566">3.20</div>
+                        </td>
+                        <td><span class="match-team-name">CLUB PORTUGALETE</span></td>
+                        <td>
+                            <div class="selection" sid="1188255567">4.70</div>
+                        </td>
+                        <td class="more-markets">+60</td>
+                    </tr>
+                    <tr class="r1-live" mid="586416">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6008</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League">JPN</td>
+                        <td class="time">31' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188326484">2.65</div>
+                        </td>
+                        <td><span class="match-team-name">Gamba Osaka</span></td>
+                        <td>
+                            <div class="selection" sid="1188326485">2.90</div>
+                        </td>
+                        <td><span class="match-team-name">Cerezo Osaka</span></td>
+                        <td>
+                            <div class="selection" sid="1188326486">2.90</div>
+                        </td>
+                        <td class="more-markets">+72</td>
+                    </tr>
+                    <tr class="r0-live" mid="586414">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6009</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League">JPN</td>
+                        <td class="time">30' 1:2</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188264238">3.00</div>
+                        </td>
+                        <td><span class="match-team-name">Kawasaki Frontale</span></td>
+                        <td>
+                            <div class="selection" sid="1188264239">3.35</div>
+                        </td>
+                        <td><span class="match-team-name">JUBILO IWATA</span></td>
+                        <td>
+                            <div class="selection" sid="1188264240">2.30</div>
+                        </td>
+                        <td class="more-markets">+72</td>
+                    </tr>
+                    <tr class="r1-live" mid="586415">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6011</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League">JPN</td>
+                        <td class="time">31' 1:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188250940">2.10</div>
+                        </td>
+                        <td><span class="match-team-name">Yokohama F Marinos</span></td>
+                        <td>
+                            <div class="selection" sid="1188250941">3.00</div>
+                        </td>
+                        <td><span class="match-team-name">Shimizu S-Pulse</span></td>
+                        <td>
+                            <div class="selection" sid="1188250942">3.85</div>
+                        </td>
+                        <td class="more-markets">+74</td>
+                    </tr>
+                    <tr class="r0-live" mid="586417">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6017</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League">JPN</td>
+                        <td class="time">30' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188329444">1.95</div>
+                        </td>
+                        <td><span class="match-team-name">Vissel Kobe</span></td>
+                        <td>
+                            <div class="selection" sid="1188329445">3.15</div>
+                        </td>
+                        <td><span class="match-team-name">Omiya Ardija</span></td>
+                        <td>
+                            <div class="selection" sid="1188329446">4.20</div>
+                        </td>
+                        <td class="more-markets">+74</td>
+                    </tr>
+                    <tr class="r1-live" mid="586727">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6059</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">31' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188332813">2.95</div>
+                        </td>
+                        <td><span class="match-team-name">Machida Zelvia</span></td>
+                        <td>
+                            <div class="selection" sid="1188332814">2.70</div>
+                        </td>
+                        <td><span class="match-team-name">Kyoto Sanga FC</span></td>
+                        <td>
+                            <div class="selection" sid="1188332815">2.75</div>
+                        </td>
+                        <td class="more-markets">+71</td>
+                    </tr>
+                    <tr class="r0-live" mid="586730">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6063</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">31' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188247923">3.25</div>
+                        </td>
+                        <td><span class="match-team-name">Ehime FC</span></td>
+                        <td>
+                            <div class="selection" sid="1188247924">2.90</div>
+                        </td>
+                        <td><span class="match-team-name">JEF United Ichihara Chiba</span></td>
+                        <td>
+                            <div class="selection" sid="1188247925">2.40</div>
+                        </td>
+                        <td class="more-markets">+70</td>
+                    </tr>
+                    <tr class="r1-live" mid="586729">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6065</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">30' 0:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188338981">7.20</div>
+                        </td>
+                        <td><span class="match-team-name">RENOFA YAMAGUCHI FC</span></td>
+                        <td>
+                            <div class="selection" sid="1188338982">3.90</div>
+                        </td>
+                        <td><span class="match-team-name">Yokohama FC</span></td>
+                        <td>
+                            <div class="selection" sid="1188338983">1.48</div>
+                        </td>
+                        <td class="more-markets">+70</td>
+                    </tr>
+                    <tr class="r0-live" mid="586728">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6066</td>
+                        <td class="league flag-bg flag-bg-japan" title="Japan J.League 2">JPN2</td>
+                        <td class="time">31' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188252146">2.60</div>
+                        </td>
+                        <td><span class="match-team-name">Shonan Bellmare</span></td>
+                        <td>
+                            <div class="selection" sid="1188252147">2.85</div>
+                        </td>
+                        <td><span class="match-team-name">Tokushima Vortis</span></td>
+                        <td>
+                            <div class="selection" sid="1188252148">3.00</div>
+                        </td>
+                        <td class="more-markets">+71</td>
+                    </tr>
+                    <tr class="r1-live" mid="589075">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">6331</td>
+                        <td class="league flag-bg flag-bg-germany-amateur"
+                            title="Germany Amateur Regionalliga Northeast">GER AM
+                        </td>
+                        <td class="time">34' 0:1</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">BSG Chemie Leipzig</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Lokomotive Leipzig</span></td>
+                        <td>&nbsp;</td>
+                        <td class="more-markets">+68</td>
+                    </tr>
+                    <tr class="r0-live" mid="589485">
+                        <td class="sport sport-basketball">&nbsp;</td>
+                        <td class="code">5466</td>
+                        <td class="league flag-bg flag-bg-international"
+                            title="International U19 WC Women, Placement Round 13-16">INT
+                        </td>
+                        <td class="time">17' 13:28</td>
+                        <td class="status betstart"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground"
+                                                         style="cursor: pointer;"></td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188268935">8.75</div>
+                        </td>
+                        <td><span class="match-team-name">Egypt</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Mali</span></td>
+                        <td>
+                            <div class="selection selection-na">0.00</div>
+                        </td>
+                        <td class="more-markets">+40</td>
+                    </tr>
+                    <tr class="r1-live" mid="589389">
+                        <td class="sport sport-basketball">&nbsp;</td>
+                        <td class="code">8127</td>
+                        <td class="league flag-bg flag-bg-international"
+                            title="International FIBA Asia Championship Women, Final round">INT
+                        </td>
+                        <td class="time">19' 32:38</td>
+                        <td class="status betstart"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground"
+                                                         style="cursor: pointer;"></td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188272053">7.50</div>
+                        </td>
+                        <td><span class="match-team-name">South Korea</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">China</span></td>
+                        <td>
+                            <div class="selection" sid="1188272054">1.03</div>
+                        </td>
+                        <td class="more-markets">+31</td>
+                    </tr>
+                    <tr class="r0-live" mid="589400">
+                        <td class="sport sport-tennis">&nbsp;</td>
+                        <td class="code">8131</td>
+                        <td class="league flag-bg flag-bg-atp" title="ATP Hamburg, Germany">ATP</td>
+                        <td class="time">Set 1 0:0</td>
+                        <td class="status betstart"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground"
+                                                         style="cursor: pointer;"></td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188252357">1.35</div>
+                        </td>
+                        <td><span class="match-team-name">Mayer, Leonardo</span></td>
+                        <td>&nbsp;</td>
+                        <td><span class="match-team-name">Delbonis, Federico</span></td>
+                        <td>
+                            <div class="selection" sid="1188252358">2.65</div>
+                        </td>
+                        <td class="more-markets">+10</td>
+                    </tr>
+                    <tr class="r1-live" mid="589461">
+                        <td class="sport sport-soccer">&nbsp;</td>
+                        <td class="code">5442</td>
+                        <td class="league flag-bg flag-bg-international-youth"
+                            title="International Youth U21 Tournoi Europeen">INT
+                        </td>
+                        <td class="time">8' 0:0</td>
+                        <td class="status betstart">&nbsp;</td>
+                        <td class="min-comb">1+</td>
+                        <td>
+                            <div class="selection" sid="1188474749">1.85</div>
+                        </td>
+                        <td><span class="match-team-name">LEICESTER CITY</span></td>
+                        <td>
+                            <div class="selection" sid="1188474750">2.95</div>
+                        </td>
+                        <td><span class="match-team-name">STADE BREST</span></td>
+                        <td>
+                            <div class="selection" sid="1188474751">5.30</div>
+                        </td>
+                        <td class="more-markets">+1</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="match-coupon matches-coupon">
+            <div class="match-head">
+                <div class="close-markets"></div>
+            </div>
+            <div class="match-stats"></div>
+            <div class="top-market-list"></div>
+            <div class="match-markets">
+                <div class="market-list"></div>
+                <div class="markets"></div>
+            </div>
+        </div>
+    </div>
+    <div class="coupon-content">
+            <div class="sport-coupon matches-coupon"><div id="shop-couponview"><ul class="market-menu" sport="3"><li class="selected"><a class="coupon-index market-index" mid="810" href="#">FT 1X2</a></li><li><a class="coupon-index market-index" mid="856" href="#">Under/Over 2.5</a></li><li><a class="coupon-index market-index" mid="843" href="#">Goal Goal No Goal</a></li><li><a class="coupon-index market-index" mid="202" href="#">Total Goals</a></li><li><a class="coupon-index market-index" mid="842" href="#">1st Half - 1X2</a></li><br><li><a class="coupon-index market-index" mid="844" href="#">Halftime/Fulltime</a></li><li><a class="coupon-index market-index" mid="984" href="#">1st Half - Under/Over</a></li><li><a class="coupon-index market-index" mid="908" href="#">FT 1X2 &amp; Under/Over 2.5</a></li><li><a class="coupon-index market-index" mid="891" href="#">Home Team To Score</a></li><li><a class="coupon-index market-index" mid="892" href="#">Away Team To Score</a></li></ul><table class="coupon matches"><thead class="coupon-head"><tr class="coupon-head"><td>Code</td><td>&nbsp;</td><td>Time</td><td>Info</td><td>&nbsp;</td><td>1.</td><td>&nbsp;</td><td>X</td><td>&nbsp;</td><td>2.</td><td>&nbsp;</td></tr></thead><tbody><tr class="r0" mid="555286"><td class="code">3031</td><td class="league flag-bg flag-bg-norway" title="Norway NM Cup">NOR</td><td class="time">19:30</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><span class="match-team-name">Tynset</span></td><td>&nbsp;</td><td><span class="match-team-name">Rosenborg BK</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="date-row"><td colspan="11">Saturday 29/07</td></tr><tr class="r1" mid="588218"><td class="code">6178</td><td class="league flag-bg flag-bg-thailand" title="Thailand Premier League">THA</td><td class="time">13:45</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1171815714">1.25</div></td><td><span class="match-team-name">Bangkok United</span></td><td><div class="selection" sid="1171815716">5.90</div></td><td><span class="match-team-name">BEC Tero Sasana</span></td><td><div class="selection" sid="1171815715">9.10</div></td><td class="more-markets">+41</td></tr><tr class="r0" mid="586425"><td class="code">6012</td><td class="league flag-bg flag-bg-germany" title="Germany 2nd Bundesliga">GER2</td><td class="time">14:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1153368053">2.05</div></td><td><span class="match-team-name">FC Ingolstadt</span></td><td><div class="selection" sid="1153368055">3.30</div></td><td><span class="match-team-name">FC Union Berlin</span></td><td><div class="selection" sid="1153368054">3.50</div></td><td class="more-markets">+73</td></tr><tr class="r1" mid="587318"><td class="code">6109</td><td class="league flag-bg flag-bg-finland" title="Finland Ykkonen">FIN</td><td class="time">14:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1162524026">2.50</div></td><td><span class="match-team-name">FC Haka Valkeakoski</span></td><td><div class="selection" sid="1162524028">3.40</div></td><td><span class="match-team-name">FF Jaro</span></td><td><div class="selection" sid="1162524027">2.65</div></td><td class="more-markets">+70</td></tr><tr class="r0" mid="587317"><td class="code">6110</td><td class="league flag-bg flag-bg-finland" title="Finland Ykkonen">FIN</td><td class="time">14:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1162523034">3.25</div></td><td><span class="match-team-name">EIF</span></td><td><div class="selection" sid="1162523036">3.35</div></td><td><span class="match-team-name">KPV Kokkola</span></td><td><div class="selection" sid="1162523035">2.10</div></td><td class="more-markets">+73</td></tr><tr class="r1" mid="588219"><td class="code">6176</td><td class="league flag-bg flag-bg-thailand" title="Thailand Premier League">THA</td><td class="time">14:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1171815722">1.95</div></td><td><span class="match-team-name">Chonburi FC</span></td><td><div class="selection" sid="1171815724">3.80</div></td><td><span class="match-team-name">Suphanburi FC</span></td><td><div class="selection" sid="1171815723">3.35</div></td><td class="more-markets">+41</td></tr><tr class="r0" mid="588597"><td class="code">6224</td><td class="league flag-bg flag-bg-sweden" title="Sweden Division 2, Vastra Gotaland">SWE</td><td class="time">14:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176193731">1.90</div></td><td><span class="match-team-name">Lindome Gif</span></td><td><div class="selection" sid="1176193733">4.20</div></td><td><span class="match-team-name">IS Halmia</span></td><td><div class="selection" sid="1176193732">3.15</div></td><td class="more-markets">+69</td></tr><tr class="r1" mid="588596"><td class="code">6225</td><td class="league flag-bg flag-bg-sweden" title="Sweden Division 2, Vastra Gotaland">SWE</td><td class="time">14:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176192983">1.95</div></td><td><span class="match-team-name">Hittarps IK</span></td><td><div class="selection" sid="1176192985">3.95</div></td><td><span class="match-team-name">Vinbergs IF</span></td><td><div class="selection" sid="1176192984">3.15</div></td><td class="more-markets">+67</td></tr><tr class="r0" mid="588893"><td class="code">6267</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Bavaria">GER4</td><td class="time">14:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180262157">2.55</div></td><td><span class="match-team-name">VfR Garching</span></td><td><div class="selection" sid="1180262159">3.45</div></td><td><span class="match-team-name">Spvgg Bayreuth</span></td><td><div class="selection" sid="1180262158">2.50</div></td><td class="more-markets">+69</td></tr><tr class="r1" mid="589238"><td class="code">6406</td><td class="league flag-bg flag-bg-russia" title="Russia Youth League">RUS AM</td><td class="time">14:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1182386217">3.80</div></td><td><span class="match-team-name">FK Tosno</span></td><td><div class="selection" sid="1182386219">4.10</div></td><td><span class="match-team-name">Zenit Youth</span></td><td><div class="selection" sid="1182386218">1.75</div></td><td class="more-markets">+70</td></tr><tr class="r0" mid="589335"><td class="code">6458</td><td class="league flag-bg flag-bg-kenya" title="Kenya Premier League">KEN</td><td class="time">14:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1184016214">1.90</div></td><td><span class="match-team-name">Sofapaka FC</span></td><td><div class="selection" sid="1184016216">2.85</div></td><td><span class="match-team-name">Muhoroni Youth FC</span></td><td><div class="selection" sid="1184016215">4.90</div></td><td class="more-markets">+37</td></tr><tr class="r1" mid="588368"><td class="code">6202</td><td class="league flag-bg flag-bg-indonesia" title="Indonesia Indonesia Soccer Championship A">IND</td><td class="time">14:30</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1174731092">2.15</div></td><td><span class="match-team-name">Persija Jakarta</span></td><td><div class="selection" sid="1174731094">3.20</div></td><td><span class="match-team-name">Bhayangkara Surabaya United</span></td><td><div class="selection" sid="1174731093">3.25</div></td><td class="more-markets">+68</td></tr><tr class="r0" mid="588604"><td class="code">6218</td><td class="league flag-bg flag-bg-singapore" title="Singapore S-league">SIN</td><td class="time">14:30</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176199200">4.30</div></td><td><span class="match-team-name">Warriors FC</span></td><td><div class="selection" sid="1176199202">3.65</div></td><td><span class="match-team-name">Albirex Niigata FC</span></td><td><div class="selection" sid="1176199201">1.75</div></td><td class="more-markets">+68</td></tr><tr class="r1" mid="588598"><td class="code">6221</td><td class="league flag-bg flag-bg-sweden" title="Sweden Division 2, Vastra Gotaland">SWE</td><td class="time">14:30</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176194667">1.75</div></td><td><span class="match-team-name">Savedalens IF</span></td><td><div class="selection" sid="1176194669">4.10</div></td><td><span class="match-team-name">Eskilsminne IF</span></td><td><div class="selection" sid="1176194668">3.75</div></td><td class="more-markets">+66</td></tr><tr class="r0" mid="588743"><td class="code">6244</td><td class="league flag-bg flag-bg-singapore" title="Singapore S-league">SIN</td><td class="time">14:30</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1178169917">3.55</div></td><td><span class="match-team-name">Balestier Central</span></td><td><div class="selection" sid="1178169919">3.55</div></td><td><span class="match-team-name">Hougang United FC</span></td><td><div class="selection" sid="1178169918">1.95</div></td><td class="more-markets">+68</td></tr><tr class="r1" mid="588744"><td class="code">6245</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga North">GER AM</td><td class="time">14:30</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1178170757">1.39</div></td><td><span class="match-team-name">Etsv Weiche Flensburg</span></td><td><div class="selection" sid="1178170759">4.70</div></td><td><span class="match-team-name">FC St. Pauli II</span></td><td><div class="selection" sid="1178170758">6.70</div></td><td class="more-markets">+70</td></tr><tr class="r0" mid="588974"><td class="code">6284</td><td class="league flag-bg flag-bg-china" title="China China League">CHI</td><td class="time">14:30</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180547674">2.15</div></td><td><span class="match-team-name">Qingdao Hainiu</span></td><td><div class="selection" sid="1180547676">3.50</div></td><td><span class="match-team-name">Wuhan Zall</span></td><td><div class="selection" sid="1180547675">3.00</div></td><td class="more-markets">+68</td></tr><tr class="r1" mid="589339"><td class="code">6456</td><td class="league flag-bg flag-bg-china" title="China China League 2, South">CHI</td><td class="time">14:30</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1184019204">2.45</div></td><td><span class="match-team-name">Chengdu Qianbao</span></td><td><div class="selection" sid="1184019206">3.15</div></td><td><span class="match-team-name">Dongguan Nancheng</span></td><td><div class="selection" sid="1184019205">2.80</div></td><td class="more-markets">+40</td></tr><tr class="r0" mid="586428"><td class="code">6006</td><td class="league flag-bg flag-bg-international-clubs" title="International Clubs International Champions Cup">INT</td><td class="time">14:35</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1153369937">1.70</div></td><td><span class="match-team-name">Chelsea FC</span></td><td><div class="selection" sid="1153369939">3.90</div></td><td><span class="match-team-name">Inter Milan</span></td><td><div class="selection" sid="1153369938">4.30</div></td><td class="more-markets">+98</td></tr><tr class="r1" mid="587275"><td class="code">6101</td><td class="league flag-bg flag-bg-china" title="China Chinese Super League">CHI</td><td class="time">14:35</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1161911138">3.25</div></td><td><span class="match-team-name">Guangzhou R&amp;f FC</span></td><td><div class="selection" sid="1161911140">3.70</div></td><td><span class="match-team-name">Guangzhou Evergrande</span></td><td><div class="selection" sid="1161911139">2.00</div></td><td class="more-markets">+80</td></tr><tr class="r0" mid="587274"><td class="code">6103</td><td class="league flag-bg flag-bg-china" title="China Chinese Super League">CHI</td><td class="time">14:35</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1161911130">3.60</div></td><td><span class="match-team-name">Chongqing Lifan</span></td><td><div class="selection" sid="1161911132">3.55</div></td><td><span class="match-team-name">Jiangsu Guoxin-Sainty FC</span></td><td><div class="selection" sid="1161911131">1.90</div></td><td class="more-markets">+81</td></tr><tr class="r1" mid="587276"><td class="code">6106</td><td class="league flag-bg flag-bg-china" title="China Chinese Super League">CHI</td><td class="time">14:35</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1161911146">2.15</div></td><td><span class="match-team-name">FC Shanghai Shenhua</span></td><td><div class="selection" sid="1161911148">3.50</div></td><td><span class="match-team-name">Hebei China Fortune FC</span></td><td><div class="selection" sid="1161911147">3.05</div></td><td class="more-markets">+78</td></tr><tr class="r0" mid="587713"><td class="code">6137</td><td class="league flag-bg flag-bg-china" title="China China League">CHI</td><td class="time">14:35</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1165787828">2.00</div></td><td><span class="match-team-name">Beijing Renhe</span></td><td><div class="selection" sid="1165787830">3.40</div></td><td><span class="match-team-name">Dalian Yifang FC</span></td><td><div class="selection" sid="1165787829">3.50</div></td><td class="more-markets">+66</td></tr><tr class="r1" mid="586431"><td class="code">6020</td><td class="league flag-bg flag-bg-russia" title="Russia Premier League">RUS</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1153371893">2.50</div></td><td><span class="match-team-name">FC Ural Yekaterinburg</span></td><td><div class="selection" sid="1153371895">2.80</div></td><td><span class="match-team-name">FC Ufa</span></td><td><div class="selection" sid="1153371894">3.10</div></td><td class="more-markets">+87</td></tr><tr class="r0" mid="587080"><td class="code">6084</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847288">2.30</div></td><td><span class="match-team-name">Carl Zeiss Jena</span></td><td><div class="selection" sid="1160847290">3.20</div></td><td><span class="match-team-name">Fortuna Cologne</span></td><td><div class="selection" sid="1160847289">3.00</div></td><td class="more-markets">+73</td></tr><tr class="r1" mid="587086"><td class="code">6086</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847336">1.85</div></td><td><span class="match-team-name">SC PREUSSEN MUNSTER</span></td><td><div class="selection" sid="1160847338">3.45</div></td><td><span class="match-team-name">SV Meppen</span></td><td><div class="selection" sid="1160847337">4.00</div></td><td class="more-markets">+75</td></tr><tr class="r0" mid="587085"><td class="code">6087</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847328">1.70</div></td><td><span class="match-team-name">FC Magdeburg</span></td><td><div class="selection" sid="1160847330">3.35</div></td><td><span class="match-team-name">RW Erfurt</span></td><td><div class="selection" sid="1160847329">5.30</div></td><td class="more-markets">+74</td></tr><tr class="r1" mid="587084"><td class="code">6088</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847320">2.20</div></td><td><span class="match-team-name">Hansa Rostock</span></td><td><div class="selection" sid="1160847322">3.20</div></td><td><span class="match-team-name">SG Sonnenhof Grossaspach</span></td><td><div class="selection" sid="1160847321">3.25</div></td><td class="more-markets">+73</td></tr><tr class="r0" mid="587083"><td class="code">6090</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847312">1.85</div></td><td><span class="match-team-name">FSV ZWICKAU</span></td><td><div class="selection" sid="1160847314">3.35</div></td><td><span class="match-team-name">SF Lotte</span></td><td><div class="selection" sid="1160847313">4.20</div></td><td class="more-markets">+75</td></tr><tr class="r1" mid="587082"><td class="code">6091</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847304">2.10</div></td><td><span class="match-team-name">SC PADERBORN 07</span></td><td><div class="selection" sid="1160847306">3.25</div></td><td><span class="match-team-name">Chemnitzer FC</span></td><td><div class="selection" sid="1160847305">3.30</div></td><td class="more-markets">+72</td></tr><tr class="r0" mid="587081"><td class="code">6092</td><td class="league flag-bg flag-bg-germany" title="Germany 3rd Liga">GER3</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1160847296">2.15</div></td><td><span class="match-team-name">VfR Aalen</span></td><td><div class="selection" sid="1160847298">3.20</div></td><td><span class="match-team-name">HALLESCHER FC</span></td><td><div class="selection" sid="1160847297">3.35</div></td><td class="more-markets">+71</td></tr><tr class="r1" mid="588057"><td class="code">6154</td><td class="league flag-bg flag-bg-russia" title="Russia Premier League">RUS</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1168581985">1.18</div></td><td><span class="match-team-name">CSKA Moscow</span></td><td><div class="selection" sid="1168581987">6.80</div></td><td><span class="match-team-name">Ska-Khabarovsk</span></td><td><div class="selection" sid="1168581986">12.00</div></td><td class="more-markets">+75</td></tr><tr class="r0" mid="588223"><td class="code">6160</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Southwest">GER AM</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1171815785">2.45</div></td><td><span class="match-team-name">SC Freiburg II</span></td><td><div class="selection" sid="1171815787">3.35</div></td><td><span class="match-team-name">Astoria Walldorf</span></td><td><div class="selection" sid="1171815786">2.70</div></td><td class="more-markets">+69</td></tr><tr class="r1" mid="588224"><td class="code">6162</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga West">GER AM</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1171816985">1.23</div></td><td><span class="match-team-name">FC VIKTORIA COLOGNE</span></td><td><div class="selection" sid="1171816987">5.70</div></td><td><span class="match-team-name">SC Verl</span></td><td><div class="selection" sid="1171816986">11.00</div></td><td class="more-markets">+70</td></tr><tr class="r0" mid="588221"><td class="code">6172</td><td class="league flag-bg flag-bg-thailand" title="Thailand Premier League">THA</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1171815738">4.90</div></td><td><span class="match-team-name">Thailand Honda FC</span></td><td><div class="selection" sid="1171815740">4.30</div></td><td><span class="match-team-name">Bangkok Glass FC</span></td><td><div class="selection" sid="1171815739">1.55</div></td><td class="more-markets">+40</td></tr><tr class="r1" mid="588220"><td class="code">6175</td><td class="league flag-bg flag-bg-thailand" title="Thailand Premier League">THA</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1171815730">2.65</div></td><td><span class="match-team-name">Pattaya United FC</span></td><td><div class="selection" sid="1171815732">3.50</div></td><td><span class="match-team-name">Ratchaburi FC</span></td><td><div class="selection" sid="1171815731">2.40</div></td><td class="more-markets">+41</td></tr><tr class="r0" mid="588601"><td class="code">6220</td><td class="league flag-bg flag-bg-sweden" title="Sweden Division 2, Ostra Gotaland">SWE</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176196605">1.85</div></td><td><span class="match-team-name">Rappe Goif</span></td><td><div class="selection" sid="1176196607">4.20</div></td><td><span class="match-team-name">Kvarnby IK</span></td><td><div class="selection" sid="1176196606">3.35</div></td><td class="more-markets">+65</td></tr><tr class="r1" mid="588600"><td class="code">6222</td><td class="league flag-bg flag-bg-sweden" title="Sweden Division 2, Ostra Gotaland">SWE</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176195890">1.75</div></td><td><span class="match-team-name">KSF Prespa Birlik</span></td><td><div class="selection" sid="1176195892">4.20</div></td><td><span class="match-team-name">Lunds BK</span></td><td><div class="selection" sid="1176195891">3.80</div></td><td class="more-markets">+65</td></tr><tr class="r0" mid="588599"><td class="code">6227</td><td class="league flag-bg flag-bg-sweden" title="Sweden Division 2, Vastra Gotaland">SWE</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1176195280">1.31</div></td><td><span class="match-team-name">Tvaakers IF</span></td><td><div class="selection" sid="1176195282">5.60</div></td><td><span class="match-team-name">Assyriska Turab.</span></td><td><div class="selection" sid="1176195281">7.30</div></td><td class="more-markets">+63</td></tr><tr class="r1" mid="588658"><td class="code">6238</td><td class="league flag-bg flag-bg-kazakhstan" title="Kazakhstan Premier League">KAZ</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1177132970">2.00</div></td><td><span class="match-team-name">Shakhter Karagandy</span></td><td><div class="selection" sid="1177132972">3.20</div></td><td><span class="match-team-name">FC Taraz</span></td><td><div class="selection" sid="1177132971">3.65</div></td><td class="more-markets">+66</td></tr><tr class="r0" mid="588748"><td class="code">6248</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Southwest">GER AM</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1178171830">4.70</div></td><td><span class="match-team-name">Hessen Kassel</span></td><td><div class="selection" sid="1178171832">3.45</div></td><td><span class="match-team-name">SV Waldhof Mannheim</span></td><td><div class="selection" sid="1178171831">1.75</div></td><td class="more-markets">+71</td></tr><tr class="r1" mid="588750"><td class="code">6250</td><td class="league flag-bg flag-bg-paraguay" title="Paraguay Primera Division Reserve, Clausura">PAR</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1178172492">2.30</div></td><td><span class="match-team-name">SPORTIVO LUQUENO</span></td><td><div class="selection" sid="1178172494">3.85</div></td><td><span class="match-team-name">Libertad Asuncion Reserve</span></td><td><div class="selection" sid="1178172493">2.60</div></td><td class="more-markets">+38</td></tr><tr class="r0" mid="588745"><td class="code">6254</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Bavaria">GER4</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1178171783">3.65</div></td><td><span class="match-team-name">SV Seligenporten</span></td><td><div class="selection" sid="1178171785">3.80</div></td><td><span class="match-team-name">Wacker Burghausen</span></td><td><div class="selection" sid="1178171784">1.85</div></td><td class="more-markets">+71</td></tr><tr class="r1" mid="588749"><td class="code">6255</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga West">GER AM</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1178172453">2.10</div></td><td><span class="match-team-name">Wuppertaler SV</span></td><td><div class="selection" sid="1178172455">3.50</div></td><td><span class="match-team-name">Bonner SC</span></td><td><div class="selection" sid="1178172454">3.10</div></td><td class="more-markets">+70</td></tr><tr class="r0" mid="588746"><td class="code">6259</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Bavaria">GER4</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180152185">1.54</div></td><td><span class="match-team-name">Schweinfurt 05</span></td><td><div class="selection" sid="1180152187">4.20</div></td><td><span class="match-team-name">FC Augsburg II</span></td><td><div class="selection" sid="1180152186">5.20</div></td><td class="more-markets">+70</td></tr><tr class="r1" mid="588896"><td class="code">6263</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Southwest">GER AM</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180264101">2.90</div></td><td><span class="match-team-name">Rochling Volklingen</span></td><td><div class="selection" sid="1180264103">3.30</div></td><td><span class="match-team-name">TuS Koblenz</span></td><td><div class="selection" sid="1180264102">2.35</div></td><td class="more-markets">+69</td></tr><tr class="r0" mid="588895"><td class="code">6264</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Southwest">GER AM</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180263469">1.85</div></td><td><span class="match-team-name">STUTTGARTER KICKERS</span></td><td><div class="selection" sid="1180263471">3.50</div></td><td><span class="match-team-name">Wormatia Worms</span></td><td><div class="selection" sid="1180263470">4.00</div></td><td class="more-markets">+72</td></tr><tr class="r1" mid="588894"><td class="code">6265</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga Bavaria">GER4</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180262789">2.55</div></td><td><span class="match-team-name">SV Schalding-Heining</span></td><td><div class="selection" sid="1180262791">3.50</div></td><td><span class="match-team-name">1 FC Nuremberg II</span></td><td><div class="selection" sid="1180262790">2.45</div></td><td class="more-markets">+70</td></tr><tr class="r0" mid="588899"><td class="code">6266</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga West">GER AM</td><td class="time">15:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180266130">2.80</div></td><td><span class="match-team-name">TuS Erndtebruck</span></td><td><div class="selection" sid="1180266132">3.30</div></td><td><span class="match-team-name">SG Wattenscheid 09</span></td><td><div class="selection" sid="1180266131">2.40</div></td><td class="more-markets">+72</td></tr><tr class="r1" mid="588898"><td class="code">6268</td><td class="league flag-bg flag-bg-germany-amateur" title="Germany Amateur Regionalliga West">GER AM</td><td class="time">15:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1180265498">2.50</div></td><td><span class="match-team-name">SC Wiedenbruck</span></td><td><div class="selection" sid="1180265500">3.35</div></td><td><span class="match-team-name">Rodinghausen</span></td><td><div class="selection" sid="1180265499">2.60</div></td><td class="more-markets">+70</td></tr></tbody></table><div style="padding: 10px"><button class="show-more-matches" nml="70">Show More Matches</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="show-all-matches">Show All Matches</button></div></div></div>
+            <div class="match-coupon matches-coupon"><div class="match-head"><div class="close-markets"></div></div><div class="match-stats"></div><div class="top-market-list"></div><div class="match-markets"><div class="market-list"></div><div class="markets"></div></div></div></div>
+    <div class="coupon-content yui-hidden" mid="">
+        <div class="sport-coupon matches-coupon"><div id="shop-couponview"><ul class="market-menu" sport="1"><li class="selected"><a class="coupon-index market-index" mid="851" href="#">Match Odds</a></li><li><a class="coupon-index market-index" mid="853" href="#">Halftime Match Odds</a></li><li><a class="coupon-index market-index" mid="860" href="#">Under/Over</a></li><li><a class="coupon-index market-index" mid="844" href="#">Halftime/Fulltime</a></li></ul><table class="coupon matches"><thead class="coupon-head"><tr class="coupon-head"><td>Code</td><td>&nbsp;</td><td>Time</td><td>Info</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>2</td><td>&nbsp;</td></tr></thead><tbody><tr class="r0" mid="582486"><td class="code">7226</td><td class="league flag-bg flag-bg-international" title="International U20 EC Div. B, Group D">INT</td><td class="time">20:45</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td>&nbsp;</td><td></td><td>&nbsp;</td><td><span class="match-team-name">Kosovo</span></td><td><span class="match-team-name">Ireland</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="date-row"><td colspan="11">Saturday 29/07</td></tr><tr class="r1" mid="589839"><td class="code">8266</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group B">INT</td><td class="time">13:45</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>2.5</td><td><div class="selection" sid="1187774486">1.75</div></td><td><span class="match-team-name">Georgia</span></td><td><span class="match-team-name">Belarus</span></td><td><div class="selection" sid="1187774487">1.85</div></td><td class="more-markets">+45</td></tr><tr class="r0" mid="589837"><td class="code">8272</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group B">INT</td><td class="time">13:45</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>5.5</td><td><div class="selection" sid="1187774304">1.75</div></td><td><span class="match-team-name">Hungary</span></td><td><span class="match-team-name">Iceland</span></td><td><div class="selection" sid="1187774305">1.85</div></td><td class="more-markets">+46</td></tr><tr class="r1" mid="589838"><td class="code">8303</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group B">INT</td><td class="time">13:45</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td>&nbsp;</td><td></td><td>&nbsp;</td><td><span class="match-team-name">Bulgaria</span></td><td><span class="match-team-name">Croatia</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="r0" mid="589487"><td class="code">5468</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Placement Round 5-8">INT</td><td class="time">14:30</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>6.5</td><td><div class="selection" sid="1187309103">1.80</div></td><td><span class="match-team-name">China</span></td><td><span class="match-team-name">Australia</span></td><td><div class="selection" sid="1187309104">1.80</div></td><td class="more-markets">+47</td></tr><tr class="r1" mid="589842"><td class="code">8269</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group C">INT</td><td class="time">14:30</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>7.5</td><td><div class="selection" sid="1188284537">1.75</div></td><td><span class="match-team-name">Finland</span></td><td><span class="match-team-name">Lithuania</span></td><td><div class="selection" sid="1188284538">1.85</div></td><td class="more-markets">+38</td></tr><tr class="r0" mid="589840"><td class="code">8275</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group B">INT</td><td class="time">14:30</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>9.5</td><td><div class="selection" sid="1188370887">1.85</div></td><td><span class="match-team-name">Ukraine</span></td><td><span class="match-team-name">Italy</span></td><td><div class="selection" sid="1188370888">1.75</div></td><td class="more-markets">+33</td></tr><tr class="r1" mid="589486"><td class="code">5467</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Placement Round 13-16">INT</td><td class="time">15:15</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>9.5</td><td><div class="selection" sid="1187459636">1.85</div></td><td><span class="match-team-name">Puerto Rico</span></td><td><span class="match-team-name">South Korea</span></td><td><div class="selection" sid="1187459637">1.75</div></td><td class="more-markets">+38</td></tr><tr class="r0" mid="589784"><td class="code">8234</td><td class="league flag-bg flag-bg-international" title="International FIBA Asia Championship Women, Level II, Final Roun">INT</td><td class="time">15:15</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>3.5</td><td><div class="selection" sid="1187494813">1.85</div></td><td><span class="match-team-name">Kazakhstan</span></td><td><span class="match-team-name">India</span></td><td><div class="selection" sid="1187494814">1.75</div></td><td class="more-markets">+30</td></tr><tr class="r1" mid="589500"><td class="code">5481</td><td class="league flag-bg flag-bg-international" title="International International Friendly Games">INT</td><td class="time">16:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>2.5</td><td><div class="selection" sid="1187887879">1.75</div></td><td><span class="match-team-name">AUSTRIA</span></td><td><span class="match-team-name">GEORGIA</span></td><td><div class="selection" sid="1187887880">1.85</div></td><td class="more-markets">+30</td></tr><tr class="r0" mid="589843"><td class="code">8265</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group C">INT</td><td class="time">16:00</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>-5.5</td><td><div class="selection" sid="1187775435">1.80</div></td><td><span class="match-team-name">Austria</span></td><td><span class="match-team-name">Romania</span></td><td><div class="selection" sid="1187775436">1.80</div></td><td class="more-markets">+39</td></tr><tr class="r1" mid="589844"><td class="code">8274</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group C">INT</td><td class="time">16:00</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>14.5</td><td><div class="selection" sid="1188273087">1.80</div></td><td><span class="match-team-name">Portugal</span></td><td><span class="match-team-name">Israel</span></td><td><div class="selection" sid="1188273088">1.80</div></td><td class="more-markets">+37</td></tr><tr class="r0" mid="589845"><td class="code">8298</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group C">INT</td><td class="time">16:00</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td>&nbsp;</td><td></td><td>&nbsp;</td><td><span class="match-team-name">Poland</span></td><td><span class="match-team-name">Azerbaijan</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="r1" mid="589846"><td class="code">8264</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group A">INT</td><td class="time">16:45</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>7.5</td><td><div class="selection" sid="1188496489">1.85</div></td><td><span class="match-team-name">Germany</span></td><td><span class="match-team-name">Turkey</span></td><td><div class="selection" sid="1188496490">1.75</div></td><td class="more-markets">+43</td></tr><tr class="r0" mid="589848"><td class="code">8273</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group D">INT</td><td class="time">16:45</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>-12.5</td><td><div class="selection" sid="1187776269">1.80</div></td><td><span class="match-team-name">France</span></td><td><span class="match-team-name">Bosnia &amp; Herzegovina</span></td><td><div class="selection" sid="1187776270">1.80</div></td><td class="more-markets">+29</td></tr><tr class="r1" mid="589613"><td class="code">5498</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Placement Round 5-8">INT</td><td class="time">17:00</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>-5.5</td><td><div class="selection" sid="1187311710">1.85</div></td><td><span class="match-team-name">France</span></td><td><span class="match-team-name">Spain</span></td><td><div class="selection" sid="1187311711">1.75</div></td><td class="more-markets">+37</td></tr><tr class="r0" mid="589615"><td class="code">5500</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Placement Round 9-12">INT</td><td class="time">17:30</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>19.5</td><td><div class="selection" sid="1187864386">1.80</div></td><td><span class="match-team-name">Mexico</span></td><td><span class="match-team-name">Latvia</span></td><td><div class="selection" sid="1187864387">1.80</div></td><td class="more-markets">+36</td></tr><tr class="r1" mid="589390"><td class="code">8125</td><td class="league flag-bg flag-bg-international" title="International FIBA Asia Championship Women, Final round">INT</td><td class="time">17:30</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>-8.5</td><td><div class="selection" sid="1184753664">1.85</div></td><td><span class="match-team-name">Australia</span></td><td><span class="match-team-name">Japan</span></td><td><div class="selection" sid="1184753665">1.80</div></td><td class="more-markets">+45</td></tr><tr class="r0" mid="589852"><td class="code">8261</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group D">INT</td><td class="time">18:15</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>-19.5</td><td><div class="selection" sid="1187776962">1.85</div></td><td><span class="match-team-name">Belgium</span></td><td><span class="match-team-name">Macedonia</span></td><td><div class="selection" sid="1187776963">1.75</div></td><td class="more-markets">+44</td></tr><tr class="r1" mid="589850"><td class="code">8267</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group D">INT</td><td class="time">18:15</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>4.5</td><td><div class="selection" sid="1187887571">1.85</div></td><td><span class="match-team-name">Switzerland</span></td><td><span class="match-team-name">Ireland</span></td><td><div class="selection" sid="1187887572">1.75</div></td><td class="more-markets">+39</td></tr><tr class="r0" mid="589851"><td class="code">8276</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group D">INT</td><td class="time">18:15</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>18.5</td><td><div class="selection selection-na">0.00</div></td><td><span class="match-team-name">Denmark</span></td><td><span class="match-team-name">Estonia</span></td><td><div class="selection selection-na">0.00</div></td><td class="more-markets">+43</td></tr><tr class="r1" mid="589849"><td class="code">8268</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group D">INT</td><td class="time">19:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td>-3.5</td><td><div class="selection" sid="1187776437">1.80</div></td><td><span class="match-team-name">Slovakia</span></td><td><span class="match-team-name">Latvia</span></td><td><div class="selection" sid="1187776438">1.80</div></td><td class="more-markets">+38</td></tr><tr class="r0" mid="589847"><td class="code">8271</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group A">INT</td><td class="time">19:00</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>-6.5</td><td><div class="selection" sid="1187776107">1.80</div></td><td><span class="match-team-name">Russia</span></td><td><span class="match-team-name">Montenegro</span></td><td><div class="selection" sid="1187776108">1.80</div></td><td class="more-markets">+30</td></tr><tr class="r1" mid="589853"><td class="code">8263</td><td class="league flag-bg flag-bg-international" title="International International Friendly Games">INT</td><td class="time">19:15</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>-4.5</td><td><div class="selection" sid="1187777295">1.85</div></td><td><span class="match-team-name">Ukraine</span></td><td><span class="match-team-name">Netherlands</span></td><td><div class="selection" sid="1187777296">1.75</div></td><td class="more-markets">+30</td></tr><tr class="r0" mid="589637"><td class="code">5522</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Playoffs">INT</td><td class="time">19:30</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>7.5</td><td><div class="selection" sid="1187309119">1.75</div></td><td><span class="match-team-name">Canada</span></td><td><span class="match-team-name">Russia</span></td><td><div class="selection" sid="1187309120">1.85</div></td><td class="more-markets">+38</td></tr><tr class="r1" mid="589640"><td class="code">5525</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Placement Round 9-12">INT</td><td class="time">19:45</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>-0.5</td><td><div class="selection" sid="1187564469">1.75</div></td><td><span class="match-team-name">Hungary</span></td><td><span class="match-team-name">Italy</span></td><td><div class="selection" sid="1187564470">1.85</div></td><td class="more-markets">+37</td></tr><tr class="r0" mid="589855"><td class="code">8270</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group A">INT</td><td class="time">20:30</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>9.5</td><td><div class="selection" sid="1187841536">1.75</div></td><td><span class="match-team-name">Netherlands</span></td><td><span class="match-team-name">Great Britain</span></td><td><div class="selection" sid="1187841537">1.85</div></td><td class="more-markets">+45</td></tr><tr class="r1" mid="589854"><td class="code">8294</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group A">INT</td><td class="time">20:30</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td>&nbsp;</td><td></td><td>&nbsp;</td><td><span class="match-team-name">Czech Republic</span></td><td><span class="match-team-name">Luxembourg</span></td><td>&nbsp;</td><td class="more-markets">+8</td></tr><tr class="r0" mid="589856"><td class="code">8302</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. B, Group A">INT</td><td class="time">20:30</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td>&nbsp;</td><td></td><td>&nbsp;</td><td><span class="match-team-name">Sweden</span></td><td><span class="match-team-name">Albania</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="r1" mid="589841"><td class="code">8262</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group B">INT</td><td class="time">21:15</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>2.5</td><td><div class="selection" sid="1187774878">1.80</div></td><td><span class="match-team-name">Serbia</span></td><td><span class="match-team-name">Spain</span></td><td><div class="selection" sid="1187774879">1.80</div></td><td class="more-markets">+30</td></tr><tr class="r0" mid="589896"><td class="code">8304</td><td class="league flag-bg flag-bg-international" title="International U18 EC Div. A, Group C">INT</td><td class="time">21:15</td><td class="status"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;"></td><td class="min-comb">1+</td><td>6.5</td><td><div class="selection" sid="1188213012">1.75</div></td><td><span class="match-team-name">Slovenia</span></td><td><span class="match-team-name">Greece</span></td><td><div class="selection" sid="1188213013">1.85</div></td><td class="more-markets">+30</td></tr><tr class="r1" mid="589715"><td class="code">6508</td><td class="league flag-bg flag-bg-international" title="International U19 WC Women, Playoffs">INT</td><td class="time">22:00</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td>-12.5</td><td><div class="selection selection-na">0.00</div></td><td><span class="match-team-name">USA</span></td><td><span class="match-team-name">Japan</span></td><td><div class="selection selection-na">0.00</div></td><td class="more-markets">+29</td></tr><tr class="r0" mid="589897"><td class="code">8318</td><td class="league flag-bg flag-bg-australia" title="Australia SEABL, Women">AUS</td><td class="time">05:00</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td>4.5</td><td><div class="selection" sid="1188213199">1.80</div></td><td><span class="match-team-name">Ballarat Rush</span></td><td><span class="match-team-name">Launceston Tornadoes</span></td><td><div class="selection" sid="1188213200">1.85</div></td><td class="more-markets">+7</td></tr></tbody></table></div></div>
+        <div class="match-coupon matches-coupon"><div class="match-head"><div class="close-markets"></div></div><div class="match-stats"></div><div class="top-market-list"></div><div class="match-markets"><div class="market-list"></div><div class="markets"></div></div></div></div>
+    <div class="coupon-content yui-hidden" mid="">
+        <div class="sport-coupon matches-coupon"><div id="shop-couponview"><ul class="market-menu" sport="7"><li class="selected"><a class="coupon-index market-index" mid="20" href="#">Match Odds</a></li><li><a class="coupon-index market-index" mid="229" href="#">Under/Over</a></li></ul><table class="coupon matches"><thead class="coupon-head"><tr class="coupon-head"><td>Code</td><td>&nbsp;</td><td>Time</td><td>Info</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>2</td><td>&nbsp;</td></tr></thead><tbody><tr class="r0" mid="589522"><td class="code">8164</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">20:05</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778424">1.58</div></td><td><span class="match-team-name">New York Yankees</span></td><td><span class="match-team-name">Tampa Bay Rays</span></td><td><div class="selection" sid="1186778425">2.15</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589523"><td class="code">8162</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">20:07</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778447">1.70</div></td><td><span class="match-team-name">Toronto Blue Jays</span></td><td><span class="match-team-name">Los Angeles Angels of Anaheim</span></td><td><div class="selection" sid="1186778448">1.95</div></td><td class="more-markets">+1</td></tr><tr class="r0" mid="589524"><td class="code">8182</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">23:05</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778470">1.29</div></td><td><span class="match-team-name">Los Angeles Dodgers</span></td><td><span class="match-team-name">San Francisco Giants</span></td><td><div class="selection" sid="1186778471">3.10</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589525"><td class="code">8171</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">23:10</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778476">2.05</div></td><td><span class="match-team-name">Seattle Mariners</span></td><td><span class="match-team-name">New York Mets</span></td><td><div class="selection" sid="1186778477">1.65</div></td><td class="more-markets">+1</td></tr><tr class="r0" mid="589526"><td class="code">8166</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">01:10</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778499">2.00</div></td><td><span class="match-team-name">Detroit Tigers</span></td><td><span class="match-team-name">Houston Astros</span></td><td><div class="selection" sid="1186778500">1.70</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589527"><td class="code">8172</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">02:05</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778522">1.75</div></td><td><span class="match-team-name">Philadelphia Phillies</span></td><td><span class="match-team-name">Atlanta Braves</span></td><td><div class="selection" sid="1186778523">1.90</div></td><td class="more-markets">+1</td></tr><tr class="r0" mid="589531"><td class="code">8165</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">02:10</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778597">1.59</div></td><td><span class="match-team-name">Boston Red Sox</span></td><td><span class="match-team-name">Kansas City Royals</span></td><td><div class="selection" sid="1186778598">2.10</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589529"><td class="code">8167</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">02:10</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778568">1.59</div></td><td><span class="match-team-name">Miami Marlins</span></td><td><span class="match-team-name">Cincinnati Reds</span></td><td><div class="selection" sid="1186778569">2.10</div></td><td class="more-markets">+1</td></tr><tr class="r0" mid="589528"><td class="code">8169</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">02:10</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778545">2.20</div></td><td><span class="match-team-name">Milwaukee Brewers</span></td><td><span class="match-team-name">Chicago Cubs</span></td><td><div class="selection" sid="1186778546">1.55</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589530"><td class="code">8181</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">02:10</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778591">3.10</div></td><td><span class="match-team-name">Chicago White Sox</span></td><td><span class="match-team-name">Cleveland Indians</span></td><td><div class="selection" sid="1186778592">1.28</div></td><td class="more-markets">+1</td></tr><tr class="r0" mid="589532"><td class="code">8163</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">02:15</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778620">2.05</div></td><td><span class="match-team-name">St. Louis Cardinals</span></td><td><span class="match-team-name">Arizona Diamondbacks</span></td><td><div class="selection" sid="1186778621">1.65</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589533"><td class="code">8170</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">03:05</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778643">1.95</div></td><td><span class="match-team-name">Texas Rangers</span></td><td><span class="match-team-name">Baltimore Orioles</span></td><td><div class="selection" sid="1186778644">1.70</div></td><td class="more-markets">+1</td></tr><tr class="r0" mid="589534"><td class="code">8168</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">03:40</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778666">1.95</div></td><td><span class="match-team-name">San Diego Padres</span></td><td><span class="match-team-name">Pittsburgh Pirates</span></td><td><div class="selection" sid="1186778667">1.70</div></td><td class="more-markets">+1</td></tr><tr class="r1" mid="589535"><td class="code">8173</td><td class="league flag-bg flag-bg-usa" title="USA MLB">USA</td><td class="time">04:05</td><td class="status">&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186778689">1.85</div></td><td><span class="match-team-name">Oakland Athletics</span></td><td><span class="match-team-name">Minnesota Twins</span></td><td><div class="selection" sid="1186778690">1.75</div></td><td class="more-markets">+1</td></tr></tbody></table></div></div>
+        <div class="match-coupon matches-coupon"><div class="match-head"><div class="close-markets"></div></div><div class="match-stats"></div><div class="top-market-list"></div><div class="match-markets"><div class="market-list"></div><div class="markets"></div></div></div></div>
+    <div class="coupon-content yui-hidden" mid="">
+        <div class="sport-coupon matches-coupon"><div id="shop-couponview"><ul class="market-menu" sport="4"><li class="selected"><a class="coupon-index market-index" mid="10" href="#">Match Odds</a></li><li><a class="coupon-index market-index" mid="846" href="#">Double Chance</a></li><li><a class="coupon-index market-index" mid="60" href="#">Under/Over</a></li></ul><table class="coupon matches"><thead class="coupon-head"><tr class="coupon-head"><td>Code</td><td>&nbsp;</td><td>Time</td><td>Info</td><td>&nbsp;</td><td>1.</td><td>&nbsp;</td><td>X</td><td>&nbsp;</td><td>2.</td><td>&nbsp;</td></tr></thead><tbody><tr class="r0" mid="589501"><td class="code">5482</td><td class="league flag-bg flag-bg-international" title="International Club Friendly Games">INT</td><td class="time">16:00</td><td class="status willgolive"><img src="/v5.27/images/kiosk/neutral.png" title="Neutral Ground" style="cursor: pointer;">&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1186725684">1.54</div></td><td><span class="match-team-name">Avtomobilist Yekaterinburg</span></td><td><div class="selection" sid="1186725686">4.60</div></td><td><span class="match-team-name">HC Pardubice</span></td><td><div class="selection" sid="1186725685">4.10</div></td><td class="more-markets">+5</td></tr><tr class="r1" mid="589397"><td class="code">8140</td><td class="league flag-bg flag-bg-international" title="International Club Friendly Games">INT</td><td class="time">17:00</td><td class="status willgolive">&nbsp;&nbsp;&nbsp;</td><td class="min-comb">1+</td><td><div class="selection" sid="1184057136">1.60</div></td><td><span class="match-team-name">CSKA Moscow</span></td><td><div class="selection" sid="1184057138">4.30</div></td><td><span class="match-team-name">Sibir Novosibirsk</span></td><td><div class="selection" sid="1184057137">4.00</div></td><td class="more-markets">+5</td></tr></tbody></table></div></div>
+        <div class="match-coupon matches-coupon"><div class="match-head"><div class="close-markets"></div></div><div class="match-stats"></div><div class="top-market-list"></div><div class="match-markets"><div class="market-list"></div><div class="markets"></div></div></div></div>
+
+</div>
+                <!--shop-coupon end-->
+                <!--outrights-->
+                <div id="outrights" class="yui-hidden">
+                    <ul class="sport-menu sport-menu-outrights"></ul>
+                    <div class="coupon-content">
+                        <div class="sport-coupon outrights-coupon">
+
+                        </div>
+                    </div>
+                </div>
+                <!--outrights end -->
+                <!--shop-races-->
+                <div id="shop-races" class="yui-hidden">
+                    <ul class="sport-menu sport-menu-races"></ul>
+                    <div class="coupon-content">
+                        <div class="sport-coupon races-coupon">
+                            <!--  RACES CONTENT -->
+                        </div>
+                    </div>
+                </div>
+                <!--shop-races end-->
+                <!--shop-virtual-->
+                <div id="shop-virtual" class="yui-hidden">
+                    <ul class="sport-menu sport-menu-virtual"></ul>
+                    <div class="coupon-content">
+                        <div class="sport-coupon virtual-coupon">
+                            <!-- VIRTUAL CONTENT -->
+                        </div>
+                    </div>
+                </div>
+                <!--shop-virtual end-->
+<!--keno -->
+                <div id="shop-keno" class="yui-hidden">
+                    <script type="text/javascript">
+                        ZAPNET_KENO_SETTINGS = {
+                            AMOUNT_COMBINE: true    };
+                    </script><div id="keno-sell">
+                    <div id="sale-left">
+                        <div id="tips">
+                            <div class="tip tip-1" tip="1">1</div>
+                            <div class="tip tip-2" tip="2">2</div>
+                            <div class="tip tip-3" tip="3">3</div>
+                            <div class="tip tip-4" tip="4">4</div>
+                            <div class="tip tip-5" tip="5">5</div>
+                            <div class="tip tip-6" tip="6">6</div>
+                            <div class="tip tip-7" tip="7">7</div>
+                            <div class="tip tip-8" tip="8">8</div>
+                            <div class="tip tip-9" tip="9">9</div>
+                            <div class="tip tip-10" tip="10">10</div>
+                            <div class="tip tip-11" tip="11">11</div>
+                            <div class="tip tip-12" tip="12">12</div>
+                        </div>
+                        <div id="numbers">
+                            <div class="number number-1 number-row-1 number-col-1" n="1">
+                                1            </div>
+                            <div class="number number-2 number-row-1 number-col-2" n="2">
+                                2            </div>
+                            <div class="number number-3 number-row-1 number-col-3" n="3">
+                                3            </div>
+                            <div class="number number-4 number-row-1 number-col-4" n="4">
+                                4            </div>
+                            <div class="number number-5 number-row-1 number-col-5" n="5">
+                                5            </div>
+                            <div class="number number-6 number-row-1 number-col-6" n="6">
+                                6            </div>
+                            <div class="number number-7 number-row-1 number-col-7" n="7">
+                                7            </div>
+                            <div class="number number-8 number-row-1 number-col-8" n="8">
+                                8            </div>
+                            <div class="number number-9 number-row-1 number-col-9" n="9">
+                                9            </div>
+                            <div class="number number-10 number-row-1 number-col-10" n="10">
+                                10            </div>
+                            <div class="number number-11 number-row-2 number-col-1" n="11">
+                                11            </div>
+                            <div class="number number-12 number-row-2 number-col-2" n="12">
+                                12            </div>
+                            <div class="number number-13 number-row-2 number-col-3" n="13">
+                                13            </div>
+                            <div class="number number-14 number-row-2 number-col-4" n="14">
+                                14            </div>
+                            <div class="number number-15 number-row-2 number-col-5" n="15">
+                                15            </div>
+                            <div class="number number-16 number-row-2 number-col-6" n="16">
+                                16            </div>
+                            <div class="number number-17 number-row-2 number-col-7" n="17">
+                                17            </div>
+                            <div class="number number-18 number-row-2 number-col-8" n="18">
+                                18            </div>
+                            <div class="number number-19 number-row-2 number-col-9" n="19">
+                                19            </div>
+                            <div class="number number-20 number-row-2 number-col-10" n="20">
+                                20            </div>
+                            <div class="number number-21 number-row-3 number-col-1" n="21">
+                                21            </div>
+                            <div class="number number-22 number-row-3 number-col-2" n="22">
+                                22            </div>
+                            <div class="number number-23 number-row-3 number-col-3" n="23">
+                                23            </div>
+                            <div class="number number-24 number-row-3 number-col-4" n="24">
+                                24            </div>
+                            <div class="number number-25 number-row-3 number-col-5" n="25">
+                                25            </div>
+                            <div class="number number-26 number-row-3 number-col-6" n="26">
+                                26            </div>
+                            <div class="number number-27 number-row-3 number-col-7" n="27">
+                                27            </div>
+                            <div class="number number-28 number-row-3 number-col-8" n="28">
+                                28            </div>
+                            <div class="number number-29 number-row-3 number-col-9" n="29">
+                                29            </div>
+                            <div class="number number-30 number-row-3 number-col-10" n="30">
+                                30            </div>
+                            <div class="number number-31 number-row-4 number-col-1" n="31">
+                                31            </div>
+                            <div class="number number-32 number-row-4 number-col-2" n="32">
+                                32            </div>
+                            <div class="number number-33 number-row-4 number-col-3" n="33">
+                                33            </div>
+                            <div class="number number-34 number-row-4 number-col-4" n="34">
+                                34            </div>
+                            <div class="number number-35 number-row-4 number-col-5" n="35">
+                                35            </div>
+                            <div class="number number-36 number-row-4 number-col-6" n="36">
+                                36            </div>
+                            <div class="number number-37 number-row-4 number-col-7" n="37">
+                                37            </div>
+                            <div class="number number-38 number-row-4 number-col-8" n="38">
+                                38            </div>
+                            <div class="number number-39 number-row-4 number-col-9" n="39">
+                                39            </div>
+                            <div class="number number-40 number-row-4 number-col-10" n="40">
+                                40            </div>
+                            <div class="number number-41 number-row-5 number-col-1" n="41">
+                                41            </div>
+                            <div class="number number-42 number-row-5 number-col-2" n="42">
+                                42            </div>
+                            <div class="number number-43 number-row-5 number-col-3" n="43">
+                                43            </div>
+                            <div class="number number-44 number-row-5 number-col-4" n="44">
+                                44            </div>
+                            <div class="number number-45 number-row-5 number-col-5" n="45">
+                                45            </div>
+                            <div class="number number-46 number-row-5 number-col-6" n="46">
+                                46            </div>
+                            <div class="number number-47 number-row-5 number-col-7" n="47">
+                                47            </div>
+                            <div class="number number-48 number-row-5 number-col-8" n="48">
+                                48            </div>
+                            <div class="number number-49 number-row-5 number-col-9" n="49">
+                                49            </div>
+                            <div class="number number-50 number-row-5 number-col-10" n="50">
+                                50            </div>
+                            <div class="number number-51 number-row-6 number-col-1" n="51">
+                                51            </div>
+                            <div class="number number-52 number-row-6 number-col-2" n="52">
+                                52            </div>
+                            <div class="number number-53 number-row-6 number-col-3" n="53">
+                                53            </div>
+                            <div class="number number-54 number-row-6 number-col-4" n="54">
+                                54            </div>
+                            <div class="number number-55 number-row-6 number-col-5" n="55">
+                                55            </div>
+                            <div class="number number-56 number-row-6 number-col-6" n="56">
+                                56            </div>
+                            <div class="number number-57 number-row-6 number-col-7" n="57">
+                                57            </div>
+                            <div class="number number-58 number-row-6 number-col-8" n="58">
+                                58            </div>
+                            <div class="number number-59 number-row-6 number-col-9" n="59">
+                                59            </div>
+                            <div class="number number-60 number-row-6 number-col-10" n="60">
+                                60            </div>
+                            <div class="number number-61 number-row-7 number-col-1" n="61">
+                                61            </div>
+                            <div class="number number-62 number-row-7 number-col-2" n="62">
+                                62            </div>
+                            <div class="number number-63 number-row-7 number-col-3" n="63">
+                                63            </div>
+                            <div class="number number-64 number-row-7 number-col-4" n="64">
+                                64            </div>
+                            <div class="number number-65 number-row-7 number-col-5" n="65">
+                                65            </div>
+                            <div class="number number-66 number-row-7 number-col-6" n="66">
+                                66            </div>
+                            <div class="number number-67 number-row-7 number-col-7" n="67">
+                                67            </div>
+                            <div class="number number-68 number-row-7 number-col-8" n="68">
+                                68            </div>
+                            <div class="number number-69 number-row-7 number-col-9" n="69">
+                                69            </div>
+                            <div class="number number-70 number-row-7 number-col-10" n="70">
+                                70            </div>
+                            <div class="number number-71 number-row-8 number-col-1" n="71">
+                                71            </div>
+                            <div class="number number-72 number-row-8 number-col-2" n="72">
+                                72            </div>
+                            <div class="number number-73 number-row-8 number-col-3" n="73">
+                                73            </div>
+                            <div class="number number-74 number-row-8 number-col-4" n="74">
+                                74            </div>
+                            <div class="number number-75 number-row-8 number-col-5" n="75">
+                                75            </div>
+                            <div class="number number-76 number-row-8 number-col-6" n="76">
+                                76            </div>
+                            <div class="number number-77 number-row-8 number-col-7" n="77">
+                                77            </div>
+                            <div class="number number-78 number-row-8 number-col-8" n="78">
+                                78            </div>
+                            <div class="number number-79 number-row-8 number-col-9" n="79">
+                                79            </div>
+                            <div class="number number-80 number-row-8 number-col-10" n="80">
+                                80            </div>
+                            <div id="numbers-separator"></div>
+                        </div>
+                        <div id="systems">
+                            <div class="system system-0-5 selected" system="1">1</div>
+                            <div class="system system-1" system="2">2</div>
+                            <div class="system system-2" system="3">3</div>
+                            <div class="system system-3" system="4">4</div>
+                            <div class="system system-4" system="5">5</div>
+                            <div class="system system-5" system="10">10</div>
+                            <div class="system system-6" system="15">15</div>
+                            <div class="system system-7" system="20">20</div>
+                            <div class="system system-8" system="25">25</div>
+                        </div>
+                    </div>
+                    <div id="numbers-overlay"></div>
+                    <div id="tips-input">
+                        <div class="tip tip-1" tip="1"></div>
+                        <div class="tip tip-2" tip="2"></div>
+                        <div class="tip tip-3" tip="3"></div>
+                        <div class="tip tip-4" tip="4"></div>
+                        <div class="tip tip-5" tip="5"></div>
+                        <div class="tip tip-6" tip="6"></div>
+                        <div class="tip tip-7" tip="7"></div>
+                        <div class="tip tip-8" tip="8"></div>
+                        <div class="tip tip-9" tip="9"></div>
+                        <div class="tip tip-10" tip="10"></div>
+                        <div class="tip tip-11" tip="11"></div>
+                        <div class="tip tip-12" tip="12"></div>
+                    </div>
+                    <div id="numbers-input">
+                        <div class="number number-1 number-row-1 number-col-1" n="1">
+                            1        </div>
+                        <div class="number number-2 number-row-1 number-col-2" n="2">
+                            2        </div>
+                        <div class="number number-3 number-row-1 number-col-3" n="3">
+                            3        </div>
+                        <div class="number number-4 number-row-1 number-col-4" n="4">
+                            4        </div>
+                        <div class="number number-5 number-row-1 number-col-5" n="5">
+                            5        </div>
+                        <div class="number number-6 number-row-1 number-col-6" n="6">
+                            6        </div>
+                        <div class="number number-7 number-row-1 number-col-7" n="7">
+                            7        </div>
+                        <div class="number number-8 number-row-1 number-col-8" n="8">
+                            8        </div>
+                        <div class="number number-9 number-row-1 number-col-9" n="9">
+                            9        </div>
+                        <div class="number number-10 number-row-1 number-col-10" n="10">
+                            10        </div>
+                        <div class="number number-11 number-row-2 number-col-1" n="11">
+                            11        </div>
+                        <div class="number number-12 number-row-2 number-col-2" n="12">
+                            12        </div>
+                        <div class="number number-13 number-row-2 number-col-3" n="13">
+                            13        </div>
+                        <div class="number number-14 number-row-2 number-col-4" n="14">
+                            14        </div>
+                        <div class="number number-15 number-row-2 number-col-5" n="15">
+                            15        </div>
+                        <div class="number number-16 number-row-2 number-col-6" n="16">
+                            16        </div>
+                        <div class="number number-17 number-row-2 number-col-7" n="17">
+                            17        </div>
+                        <div class="number number-18 number-row-2 number-col-8" n="18">
+                            18        </div>
+                        <div class="number number-19 number-row-2 number-col-9" n="19">
+                            19        </div>
+                        <div class="number number-20 number-row-2 number-col-10" n="20">
+                            20        </div>
+                        <div class="number number-21 number-row-3 number-col-1" n="21">
+                            21        </div>
+                        <div class="number number-22 number-row-3 number-col-2" n="22">
+                            22        </div>
+                        <div class="number number-23 number-row-3 number-col-3" n="23">
+                            23        </div>
+                        <div class="number number-24 number-row-3 number-col-4" n="24">
+                            24        </div>
+                        <div class="number number-25 number-row-3 number-col-5" n="25">
+                            25        </div>
+                        <div class="number number-26 number-row-3 number-col-6" n="26">
+                            26        </div>
+                        <div class="number number-27 number-row-3 number-col-7" n="27">
+                            27        </div>
+                        <div class="number number-28 number-row-3 number-col-8" n="28">
+                            28        </div>
+                        <div class="number number-29 number-row-3 number-col-9" n="29">
+                            29        </div>
+                        <div class="number number-30 number-row-3 number-col-10" n="30">
+                            30        </div>
+                        <div class="number number-31 number-row-4 number-col-1" n="31">
+                            31        </div>
+                        <div class="number number-32 number-row-4 number-col-2" n="32">
+                            32        </div>
+                        <div class="number number-33 number-row-4 number-col-3" n="33">
+                            33        </div>
+                        <div class="number number-34 number-row-4 number-col-4" n="34">
+                            34        </div>
+                        <div class="number number-35 number-row-4 number-col-5" n="35">
+                            35        </div>
+                        <div class="number number-36 number-row-4 number-col-6" n="36">
+                            36        </div>
+                        <div class="number number-37 number-row-4 number-col-7" n="37">
+                            37        </div>
+                        <div class="number number-38 number-row-4 number-col-8" n="38">
+                            38        </div>
+                        <div class="number number-39 number-row-4 number-col-9" n="39">
+                            39        </div>
+                        <div class="number number-40 number-row-4 number-col-10" n="40">
+                            40        </div>
+                        <div class="number number-41 number-row-5 number-col-1" n="41">
+                            41        </div>
+                        <div class="number number-42 number-row-5 number-col-2" n="42">
+                            42        </div>
+                        <div class="number number-43 number-row-5 number-col-3" n="43">
+                            43        </div>
+                        <div class="number number-44 number-row-5 number-col-4" n="44">
+                            44        </div>
+                        <div class="number number-45 number-row-5 number-col-5" n="45">
+                            45        </div>
+                        <div class="number number-46 number-row-5 number-col-6" n="46">
+                            46        </div>
+                        <div class="number number-47 number-row-5 number-col-7" n="47">
+                            47        </div>
+                        <div class="number number-48 number-row-5 number-col-8" n="48">
+                            48        </div>
+                        <div class="number number-49 number-row-5 number-col-9" n="49">
+                            49        </div>
+                        <div class="number number-50 number-row-5 number-col-10" n="50">
+                            50        </div>
+                        <div class="number number-51 number-row-6 number-col-1" n="51">
+                            51        </div>
+                        <div class="number number-52 number-row-6 number-col-2" n="52">
+                            52        </div>
+                        <div class="number number-53 number-row-6 number-col-3" n="53">
+                            53        </div>
+                        <div class="number number-54 number-row-6 number-col-4" n="54">
+                            54        </div>
+                        <div class="number number-55 number-row-6 number-col-5" n="55">
+                            55        </div>
+                        <div class="number number-56 number-row-6 number-col-6" n="56">
+                            56        </div>
+                        <div class="number number-57 number-row-6 number-col-7" n="57">
+                            57        </div>
+                        <div class="number number-58 number-row-6 number-col-8" n="58">
+                            58        </div>
+                        <div class="number number-59 number-row-6 number-col-9" n="59">
+                            59        </div>
+                        <div class="number number-60 number-row-6 number-col-10" n="60">
+                            60        </div>
+                        <div class="number number-61 number-row-7 number-col-1" n="61">
+                            61        </div>
+                        <div class="number number-62 number-row-7 number-col-2" n="62">
+                            62        </div>
+                        <div class="number number-63 number-row-7 number-col-3" n="63">
+                            63        </div>
+                        <div class="number number-64 number-row-7 number-col-4" n="64">
+                            64        </div>
+                        <div class="number number-65 number-row-7 number-col-5" n="65">
+                            65        </div>
+                        <div class="number number-66 number-row-7 number-col-6" n="66">
+                            66        </div>
+                        <div class="number number-67 number-row-7 number-col-7" n="67">
+                            67        </div>
+                        <div class="number number-68 number-row-7 number-col-8" n="68">
+                            68        </div>
+                        <div class="number number-69 number-row-7 number-col-9" n="69">
+                            69        </div>
+                        <div class="number number-70 number-row-7 number-col-10" n="70">
+                            70        </div>
+                        <div class="number number-71 number-row-8 number-col-1" n="71">
+                            71        </div>
+                        <div class="number number-72 number-row-8 number-col-2" n="72">
+                            72        </div>
+                        <div class="number number-73 number-row-8 number-col-3" n="73">
+                            73        </div>
+                        <div class="number number-74 number-row-8 number-col-4" n="74">
+                            74        </div>
+                        <div class="number number-75 number-row-8 number-col-5" n="75">
+                            75        </div>
+                        <div class="number number-76 number-row-8 number-col-6" n="76">
+                            76        </div>
+                        <div class="number number-77 number-row-8 number-col-7" n="77">
+                            77        </div>
+                        <div class="number number-78 number-row-8 number-col-8" n="78">
+                            78        </div>
+                        <div class="number number-79 number-row-8 number-col-9" n="79">
+                            79        </div>
+                        <div class="number number-80 number-row-8 number-col-10" n="80">
+                            80        </div>
+                    </div>
+                    <div id="systems-input">
+                        <div class="system system-0-5 selected" system="1"></div>
+                        <div class="system system-1" system="2"></div>
+                        <div class="system system-2" system="3"></div>
+                        <div class="system system-3" system="4"></div>
+                        <div class="system system-4" system="5"></div>
+                        <div class="system system-5" system="10"></div>
+                        <div class="system system-6" system="15"></div>
+                        <div class="system system-7" system="20"></div>
+                        <div class="system system-8" system="25"></div>
+                    </div>
+                    <div id="sale-right" class="font-effect-outline">
+                        <div id="draw-info">
+                            <table class="info">
+                                <tbody><tr><td class="label">Draw No: </td><td class="value"><span id="next-draw-id">79488</span></td></tr>
+                                <tr><td class="label">Next Draw: </td><td class="value"><span id="next-draw-time">11:40</span></td></tr>
+                                <tr><td class="label">Time Left: </td><td class="value"><span id="info-time-left" seconds="1501317600">00:00</span></td></tr>
+                                </tbody></table>
+                        </div>
+                        <div id="shop-jackpot">$0</div>
+                        <div id="site-jackpot"></div>
+                        <div id="sale">
+                            <div id="draws">
+                                <div id="nr-draws" class="value">1</div>
+                                <div class="draws-minus"></div>
+                                <div class="draws-plus"></div>
+                            </div>
+                            <div id="stake">
+                                <div id="total-stake" class="value">1.00</div>
+                            </div>
+                            <div id="sell"></div>
+                            <div id="clear"></div>
+                            <div id="showsystem" class="showsystem-unselected showsystem "></div>
+                            <!--            <div id="search"></div>-->
+
+                        </div>
+                    </div>
+                    <div class="ticket-info" style="display: none;">
+                        <table class="info">
+                            <tbody><tr><th colspan="2"><span id="scan-info-id">&nbsp;</span></th></tr>
+                            <tr><td class="label">Sale Time:</td><td class="value"><span id="scan-info-salets"></span></td></tr>
+                            <tr><td class="label">Draws:</td><td class="value"><span id="scan-info-draws"></span></td></tr>
+                            <tr><td class="label">Last Draw:</td><td class="value"><span id="scan-info-lastdrawts"></span></td></tr>
+                            <tr><td class="label">System:</td><td class="value"><span id="scan-info-system"></span></td></tr>
+                            <tr><td class="label">Stake:</td><td class="value"><span id="scan-info-stake"></span></td></tr>
+                            <tr><td class="label">Numbers:</td><td class="value"><span id="scan-info-numbers"></span></td></tr>
+                            <tr class="emphasis"><td class="label">Status:</td><td class="value"><span id="scan-info-status"></span></td></tr>
+                            <tr class="emphasis"><td class="label">Payout:</td><td class="value"><span id="scan-info-payout"></span></td></tr>
+                            </tbody></table>
+                    </div>
+                    <div id="numpad">
+                        <div id="number-type"></div>
+                        <div class="keys">
+                            <div class="key num-0"></div>
+                            <div class="key num-1"></div>
+                            <div class="key num-2"></div>
+                            <div class="key num-3"></div>
+                            <div class="key num-4"></div>
+                            <div class="key num-5"></div>
+                            <div class="key num-6"></div>
+                            <div class="key num-7"></div>
+                            <div class="key num-8"></div>
+                            <div class="key num-9"></div>
+                            <div class="key enter"></div>
+                            <div class="key cancel"></div>
+                        </div>
+                    </div>
+                    <div id="system">
+                        <div id="toolbar">
+                            <div id="system-back-to-sales"></div>
+                            <div id="system-register"></div>
+                            <div id="system-statement"></div>
+                            <div id="system-draws"></div>
+                            <div id="system-tickets"></div>
+                            <div id="system-winners"></div>
+                            <div id="system-exit"></div>
+                        </div>
+                        <div id="system-content"></div>
+                    </div>
+                </div>
+
+                    <div id="print-ticket">
+
+                    </div>
+
+                    <script type="text/javascript">
+                        window.ZAPNET_LAST_EVENT_ID = 46158858;
+                        window.ZAPNET_KENO_NEXT_DRAW_ID = 79488;
+                        window.ZAPNET_KENO_TICKET_PRICE = 1;
+                        window.ZAPNET_KENO_ALLIN = false;
+
+                        //ZAPNET.util.centerElem(YAHOO.util.Dom.get('keno-sell'));
+                    </script>
+
+                </div>
+                <!--keno end-->
+                <!--cashregister-->
+<div id="cashregister" class="yui-hidden">
+
+        <ul id="register-menu" class="slips-menu"><li class="slips-menu-item slips-menu-item-long selected"><a href="#" class="terminal-cash">Terminal Register</a></li><li class="slips-menu-item slips-menu-item-long"><a href="#" class="shop-cash">Shop Register</a></li>            </ul>
+        <div class="report"><div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>Day</th><th>Slip Sales</th><th>Slip Payments</th><th>Net Cash</th><th>Pending Payouts</th></tr></thead><tbody><tr><td colspan="0">Empty Result</td></tr></tbody></table></div></div>
+    <div class="report"><div class="report-wrapper"><table class="report no-fixed"><thead><tr><th>Day</th><th>Slip Sales</th><th>Slip Payments</th><th>Net Cash</th><th>Pending Payouts</th></tr></thead><tbody><tr><td colspan="0">Empty Result</td></tr></tbody></table></div></div>
+    <div class="printzet"></div>
+
+</div>
+                <!--cashregister end -->
+                <!--placedslips-->
+<div id="placedslips" class="yui-hidden sliplist">
+        <ul id="slips-menu" class="slips-menu"><li class="slips-menu-item selected"><a href="#" class="slips-report" status="sold">Sold Slips</a></li><li class="slips-menu-item"><a href="#" class="slips-report" status="void">Cancelled</a></li><li class="slips-menu-item"><a href="#" class="slips-report" status="settled">Settled</a></li><li class="slips-menu-item"><a href="#" class="slips-report" status="winners">Winners</a></li><li class="slips-menu-item"><a href="#" class="slips-report" status="unpaid">Win - Unpaid</a></li><li class="slips-menu-item"><a href="#" class="slips-report" status="new">Terminals</a></li><li class="slips-menu-item"><a href="#" class="slips-report" status="search">Search</a></li>
+        </ul>
+        <ul id="slips-menu-search" class="slips-menu" style="display: none;">
+            Search By ID or CODE <input type="text" id="slipssearch"> <button id="slipssearchsubmit">Search</button>
+        </ul>
+        <ul id="slips-day-menu" class="slips-menu" style="display: block;"><li class="slips-menu-item selected"><a href="#" class="slips-day-select" day="0">Today</a></li><li class="slips-menu-item"><a href="#" class="slips-day-select" day="-1">Yesterday</a></li><li class="slips-menu-item"><a href="#" class="slips-day-select" day="-2">Thu 27/07</a></li><li class="slips-menu-item"><a href="#" class="slips-day-select" day="-3">Wed 26/07</a></li><li class="slips-menu-item"><a href="#" class="slips-day-select" day="-4">Tue 25/07</a></li><li class="slips-menu-item"><a href="#" class="slips-day-select" day="-5">Mon 24/07</a></li></ul>
+        <div id="slips-content"><h3 class="nr-slips">Number Of Slips : 0</h3><div class="report-wrapper"><table class="report betslips no-fixed"><thead><tr><th>ID</th><th>Shop</th><th>Date</th><th>Bets</th><th>Stake</th><th>Odds</th><th>Lines</th><th>Payout</th><th>St</th><th>Max Payout</th></tr></thead><tbody><tr><td colspan="10">Empty Result</td></tr></tbody></table></div></div>
+    <div id="slips-content" class="yui-hidden"><h3 class="nr-slips">Number Of Slips : 0</h3><div class="report-wrapper"><table class="report betslips no-fixed"><thead><tr><th>ID</th><th>Shop</th><th>Date</th><th>Bets</th><th>Stake</th><th>Odds</th><th>Lines</th><th>Payout</th><th>St</th><th>Max Payout</th></tr></thead><tbody><tr><td colspan="10">Empty Result</td></tr></tbody></table></div></div>
+    <div id="slips-content" class="yui-hidden"><h3 class="nr-slips">Number Of Slips : 0</h3><div class="report-wrapper"><table class="report betslips no-fixed"><thead><tr><th>ID</th><th>Shop</th><th>Date</th><th>Bets</th><th>Stake</th><th>Odds</th><th>Lines</th><th>Payout</th><th>St</th><th>Max Payout</th></tr></thead><tbody><tr><td colspan="10">Empty Result</td></tr></tbody></table></div></div>
+    <div id="slips-content" class="yui-hidden"><h3 class="nr-slips">Number Of Slips : 0</h3><div class="report-wrapper"><table class="report betslips no-fixed"><thead><tr><th>ID</th><th>Shop</th><th>Date</th><th>Bets</th><th>Stake</th><th>Odds</th><th>Lines</th><th>Payout</th><th>St</th><th>Max Payout</th></tr></thead><tbody><tr><td colspan="10">Empty Result</td></tr></tbody></table></div></div>
+    <div id="slips-content" class="yui-hidden"><h3 class="nr-slips">Number Of Slips : 5</h3><div class="report-wrapper"><table class="report betslips no-fixed"><thead><tr><th>ID</th><th>BC</th><th>Card</th><th>R</th><th>T</th><th>Date</th><th>V</th><th>Stake</th><th>Lines</th><th>Max P</th><th>St</th><th>Payout</th><th>Action</th></tr></thead><tbody><tr class="r0" bid="7954050" s1="" s2=""><td class="num"><a href="/shop/betslips/betslip/id/7954050" class="slip-link">7954050</a></td><td class="num"><a href="/shop/betslips/betslip/id/7954050" class="slip-link">9118693774476</a></td><td>&nbsp;</td><td></td><td>M</td><td>16:24 23/07</td><td class="betslip"><div class="slip-handle">█</div><div class="inline-betslip"><table class="betslip-html betslip-settled"><tbody><tr class="head"><td colspan="4"><text class="translate" ot="Selections">Selections</text> (3)</td></tr><tr class="match"><td class="code">7267</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Mexico / U20 League">Mexico / U20 League</text></div>Pumas v Pachuca<div class="date">23/07/17 17:00</div><div class="match-result match-result-ready">FT=2:0</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">1</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="1">1</text></div></td><td class="odds">2.05</td></tr><tr class="match"><td class="code">7266</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Mexico / U20 League">Mexico / U20 League</text></div>Veracruz Tiburones Rojos v Necaxa<div class="date">23/07/17 17:00</div><div class="match-result match-result-ready">FT=2:1</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">2</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="1">1</text></div></td><td class="odds">1.70</td></tr><tr class="match"><td class="code">7204</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="International Youth / U23 AFC Championship, Qualification">International Youth / U23 AFC Championship, Qualification</text></div>India v Turkmenistan<div class="date">23/07/17 17:00</div><div class="match-result match-result-ready">FT=3:1,HT=1:1</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">3</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="1">1</text></div></td><td class="odds">2.40</td></tr><tr class="head head-bets"><td colspan="4"><text class="translate" ot="Bets">Bets</text></td></tr><tr><td colspan="4" class="slip-bottom"><table class="bets"><tbody><tr class="hd"><td>&nbsp;</td><td><text class="translate" ot="Perms">Perms</text></td><td><text class="translate" ot="Lines">Lines</text></td><td><text class="translate" ot="Odds">Odds</text></td><td><text class="translate" ot="Stake">Stake</text></td></tr><tr><td class="selection"><text class="translate" ot="Accum">Accum</text> </td><td class="system">3 of 3</td><td class="lines">1</td><td class="odds">8.36</td><td class="amount">$3.00</td></tr></tbody></table><table class="bets"><tbody><tr class="totals"><td><text class="translate" ot="Total Lines">Total Lines</text></td><td class="lines">1</td></tr><tr class="totals"><td><text class="translate" ot="Total Stake">Total Stake</text></td><td class="amount">$3.00</td></tr><tr class="totals"><td><text class="translate" ot="Max. Payout">Max. Payout</text></td><td class="amount">$25.09</td></tr><tr class="totals actual-payout"><td><text class="translate" ot="Payout">Payout</text></td><td class="amount">$25.09</td></tr></tbody></table></td></tr></tbody></table></div></td><td class="money">3.00</td><td class="num">1</td><td class="num">$25</td><td class="betslip-status betslip-status-won">WU</td><td class="money">25.09</td><td><button class="redeem" clk="bs-redeem">Pay Out</button>&nbsp;<button class="reload" clk="bs-reload">Reload</button></td></tr><tr class="r1" bid="7897438" s1="" s2=""><td class="num"><a href="/shop/betslips/betslip/id/7897438" class="slip-link">7897438</a></td><td class="num"><a href="/shop/betslips/betslip/id/7897438" class="slip-link">9126070158678</a></td><td>&nbsp;</td><td></td><td>M</td><td>20:30 11/07</td><td class="betslip"><div class="slip-handle">█</div><div class="inline-betslip"><table class="betslip-html betslip-settled"><tbody><tr class="head"><td colspan="4"><text class="translate" ot="Selections">Selections</text> (1)</td></tr><tr class="match"><td class="code">2161</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Brazil / U20 Campeonato Brasileiro, Group D">Brazil / U20 Campeonato Brasileiro, Group D</text></div>Palmeiras SP v Vitoria BA Youth<div class="date">11/07/17 21:00</div><div class="match-result match-result-ready">FT=3:1</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">1</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="1">1</text></div></td><td class="odds">1.65</td></tr><tr class="head head-bets"><td colspan="4"><text class="translate" ot="Bets">Bets</text></td></tr><tr><td colspan="4" class="slip-bottom"><table class="bets"><tbody><tr class="hd"><td>&nbsp;</td><td><text class="translate" ot="Perms">Perms</text></td><td><text class="translate" ot="Lines">Lines</text></td><td><text class="translate" ot="Odds">Odds</text></td><td><text class="translate" ot="Stake">Stake</text></td></tr><tr><td class="selection">Single</td><td class="system">#1</td><td class="lines">1</td><td class="odds">1.65</td><td class="amount">$3.00</td></tr></tbody></table><table class="bets"><tbody><tr class="totals"><td><text class="translate" ot="Total Lines">Total Lines</text></td><td class="lines">1</td></tr><tr class="totals"><td><text class="translate" ot="Total Stake">Total Stake</text></td><td class="amount">$3.00</td></tr><tr class="totals"><td><text class="translate" ot="Max. Payout">Max. Payout</text></td><td class="amount">$4.95</td></tr><tr class="totals actual-payout"><td><text class="translate" ot="Payout">Payout</text></td><td class="amount">$4.95</td></tr></tbody></table></td></tr></tbody></table></div></td><td class="money">3.00</td><td class="num">1</td><td class="num">$5</td><td class="betslip-status betslip-status-won">WU</td><td class="money">4.95</td><td><button class="redeem" clk="bs-redeem">Pay Out</button>&nbsp;<button class="reload" clk="bs-reload">Reload</button></td></tr><tr class="r0" bid="7894727" s1="" s2=""><td class="num"><a href="/shop/betslips/betslip/id/7894727" class="slip-link">7894727</a></td><td class="num"><a href="/shop/betslips/betslip/id/7894727" class="slip-link">9111678423901</a></td><td>&nbsp;</td><td></td><td>M</td><td>02:11 11/07</td><td class="betslip"><div class="slip-handle">█</div><div class="inline-betslip"><table class="betslip-html betslip-settled"><tbody><tr class="head"><td colspan="4"><text class="translate" ot="Selections">Selections</text> (3)</td></tr><tr class="match"><td class="code">1013</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Brazil / Brasileiro Serie C, Group A">Brazil / Brasileiro Serie C, Group A</text></div>Confianca SE v ASA AL<div class="date">11/07/17 02:30</div><div class="match-result match-result-ready">FT=1:1,HT=1:0</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">1</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">3.10</td></tr><tr class="match"><td class="code">1012</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Brazil / Brasileiro Serie C, Group B">Brazil / Brasileiro Serie C, Group B</text></div>Mogi Mirim SP v Joinville SC<div class="date">11/07/17 03:00</div><div class="match-result match-result-ready">FT=1:1,HT=0:1</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">2</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">3.25</td></tr><tr class="match"><td class="code">1079</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Colombia / Primera B, Clausura">Colombia / Primera B, Clausura</text></div>Deportes Quindio v Real Cartagena<div class="date">11/07/17 03:45</div><div class="match-result match-result-ready">FT=1:1,HT=0:0</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">3</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">4.00</td></tr><tr class="head head-bets"><td colspan="4"><text class="translate" ot="Bets">Bets</text></td></tr><tr><td colspan="4" class="slip-bottom"><table class="bets"><tbody><tr class="hd"><td>&nbsp;</td><td><text class="translate" ot="Perms">Perms</text></td><td><text class="translate" ot="Lines">Lines</text></td><td><text class="translate" ot="Odds">Odds</text></td><td><text class="translate" ot="Stake">Stake</text></td></tr><tr><td class="selection"><text class="translate" ot="Accum">Accum</text> </td><td class="system">3 of 3</td><td class="lines">1</td><td class="odds">40.3</td><td class="amount">$3.00</td></tr></tbody></table><table class="bets"><tbody><tr class="totals"><td><text class="translate" ot="Total Lines">Total Lines</text></td><td class="lines">1</td></tr><tr class="totals"><td><text class="translate" ot="Total Stake">Total Stake</text></td><td class="amount">$3.00</td></tr><tr class="totals"><td><text class="translate" ot="Max. Payout">Max. Payout</text></td><td class="amount">$120.90</td></tr><tr class="totals actual-payout"><td><text class="translate" ot="Payout">Payout</text></td><td class="amount">$120.90</td></tr></tbody></table></td></tr></tbody></table></div></td><td class="money">3.00</td><td class="num">1</td><td class="num">$121</td><td class="betslip-status betslip-status-won">WU</td><td class="money">120.90</td><td><button class="redeem" clk="bs-redeem">Pay Out</button>&nbsp;<button class="reload" clk="bs-reload">Reload</button></td></tr><tr class="r1" bid="7827486" s1="" s2=""><td class="num"><a href="/shop/betslips/betslip/id/7827486" class="slip-link">7827486</a></td><td class="num"><a href="/shop/betslips/betslip/id/7827486" class="slip-link">9127302145233</a></td><td>&nbsp;</td><td></td><td>M</td><td>02:52 28/06</td><td class="betslip"><div class="slip-handle">█</div><div class="inline-betslip"><table class="betslip-html betslip-settled"><tbody><tr class="head"><td colspan="4"><text class="translate" ot="Selections">Selections</text> (4)</td></tr><tr class="match"><td class="code">2014</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Argentina / Primera Division, Torneo Inicial">Argentina / Primera Division, Torneo Inicial</text></div>CA Independiente v Atletico Lanus (Live 18': 0:0)<div class="date">28/06/17 02:30</div><div class="match-result match-result-ready">FT=1:1,HT=1:0</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">1</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">3.10</td></tr><tr class="match"><td class="code">2319</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="USA / Premier Development League">USA / Premier Development League</text></div>FA Euro New York v Reading United AC (Live 12': 0:0)<div class="date">28/06/17 02:30</div><div class="match-result match-result-ready">FT=1:4,HT=1:2</div></div></td></tr><tr class="selection selection-lost"><td class="nr"><div class="nr">2</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">6.40</td></tr><tr class="match"><td class="code">2040</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="USA / US Open Cup">USA / US Open Cup</text></div>FC Dallas v Colorado Rapids<div class="date">28/06/17 03:00</div><div class="match-result match-result-ready">FT=3:1,HT=1:0</div></div></td></tr><tr class="selection selection-lost"><td class="nr"><div class="nr">3</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">4.20</td></tr><tr class="match"><td class="code">2032</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="Brazil / Brasileiro Serie B">Brazil / Brasileiro Serie B</text></div>Figueirense FC v LONDRINA PR<div class="date">28/06/17 03:30</div><div class="match-result match-result-ready">FT=3:1,HT=1:0</div></div></td></tr><tr class="selection selection-lost"><td class="nr"><div class="nr">4</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="X">X</text></div></td><td class="odds">3.15</td></tr><tr class="head head-bets"><td colspan="4"><text class="translate" ot="Bets">Bets</text></td></tr><tr><td colspan="4" class="slip-bottom"><table class="bets"><tbody><tr class="hd"><td>&nbsp;</td><td><text class="translate" ot="Perms">Perms</text></td><td><text class="translate" ot="Lines">Lines</text></td><td><text class="translate" ot="Odds">Odds</text></td><td><text class="translate" ot="Stake">Stake</text></td></tr><tr><td class="selection">Single</td><td class="system">#1</td><td class="lines">1</td><td class="odds">3.10</td><td class="amount">$4.00</td></tr><tr><td class="selection">Single</td><td class="system">#2</td><td class="lines">1</td><td class="odds">6.40</td><td class="amount">$3.00</td></tr><tr><td class="selection">Single</td><td class="system">#3</td><td class="lines">1</td><td class="odds">4.20</td><td class="amount">$2.00</td></tr><tr><td class="selection">Single</td><td class="system">#4</td><td class="lines">1</td><td class="odds">3.15</td><td class="amount">$1.00</td></tr><tr><td class="selection"><text class="translate" ot="Accum">Accum</text> </td><td class="system">4 of 4</td><td class="lines">1</td><td class="odds">262.48</td><td class="amount">$2.00</td></tr></tbody></table><table class="bets"><tbody><tr class="totals"><td><text class="translate" ot="Total Lines">Total Lines</text></td><td class="lines">5</td></tr><tr class="totals"><td><text class="translate" ot="Total Stake">Total Stake</text></td><td class="amount">$12.00</td></tr><tr class="totals"><td><text class="translate" ot="Max. Payout">Max. Payout</text></td><td class="amount">$568.12</td></tr><tr class="totals actual-payout"><td><text class="translate" ot="Payout">Payout</text></td><td class="amount">$12.40</td></tr></tbody></table></td></tr></tbody></table></div></td><td class="money">12.00</td><td class="num">5</td><td class="num">$568</td><td class="betslip-status betslip-status-won">WU</td><td class="money">12.40</td><td><button class="redeem" clk="bs-redeem">Pay Out</button>&nbsp;<button class="reload" clk="bs-reload">Reload</button></td></tr><tr class="r0" bid="7747150" s1="" s2=""><td class="num"><a href="/shop/betslips/betslip/id/7747150" class="slip-link">7747150</a></td><td class="num"><a href="/shop/betslips/betslip/id/7747150" class="slip-link">9129063978995</a></td><td>&nbsp;</td><td></td><td>M</td><td>05:13 14/06</td><td class="betslip"><div class="slip-handle">█</div><div class="inline-betslip"><table class="betslip-html betslip-settled"><tbody><tr class="head"><td colspan="4"><text class="translate" ot="Selections">Selections</text> (1)</td></tr><tr class="match"><td class="code">2047</td><td colspan="3" class="match"><div class="match"><div class="print-hide"><text class="translate" ot="USA / US Open Cup">USA / US Open Cup</text></div>Seattle Sounders v Portland Timbers<div class="date">14/06/17 05:30</div><div class="match-result match-result-ready">FT=2:1,HT=1:1</div></div></td></tr><tr class="selection selection-won"><td class="nr"><div class="nr">1</div></td><td class="match"><div class="outcome"><text class="translate" ot="FT 1X2">FT 1X2</text>: <text class="translate" ot="1">1</text></div></td><td class="odds">2.05</td></tr><tr class="head head-bets"><td colspan="4"><text class="translate" ot="Bets">Bets</text></td></tr><tr><td colspan="4" class="slip-bottom"><table class="bets"><tbody><tr class="hd"><td>&nbsp;</td><td><text class="translate" ot="Perms">Perms</text></td><td><text class="translate" ot="Lines">Lines</text></td><td><text class="translate" ot="Odds">Odds</text></td><td><text class="translate" ot="Stake">Stake</text></td></tr><tr><td class="selection">Single</td><td class="system">#1</td><td class="lines">1</td><td class="odds">2.05</td><td class="amount">$3.00</td></tr></tbody></table><table class="bets"><tbody><tr class="totals"><td><text class="translate" ot="Total Lines">Total Lines</text></td><td class="lines">1</td></tr><tr class="totals"><td><text class="translate" ot="Total Stake">Total Stake</text></td><td class="amount">$3.00</td></tr><tr class="totals"><td><text class="translate" ot="Max. Payout">Max. Payout</text></td><td class="amount">$6.15</td></tr><tr class="totals actual-payout"><td><text class="translate" ot="Payout">Payout</text></td><td class="amount">$6.15</td></tr></tbody></table></td></tr></tbody></table></div></td><td class="money">3.00</td><td class="num">1</td><td class="num">$6</td><td class="betslip-status betslip-status-won">WU</td><td class="money">6.15</td><td><button class="redeem" clk="bs-redeem">Pay Out</button>&nbsp;<button class="reload" clk="bs-reload">Reload</button></td></tr><tr class="totals"><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="24 725.21 169.49 money">24.00</td><td class="empty">&nbsp;</td><td class="num">$725</td><td class="empty">&nbsp;</td><td class="24 725.21 169.49 money">169.49</td><td class="empty">&nbsp;</td></tr></tbody></table></div></div>
+    <div id="slips-content" class="yui-hidden"><h3 class="nr-slips">Number Of Slips : 0</h3><div class="report-wrapper"><table class="report betslips no-fixed"><thead><tr><th>ID</th><th>Shop</th><th>Date</th><th>Bets</th><th>Stake</th><th>Odds</th><th>Lines</th><th>Payout</th><th>Max Payout</th></tr></thead><tbody><tr><td colspan="9">Empty Result</td></tr></tbody></table></div></div>
+    <div id="slips-content" class="yui-hidden"></div>
+</div>
+                <!--placedslips end-->
+                <!--authslips-->
+                <div id="authslips" class="sliplist yui-hidden">
+                    <table class="report betslips">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Descr</th>
+                            <th>Stake</th>
+                            <th colspan="2">&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <!--authslips end-->
+
+            </div><!--end shop panel-content-->
+
+
+
+            <!--end shop panel--></div>
+
+        <div class="spacer"></div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+<!--<script src="js/settings/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1951 @@
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html, body {
+  background: #0076c0;
+}
+#shop-page {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #0076c0 center center no-repeat;
+}
+body.extra-sale #shop-page {
+  background: #444;
+}
+#shop-doc {
+  background: none;
+  border: 0;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#shop-doc #bd {
+  border: 0;
+}
+
+#shop-hd {
+  height: 35px;
+  background: url('../images/shop/hd_bg.png') repeat-x;
+}
+#shop-hd #logout {
+  display: block;
+  width: 120px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  color: #fff;
+  font: bold 12px/25px Verdana;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: url('../images/shop/exit.png') center center no-repeat;
+}
+#shop-hd #cashier-settings {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  right: 140px;
+  color: #fff;
+  font: bold 12px/25px Verdana;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: url('../images/shop/settings.png') center center no-repeat;
+}
+#shop-hd div.sale-terminal {
+  height: 35px;
+  padding-left: 25px;
+  font: bold 18px/25px "Courier New";
+  color: #000;
+}
+
+#cashier-settings-panel h1 {
+  height: 20px;
+  background-color: #555;
+  color: #fff;
+  font: bold 14px/20px Verdana;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+}
+#cashier-settings-panel table {
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+}
+
+
+#shop-couponview {
+  position: relative;
+  height: 100%;
+}
+#shop-couponview table.coupon {
+  border-collapse: collapse;
+  background-color: #0076c0;
+  border-bottom: 2px solid #333;
+}
+#shop-couponview table.full-width {
+  width: 100%;
+}
+#shop-couponview table.coupon td {
+  padding: 2px 24px;
+  color: #fff;
+  font: bold 11px/20px Verdana;
+  border-left: 1px solid #444;
+  white-space: nowrap;
+}
+#shop-couponview table.coupon td div.selection div.sel-odds {
+  color: #000;
+}
+#shop-couponview table.full-width td {
+  padding: 2px 4px;
+}
+#shop-couponview table.coupon td.info {
+  text-align: center;
+}
+#shop-couponview table.coupon tr.coupon-head td.info {
+  height: 40px;
+}
+#shop-match-bets div.match-info span.live-team,
+#shop-couponview table.coupon td span.live-team{
+  display: inline-block;
+}
+#shop-match-bets div.match-info span.live-team-name,
+#shop-match-bets div.match-info span.live-team-info,
+#shop-couponview table.coupon td span.live-team-name,
+#shop-couponview table.coupon td span.live-team-info {
+  display: block;
+  line-height: normal;
+  white-space: nowrap;
+  height: 14px;
+}
+#shop-match-bets div.match-info span.live-team-name,
+#shop-match-bets div.match-info span.live-team-info {
+  height: 20px;
+}
+#shop-match-bets div.match-info span.live-team-info,
+#shop-couponview table.coupon td span.live-team-info {
+  font: 10px/12px Arial;
+}
+#shop-match-bets div.match-info span.live-team-info {
+  font: 12px/18px Arial;
+}
+#shop-match-bets div.match-info span.live-team-card,
+#shop-couponview table.coupon td span.live-team-card {
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  margin-right: 16px;
+  color: #444;
+  text-align: center;
+}
+#shop-match-bets div.match-info span.live-team-card{
+  width: 15px;
+  height: 18px;
+  margin-right: 16px;
+}
+#shop-match-bets div.match-info span.cards-0,
+#shop-couponview table.coupon tr td span.cards-0 {
+  visibility: hidden;
+}
+#shop-match-bets div.match-info span.live-team-yellow {
+  background: url('../images/kiosk/yellow.png') center center no-repeat;
+}
+#shop-couponview table.coupon td span.live-team-yellow {
+  background: url('../images/kiosk/yellow_small.png') center center no-repeat;
+}
+#shop-match-bets div.match-info span.live-team-yellowred {
+  color: #fff;
+  text-align: right;
+  background: url('../images/kiosk/yellowred.png') center center no-repeat;
+}
+#shop-couponview table.coupon td span.live-team-yellowred {
+  color: #fff;
+  text-align: right;
+  background: url('../images/kiosk/yellowred_small.png') center center no-repeat;
+}
+#shop-match-bets div.match-info span.live-team-red{
+  color: #fff;
+  background: url('../images/kiosk/red.png') center center no-repeat;
+}
+#shop-couponview table.coupon td span.live-team-red {
+  color: #fff;
+  background: url('../images/kiosk/red_small.png') center center no-repeat;
+}
+#shop-couponview table.coupon td.match-teams {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+#shop-couponview table.coupon td.match-teams img {
+  vertical-align: middle;
+}
+#shop-couponview table.coupon td.bet-period {
+  white-space: nowrap;
+  border-left: 0;
+  text-align: right;
+}
+#shop-couponview table.coupon td.setscores {
+  white-space: nowrap;
+  text-align: left;
+}
+#shop-couponview table.coupon td div.market-cell-label {
+  text-align: center;
+  line-height: 12px;
+}
+#shop-couponview table.coupon td.betstart {
+  padding-left: 2px;
+  padding-right: 30px;
+  background: url('../images/kiosk/betstart.png') center center no-repeat;
+}
+#shop-couponview table.coupon td.betstop {
+  padding-left: 2px;
+  padding-right: 30px;
+  background: url('../images/kiosk/betstop.png') center center no-repeat;
+}
+#shop-couponview table.coupon td.willgolive {
+  padding-left: 2px;
+  padding-right: 42px;
+  background: url('../images/kiosk/willgolive.png') center center no-repeat;
+}
+#shop-couponview table.coupon .match-ended td.betstop {
+  padding-left: 2px;
+  padding-right: 30px;
+  background: url('../images/kiosk/matchended.png') center center no-repeat;
+}
+#shop-couponview table.coupon .match-ended td {
+  border-left: 0;
+  border-right: 0;
+}
+#shop-couponview table.coupon .match-ended td div.selection {
+  visibility: hidden;
+}
+#shop-couponview table.coupon thead.coupon-head {
+  background: #ccc url('../images/kiosk/coupon_hd_bg.png') 0 0 repeat-x;
+}
+#shop-couponview table.coupon thead.coupon-head td.league-header,
+#shop-couponview table.coupon thead.coupon-head td.time-header {
+  padding-right: 16px;
+  cursor: pointer;
+  background: #cccccd url('../images/kiosk/header_sort.png') top right repeat-x;
+}
+#shop-couponview #coupon-content.league-order table.coupon thead.coupon-head td.league-header,
+#shop-couponview #coupon-content.time-order table.coupon thead.coupon-head td.time-header {
+  background: #fcbe16 url('../images/kiosk/header_sort_sel.png') top right repeat-x;
+}
+#shop-couponview table.coupon tr.coupon-head td {
+  padding: 2px 4px;
+  color: #000;
+  font: bold 11px/16px Verdana;
+  border-left: 1px solid #444;
+  text-align: center;
+}
+#shop-couponview table.coupon tr.coupon-head td.info {
+  padding: 2px 4px;
+}
+#shop-couponview table.coupon tr.date-row td {
+  padding-left: 50px;
+  color: #000;
+  font: bold 13px/24px Verdana;
+  height: 24px;
+  background: #ccc url('../images/kiosk/coupon_hd_bg.png') 0 -10px repeat-x;
+}
+#shop-couponview table.coupon tr.vfl-week-row td {
+  border: 0;
+}
+#shop-couponview table.coupon tr.vfl-week-row td.week  {
+  padding-left: 50px;
+  color: #fff;
+  font: bold 14px/30px Verdana;
+  height: 30px;
+  background: none;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+#shop-couponview table.coupon tr.date-row-small td {
+  padding: 1px;
+  padding-left: 20px;
+  color: #000;
+  font: bold 12px/12px Verdana;
+  background: #aaa;
+}
+#shop-couponview table.coupon td.league-code {
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+}
+#shop-couponview table.coupon td.league-color {
+  padding: 0;
+  width: 12px;
+}
+#shop-couponview table.coupon td.handicap {
+  padding-right: 8px;
+  text-align: right;
+}
+#shop-couponview table.coupon td.fav-match {
+  width: 16px;
+  cursor: pointer;
+  background: url('../images/kiosk/fav.png') center center no-repeat;
+}
+#shop-couponview table.coupon td.more-markets {
+  width: 46px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background: url('../images/kiosk/morebets.png') center center no-repeat;
+}
+#shop-couponview table.coupon td.fav-match-on {
+  background: url('../images/kiosk/fav_on.png') center center no-repeat;
+}
+#shop-couponview table.coupon tr td.spacing {
+  padding: 0;
+}
+#shop-couponview table.coupon tr.date-change td {
+  border-top: 3px solid #004;
+}
+#shop-couponview table.coupon tr.date-change td.time {
+  padding: 0;
+}
+#shop-couponview table.coupon tr.date-change td.time div.date-wrapper {
+  position: relative;
+}
+#shop-couponview table.coupon tr.date-change td.time div.date-wrapper div.date-label {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 120px;
+  height: 20px;
+  background: url('../images/kiosk/date_label.png') center center no-repeat;
+  color: #000;
+  text-align: center;
+  font: bold 11px/20px Verdana;
+}
+#shop-couponview table.coupon tbody tr.l1 td {
+  padding-bottom: 0 !important;
+}
+#shop-couponview table.coupon tbody tr.l2 td {
+  padding-top: 0 !important;
+}
+#shop-couponview table.coupon tbody tr.l1 td div.selection {
+  margin: 0 auto 1px auto !important;
+}
+#shop-couponview table.coupon tbody tr.l2 td div.selection {
+  margin: 1px auto 0 auto !important;
+}
+#shop-couponview .hd {
+  position: absolute;
+  width: 100%;
+  top: -35px;
+  left: 0;
+  height: 30px;
+  color: #000;
+  font: bold 12px/25px Verdana;
+}
+#shop-couponview .hd .date {
+  position: absolute;
+  height: 25px;
+  top: 2px;
+  right: 550px;
+  width: 150px;
+}
+#shop-couponview .hd .label {
+  position: absolute;
+  height: 25px;
+  width: 200px;
+  top: 2px;
+  left: 400px;
+}
+#shop-couponview .hd .page {
+  position: absolute;
+  height: 25px;
+  width: 150px;
+  top: 2px;
+  right: 374px;
+}
+#shop-couponview .hd .date .day-previous,
+#shop-couponview .hd .page-previous,
+#shop-couponview .hd .date .day-next,
+#shop-couponview .hd .page-next {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0px;
+  cursor: pointer;
+}
+#shop-couponview .hd .date .day-previous,
+#shop-couponview .hd .page-previous {
+  background: url('../images/kiosk/button_previous.png') center center no-repeat;
+  left: 0px;
+}
+#shop-couponview .hd .date .day-info,
+#shop-couponview .hd .page-info {
+  position: absolute;
+  height: 25px;
+  width: 100px;
+  left: 25px;
+  text-align: center;
+  font: bold 12px/25px Verdana;
+}
+#shop-couponview .hd .date .day-next,
+#shop-couponview .hd .page-next {
+  background: url('../images/kiosk/button_next.png') center center no-repeat;
+  right: 0px;
+}
+#shop-couponview #coupon-content {
+  overflow: hidden;
+}
+#shop-couponview #coupon-markets {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+table.report {
+  border: 1px solid #574839;
+}
+table.report td,
+table.report th{
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+table.report td {
+  font: 12px Verdana;
+  border-left: 1px solid #aaa;
+}
+table.report td.money,
+table.report td.num,
+table.report td.numeric {
+  text-align: right;
+}
+table.report td.live-slip {
+  background-color: #0f0;
+}
+table.report td.ht-bets-slip {
+  background-color: #0fd;
+}
+
+table.report thead tr {
+  background-color: #0177c1;
+}
+table.report th {
+  color: #fff;
+}
+table.report th a {
+  color: #fff;
+  font-weight: bold;
+}
+table.report tbody tr.r0 {
+  background-color: #fff;
+}
+table.report tbody tr.r1 {
+  background-color: #e6f1f8;
+}
+table.report tr td.bold {
+  font-weight: bold;
+}
+table.report input.text {
+  width: 102px;
+  padding: 1px 4px;
+  border: 1px solid #aaa;
+}
+
+table.report tr.totals td {
+  font-weight: bold;
+  border-top: 1px solid #aaa;
+  text-align: right;
+}
+table.report td.label {
+  white-space: nowrap;
+}
+
+table.settings tr td {
+  font: 12px Verdana;
+  padding: 2px 7px;
+}
+table.settings tr td.label {
+  text-align: right;
+}
+table.settings td input.text {
+  width: 50px;
+  border: 1px solid #aaa;
+  padding: 2px 2px;
+  text-align: right;
+}
+table.report tbody tr.highlight {
+  cursor: pointer;
+  background-color: #0066cc;
+}
+table.report tr.highlight td,
+table.report tr.highlight a{
+  color: #fff;
+}
+table.report tr.highlight td td  {
+  color: #000;
+}
+table.report tbody tr.highlight-red {
+  background-color: #ffc7c7;
+}
+table.report tbody tr.highlight-red.r1 {
+  background-color: #e69e9e;
+}
+table.report td.num input {
+  width: 35px;
+}
+able.report td.betslip-status-draft {
+  background-color: #fff;
+}
+table.report td.betslip-status-pending {
+  background-color: #fff000;
+}
+table.report td.betslip-status-lost {
+  color: #fff;
+  background-color: #ff0000;
+}
+table.report td.betslip-status-won {
+  color: #fff;
+  background-color: #008800;
+}
+table.report td.betslip-status-void {
+  color: #fff;
+  background-color: #888;
+}
+
+table.report td.betslip table.bet-lines {
+  border: 2px solid #0177C1;
+}
+table.report td.closed table.bet-lines {
+  display: none;
+}
+
+table.report tr.bet-line td {
+  border-top: 4px solid #000;
+}
+table.report tr.bet-line:first-child td {
+  border-top: 0;
+}
+table.report form.inline-form {
+  display: inline;
+}
+
+table.sale {
+  margin: 20px auto;
+}
+table.sale td {
+  padding: 8px;
+  font: 16px "Courier New";
+}
+table.sale td.code {
+  text-align: right;
+}
+table.sale td.stake {
+  text-align: right;
+}
+table.sale td.total {
+  border-top: 2px solid #000;
+  text-align: right;
+  font: bold 16px "Courier New";
+}
+table.sale tr.saleok td.status {
+  width: 30px;
+  background: url('../images/shop/saleok.png') center center no-repeat;
+}
+table.sale tr.nosale td {
+  text-decoration: line-through;
+}
+table.sale tr.nosale td.status {
+  background: url('../images/shop/nosale.png') center center no-repeat;
+}
+
+table.sale tr.acceptOdds td {
+  color: red;
+}
+
+table.sale tr.acceptOdds td.txt-lower-odds {
+  font: bold 11px Verdana;
+}
+table.sale tr.acceptOdds td.status {
+  background: url('../images/shop/warning_small.png') center center no-repeat;
+}
+
+table.sale a.remove {
+  background: url('../images/kiosk/trashcan.png') center center no-repeat;
+}
+
+#wait-panel div.bd {
+  padding-left: 126px;
+  min-height: 65px;
+  padding-top: 35px;
+  font: bold 15px Verdana;
+  text-align: center;
+  background: #fff url('../images/kiosk/waitbet.gif') 20px center no-repeat;
+}
+
+#wait-panel div.con-lost{
+  font: bold 12px Verdana;
+  text-align: center;
+  color: red;
+}
+
+#shop-panel ul.shop-panel-nav em {
+  padding: 8px 0 8px 8px;
+}
+#shop-panel ul.shop-panel-nav li {
+  margin: 8px 2px;
+}
+#shop-panel ul.shop-panel-nav {
+  border: 0;
+  margin-right: 20px;
+}
+#shop-panel ul.shop-panel-nav li {
+  background: #0a80cb;
+  border-top: 2px solid #c3dae7;
+  border-left: 2px solid #c3dae7;
+  border-right: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+#shop-panel ul.shop-panel-nav li.selected {
+  background: #0169aa;
+  border-bottom: 2px solid #c3dae7;
+  border-right: 2px solid #c3dae7;
+  border-top: 2px solid #444;
+  border-left: 2px solid #444;
+}
+#shop-panel ul.shop-panel-nav a {
+  border: 0;
+  background: none;
+}
+#shop-panel ul.shop-panel-nav em {
+  display: block;
+  padding: 60px 0 4px 0;
+  height: 20px;
+  text-align: center;
+  background: center 8px no-repeat;
+  border: 0;
+  color: #fff;
+}
+#shop-panel ul.shop-panel-nav li.menu-matches a em {
+  background-image: url('../images/kiosk/coup1x2.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-outrights a em {
+  background-image: url('../images/kiosk/podium.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-pools a em {
+  background-image: url('../images/kiosk/pools.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-register a em {
+  background-image: url('../images/shop/register.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-scans a em {
+  background-image: url('../images/shop/scan.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-sold a em {
+  background-image: url('../images/shop/slips.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-auth a em {
+  background-image: url('../images/shop/auth.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-tokens a em {
+  background-image: url('../images/shop/tokens.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-shifts a em {
+  background-image: url('../images/shop/terminals.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-online a em {
+  background-image: url('../images/shop/online.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-keno a em {
+  background-image: url('../images/shop/keno.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-virtual a em {
+  background-image: url('../images/shop/virtual.png');
+}
+#shop-panel ul.shop-panel-nav li.menu-races a em {
+  background-image: url("../images/kiosk/racing.png");
+}
+#shop-panel ul.shop-panel-nav li.menu-recorded a em {
+  background-image: url("../images/kiosk/racing.png");
+}
+
+.shop-menu-small #shop-panel {
+  padding-left: 140px;
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav em {
+  padding: 10px 0 10px 30px;
+  background-position: 2px center;
+  text-align: left;
+}
+.shop-menu-small #shop-panel.yui-navset-left .yui-nav {
+  width: 135px;
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-matches a em {
+  background-image: url('../images/shop/coup1x2_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-outrights a em {
+  background-image: url('../images/shop/podium_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-pools a em {
+  background-image: url('../images/shop/pools_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-register a em {
+  background-image: url('../images/shop/register_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-scans a em {
+  background-image: url('../images/shop/scan_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-sold a em {
+  background-image: url('../images/shop/slips_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-auth a em {
+  background-image: url('../images/shop/auth_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-tokens a em {
+  background-image: url('../images/shop/tokens_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-shifts a em {
+  background-image: url('../images/shop/terminals_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-online a em {
+  background-image: url('../images/shop/online_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-keno a em {
+  background-image: url('../images/shop/keno_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-spinnwin a em {
+  background-image: url('../images/shop/spinnwin.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-virtual a em {
+  background-image: url('../images/shop/virtual_small.png');
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-races a em {
+  background-image: url("../images/shop/racing_small.png");
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-recorded a em {
+  background-image: url("../images/shop/racing_small.png");
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-betregister a em {
+  background-image: url("../images/shop/betregister_small.png");
+}
+
+div.login {
+  position: relative;
+  height: 240px;
+  width: 400px;
+  padding-top: 60px;
+  background: url('../images/shop/login_bg.png') center center no-repeat;
+}
+table.login td {
+  font: bold 13px Verdana;
+  padding: 8px 4px;
+}
+table.login td.label {
+  text-align: right;
+}
+table.login td.title {
+  text-align: center;
+  border-bottom: 1px solid #888;
+}
+table.login td.value input.text {
+  border: 2px solid #1a7cb5;
+  padding: 4px 8px;
+  color: #444;
+  font: bold 12px Verdana;
+}
+table.login input.loginsubmit {
+  display: block;
+  width: 94px;
+  height: 25px;
+  background: transparent url('../images/shop/loginsubmit.png') center center no-repeat;
+  color: #fff;
+  font: bold 13px/20px Verdana;
+  padding-left: 10px;
+  text-align: left;
+  border: 0;
+  cursor: pointer;
+  line-height: 21px !important;
+}
+table.login td.message {
+  text-align: center;
+  color: #df0404;
+  font: bold 12px Verdana;
+}
+div.languages {
+  height: 35px;
+  text-align: center;
+}
+div.languages a {
+  display: inline-block;
+  padding: 2px 8px;
+  color: #fff;
+  font: 14px Verdana;
+}
+
+#shop-panel.yui-navset-left .yui-nav {
+  width: 115px;
+}
+#shop-panel {
+  padding-left: 120px;
+}
+#shop-panel-content {
+  overflow: auto;
+}
+
+#shop-doc .yui-content {
+  background: none;
+  border: 0;
+}
+
+#shop-doc {
+  height: 100%;
+}
+
+#shop-couponview table.coupon td {
+  padding: 4px 2px;
+}
+#shop-couponview table.coupon td.code {
+  padding-right: 6px;
+  padding-left: 0;
+  text-align: right;
+}
+
+#shop-panel-content ul.sport-menu li.sport-menu-item {
+  display: inline-block;
+  width: 110px;
+  height: 26px;
+  padding: 2px;
+  margin: 5px;
+
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
+.large-sport-buttons #shop-panel-content ul.sport-menu li.sport-menu-item {
+  width: 180px;
+}
+#shop-panel-content ul.sport-menu li.selected {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #555;
+  border-top: 1px solid #555;
+  background-color: #f58516;
+}
+#shop-panel-content ul.sport-menu li.sport-menu-item a.sport {
+  display: inline-block;
+  height: 26px;
+  width: 110px;
+  padding-left: 0;
+  text-indent: 22px;
+  font: bold 11px/26px Verdana;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.large-sport-buttons #shop-panel-content ul.sport-menu li.sport-menu-item a.sport {
+  width: 180px;
+}
+#shop-panel-content ul.sport-menu li.sport-menu-item a.sport-live {
+  text-indent: 50px;
+  background: url("../images/kiosk/willgolive.png") no-repeat 2px center transparent;
+}
+#shop-couponview table.coupon td.league {
+  color: #000;
+}
+#shop-couponview table.coupon tr.coupon-head td {
+  height: 28px;
+}
+#shop-couponview table.coupon thead.coupon-head {
+  background: url("../images/kiosk/coupon_hd_bg.png") repeat-x 0 -10px #CCCCCC;
+}
+#shop-couponview table.coupon td span.match-team-name {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#shop-couponview table.coupon td.match-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#shop-coupon div.coupon-content {
+  position: relative;
+}
+#shop-coupon div.match-coupon {
+  background-color: transparent;
+}
+#shop-coupon div.show-match div.match-coupon {
+  display: block;
+}
+#shop-coupon div.show-match div.sport-coupon {
+  display: none;
+}
+#shop-coupon div.match-coupon div.match-head {
+  position: relative;
+  color: #000;
+  background: url("../images/kiosk/coupon_hd_bg.png") repeat-x 0 -10px #CCCCCC;
+}
+
+#shop-coupon div.match-coupon div.match-head.live {
+  position: relative;
+  color: #000;
+  background: #b4e391; /* Old browsers */
+  background: -moz-linear-gradient(top, #b4e391 0%, #61c419 50%, #b4e391 100%);
+  background: -webkit-linear-gradient(top, #b4e391 0%,#61c419 50%,#b4e391 100%);
+  background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%);
+}
+
+#shop-coupon div.match-coupon div.match-stats table.match-info {
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+  font: bold 12px/15px Verdana;
+  min-width:300px;
+  height:60px;
+  background: #b4e391; /* Old browsers */
+  background: -moz-linear-gradient(top, #b4e391 0%, #61c419 50%, #b4e391 100%);
+  background: -webkit-linear-gradient(top, #b4e391 0%,#61c419 50%,#b4e391 100%);
+  background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%);
+  margin-top: 5px;
+}
+
+#shop-coupon div.match-coupon div.match-stats table.match-info,
+#shop-coupon div.match-coupon div.match-stats table.match-info td {
+  border: 1px solid black;
+}
+
+#shop-coupon div.match-coupon div.match-stats table.match-info th {
+  //    background: #444;
+}
+
+#shop-coupon div.match-coupon div.match-stats table.match-info th.corner {
+  background: url('../images/shop/corner.png') center center no-repeat;
+  width:25px;
+}
+
+#shop-coupon div.match-coupon div.match-stats table.match-info th.yellow {
+  width:25px;
+  background: url('../images/shop/yellow.png') center center no-repeat;
+}
+
+#shop-coupon div.match-coupon div.match-stats table.match-info th.red {
+  width:25px;
+  background: url('../images/shop/red.png') center center no-repeat;
+}
+
+
+#shop-coupon div.match-coupon div.match-stats table.match-info th.goal {
+  width:25px;
+  background: url('../images/shop/goal.png') center center no-repeat;
+}
+
+#shop-coupon div.match-coupon div.match-head div.close-markets {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+  background: url('../images/shop/closemarkets.png') center center no-repeat;
+}
+#shop-coupon div.match-coupon div.top-market-list {
+  padding: 8px;
+}
+#shop-coupon div.match-coupon div.match-markets div.market-list a {
+  color: #fff;
+}
+#shop-coupon div.match-coupon div.match-markets div.market-list {
+  width: 220px;
+}
+#shop-coupon div.match-coupon div.match-markets div.markets {
+  margin-left: 221px;
+}
+
+#slip {
+  overflow: hidden;
+}
+#cashregister table.report tr.first-row td {
+  font-size: 14px;
+  padding: 4px;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+ul.slips-menu li.slips-menu-item {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font: 12px Verdana;
+  text-align: center;
+  margin: 4px;
+
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+ul.slips-menu li.slips-menu-item-long {
+  width: 180px;
+}
+ul.slips-menu li.slips-menu-item a {
+  display: block;
+  height: 30px;
+  width: 100px;
+  color: #fff;
+  line-height: 30px;
+}
+
+#shop-doc ul.slips-menu li.selected {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  background-color: #f58516;
+}
+#slips-content {
+  margin-top: 10px;
+}
+
+table.report thead tr {
+  position: relative;
+  background: url("../images/kiosk/coupon_hd_bg.png") repeat-x 0 -10px #CCCCCC;
+}
+table.report thead tr th {
+  font: bold 12px/25px Verdana;
+  color: #000;
+  height: 25px;
+}
+table.report thead.double tr th {
+  padding: 1px 5px;
+  font: bold 12px/12px Verdana;
+  height: auto;
+}
+
+table.report tbody tr.r0 {
+  background-color: #2E9EE4;
+}
+table.report tbody tr.r1 {
+  background-color: #1A8ED7;
+}
+table.report td{
+  color: #fff;
+}
+table.report td a {
+  color: #fff;
+  font-weight: bold;
+}
+table.report tbody tr.highlight td a {
+  color: #000;
+}
+table.report td.betslip-status {
+  color: #000;
+}
+table.report tbody tr.highlight {
+  background-color: #fff;
+}
+table.report tbody tr.highlight td {
+  color: #000;
+}
+table.report td.betslip-status {
+  text-align: center;
+}
+table.report td button {
+  margin: 1px;
+  padding: 1px;
+}
+
+table.pending-transfers {
+  margin: 0 auto;
+}
+table.pending-transfers th {
+  text-align: center;
+  padding: 4px 12px;
+  font: bold 20px/28px Verdana;
+  color: #040;
+}
+table.pending-transfers td {
+  padding: 4px 12px;
+  font: 16px Verdana;
+}
+table.pending-transfers td.label {
+  text-align: right;
+}
+div.accept-transfer-button {
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+  background-color: #080;
+  color: #fff;
+  font: bold 20px/50px Verdana;
+  height: 50px;
+  width: 255px;
+  border: 2px #040 outset;
+  text-align: center;
+}
+
+div.multi-slip-sale {
+  font: bold 18px/35px Verdana;
+  color: #040;
+  text-align: center;
+}
+div.multi-slip-error {
+  font: bold 16px/35px Verdana;
+  color: #800;
+  text-align: center;
+}
+
+
+#sale-panel button {
+  width: 135px;
+  font-size: 125%;
+  font-weight: bold;
+  height: 40px;
+}
+#sale-panel .yui-button {
+  margin-right: 25px;
+}
+#sale-panel div.message {
+  padding: 8px;
+  text-align: center;
+  font: bold 15px/25px Verdana;
+  color: #800;
+}
+
+#prepaid {
+  color: #fff;
+}
+#sell-prepaid-other {
+  font: 14px Verdana;
+  padding: 3px;
+}
+div.prepaid-card-number {
+  padding: 10px 50px;
+  text-align: center;
+  font: bold 15px Verdana;
+  color: #600;
+}
+div.prepaid-card-amount {
+  padding: 10px 50px;
+  text-align: center;
+  font: bold 22px/20px Verdana;
+  color: #090;
+}
+
+div.yui-panel-container h1 {
+  color: #000;
+  font: bold 14px Verdana;
+}
+
+div.shopman-shift-content h1,
+div.shopman-online-content h1 {
+  padding: 4px 0;
+  font: bold 14px Verdana;
+}
+div.shopman-shift-content table.form td,
+div.shopman-online-content table.form td {
+  padding: 2px 4px;
+}
+div.shopman-shift-content table.form td.hd,
+div.shopman-online-content table.form td.hd {
+  color: #fff;
+  font-weight: bold;
+}
+h1.content-title {
+  border-bottom: 1px solid #fff;
+  margin: 10px 0 20px 0;
+}
+
+h3.nr-slips {
+  font: 13px Verdana;
+  color: #fff;
+  text-align: left;
+  padding: 3px 0;
+}
+
+#slip-wrapper {
+  position: relative;
+  float: right;
+  width: 420px;
+  overflow: auto;
+}
+#slip-wrapper #slip {
+  position: relative;
+  height: auto;
+  right: auto;
+  top: auto;
+  margin-top: 10px;
+}
+#shop-doc #slip-wrapper #slip.closed div.options {
+  background-color: transparent;
+  display: block;
+}
+#shop-doc #slip-wrapper #slip.no-systems div.options {
+  display: none;
+}
+#shop-doc #slip-wrapper #slip.empty div.options {
+  display: none;
+}
+#cashregister div.printzet {
+  width: 75px;
+  height: 75px;
+  margin: 50px;
+  background: url('../images/shop/printzet.png') center center no-repeat;
+  cursor: pointer;
+}
+
+#slips-menu-search {
+  font: 15px/30px Verdana;
+}
+#slipssearch {
+  font: 15px/22px Verdana;
+  border: 2px solid #888;
+  padding: 2px;
+}
+#slipssearchsubmit {
+  font: 15px Verdana;
+  height: 30px;
+}
+
+#shop-doc.coupons #shop-couponview,
+#shop-doc.favorites #shop-couponview,
+#shop-doc.live-betting #shop-couponview,
+#shop-doc.coupons #shop-hd #pages,
+#shop-doc.favorites #shop-hd #pages,
+#shop-doc.live-betting #shop-hd #pages,
+#shop-doc.leagues #leagueview,
+#shop-doc.outrights #outrightsview,
+#shop-doc.match-bets #match-bets,
+#shop-doc.pools #poolsview,
+#shop-doc.closingsoon #closingsoonview {
+  display: block;
+}
+
+#shop-doc.coupons #coupons,
+#shop-doc.favorites #favorites,
+#shop-doc.live-betting #live-betting,
+#shop-doc.leagues #coupons,
+#shop-doc.pools #pools,
+#shop-doc.outrights #outrights {
+  border-top: 1px solid #a3b0b8;
+  border-left: 1px solid #a3b0b8;
+  border-bottom: 1px solid #d8e8f2;
+  border-right: 1px solid #d8e8f2;
+}
+
+
+#shopkiosk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: #aaa;
+  z-index: -1000;
+}
+#shopkiosk #slip {
+  display: none;
+}
+#shopkiosk #infobar {
+  display: block;
+  width: 120px;
+  height: 25px;
+  position: absolute;
+  top: 38px;
+  right: 10px;
+  color: #fff;
+  font: bold 12px/25px Verdana;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: url('../images/shop/exit.png') center center no-repeat;
+  cursor: pointer;
+}
+
+body.kiosk #shopkiosk{
+  visibility: visible;
+  z-index: 1000;
+}
+
+#shop-coupon ul.market-menu{
+}
+#shop-coupon ul.market-menu li {
+  display: inline-block;
+  width: 132px;
+  margin: 2px 4px;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  background: url('../images/website/market_index.png') center center no-repeat;
+}
+#shop-coupon ul.market-menu li.live {
+  background: url('../images/website/market_index_live.png') center center no-repeat;
+}
+#shop-coupon ul.market-menu li a {
+  display: inline-block;
+  width: 132px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
+}
+#shop-coupon ul.market-menu li.selected {
+  background: url('../images/shop/market_index_selected.png') center center no-repeat;
+}
+#shop-coupon ul.market-menu li.selected.live {
+  background: url('../images/website/market_index_live_selected.png') center center no-repeat;
+}
+#shop-coupon ul.market-menu li.selected a {
+  color: #000;
+}
+
+#shop-doc .flag-bg {
+  width: 51px;
+  padding: 0;
+  text-align: center;
+  background: url('../images/kiosk/countries/bg/world.png') center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+#shop-doc .flag-bg-england-amateur,
+#shop-doc .flag-bg-england { background-image: url('../images/kiosk/countries/bg/england.png'); }
+#shop-doc .flag-bg-norway { background-image: url('../images/kiosk/countries/bg/norway.png'); }
+#shop-doc .flag-bg-france { background-image: url('../images/kiosk/countries/bg/france.png'); }
+#shop-doc .flag-bg-denmark { background-image: url('../images/kiosk/countries/bg/denmark.png'); }
+#shop-doc .flag-bg-sweden { background-image: url('../images/kiosk/countries/bg/sweden.png'); }
+#shop-doc .flag-bg-iceland { background-image: url('../images/kiosk/countries/bg/iceland.png'); }
+#shop-doc .flag-bg-hungary { background-image: url('../images/kiosk/countries/bg/hungary.png'); }
+#shop-doc .flag-bg-mexico { background-image: url('../images/kiosk/countries/bg/mexico.png'); }
+#shop-doc .flag-bg-brazil { background-image: url('../images/kiosk/countries/bg/brazil.png'); }
+#shop-doc .flag-bg-croatia { background-image: url('../images/kiosk/countries/bg/croatia.png'); }
+#shop-doc .flag-bg-austria { background-image: url('../images/kiosk/countries/bg/austria.png'); }
+#shop-doc .flag-bg-czech { background-image: url('../images/kiosk/countries/bg/czech.png'); }
+#shop-doc .flag-bg-finland { background-image: url('../images/kiosk/countries/bg/finland.png'); }
+#shop-doc .flag-bg-peru { background-image: url('../images/kiosk/countries/bg/peru.png'); }
+#shop-doc .flag-bg-russia { background-image: url('../images/kiosk/countries/bg/russia.png'); }
+#shop-doc .flag-bg-scotland { background-image: url('../images/kiosk/countries/bg/scotland.png'); }
+#shop-doc .flag-bg-slovakia { background-image: url('../images/kiosk/countries/bg/slovakia.png'); }
+#shop-doc .flag-bg-slovenia { background-image: url('../images/kiosk/countries/bg/slovenia.png'); }
+#shop-doc .flag-bg-switzerland { background-image: url('../images/kiosk/countries/bg/switzerland.png'); }
+#shop-doc .flag-bg-usa { background-image: url('../images/kiosk/countries/bg/usa.png'); }
+#shop-doc .flag-bg-germany { background-image: url('../images/kiosk/countries/bg/germany.png'); }
+#shop-doc .flag-bg-italy { background-image: url('../images/kiosk/countries/bg/italy.png'); }
+#shop-doc .flag-bg-spain { background-image: url('../images/kiosk/countries/bg/spain.png'); }
+#shop-doc .flag-bg-belgium { background-image: url('../images/kiosk/countries/bg/belgium.png'); }
+#shop-doc .flag-bg-australia { background-image: url('../images/kiosk/countries/bg/australia.png'); }
+#shop-doc .flag-bg-netherlands { background-image: url('../images/kiosk/countries/bg/netherlands.png'); }
+#shop-doc .flag-bg-portugal { background-image: url('../images/kiosk/countries/bg/portugal.png'); }
+#shop-doc .flag-bg-singapore { background-image: url('../images/kiosk/countries/bg/singapore.png'); }
+#shop-doc .flag-bg-turkey { background-image: url('../images/kiosk/countries/bg/turkey.png'); }
+#shop-doc .flag-bg-poland { background-image: url('../images/kiosk/countries/bg/poland.png'); }
+#shop-doc .flag-bg-argentina { background-image: url('../images/kiosk/countries/bg/argentina.png'); }
+#shop-doc .flag-bg-chile { background-image: url('../images/kiosk/countries/bg/chile.png'); }
+#shop-doc .flag-bg-ireland { background-image: url('../images/kiosk/countries/bg/ireland.png'); }
+#shop-doc .flag-bg-japan { background-image: url('../images/kiosk/countries/bg/japan.png'); }
+#shop-doc .flag-bg-uruguay { background-image: url('../images/kiosk/countries/bg/uruguay.png'); }
+#shop-doc .flag-bg-israel { background-image: url('../images/kiosk/countries/bg/israel.png'); }
+#shop-doc .flag-bg-greece { background-image: url('../images/kiosk/countries/bg/greece.png'); }
+#shop-doc .flag-bg-romania { background-image: url('../images/kiosk/countries/bg/romania.png'); }
+#shop-doc .flag-bg-bulgaria { background-image: url('../images/kiosk/countries/bg/bulgaria.png'); }
+#shop-doc .flag-bg-ukraine { background-image: url('../images/kiosk/countries/bg/ukraine.png'); }
+#shop-doc .flag-bg-belarus { background-image: url('../images/kiosk/countries/bg/belarus.png'); }
+#shop-doc .flag-bg-estonia { background-image: url('../images/kiosk/countries/bg/estonia.png'); }
+#shop-doc .flag-bg-china { background-image: url('../images/kiosk/countries/bg/china.png'); }
+#shop-doc .flag-bg-cyprus { background-image: url('../images/kiosk/countries/bg/cyprus.png'); }
+#shop-doc .flag-bg-northern { background-image: url('../images/kiosk/countries/bg/northern.png'); }
+#shop-doc .flag-bg-wales { background-image: url('../images/kiosk/countries/bg/wales.png'); }
+#shop-doc .flag-bg-malta { background-image: url('../images/kiosk/countries/bg/malta.png'); }
+#shop-doc .flag-bg-serbia { background-image: url('../images/kiosk/countries/bg/serbia.png'); }
+#shop-doc .flag-bg-bosnia { background-image: url('../images/kiosk/countries/bg/bosnia.png'); }
+#shop-doc .flag-bg-macedonia { background-image: url('../images/kiosk/countries/bg/macedonia.png'); }
+#shop-doc .flag-bg-lithuania { background-image: url('../images/kiosk/countries/bg/lithuania.png'); }
+#shop-doc .flag-bg-latvia { background-image: url('../images/kiosk/countries/bg/latvia.png'); }
+#shop-doc .flag-bg-ecuador { background-image: url('../images/kiosk/countries/bg/ecuador.png'); }
+#shop-doc .flag-bg-luxembourg { background-image: url('../images/kiosk/countries/bg/luxembourg.png'); }
+#shop-doc .flag-bg-faroe { background-image: url('../images/kiosk/countries/bg/faroe.png'); }
+#shop-doc .flag-bg-albania { background-image: url('../images/kiosk/countries/bg/albania.png'); }
+#shop-doc .flag-bg-georgia { background-image: url('../images/kiosk/countries/bg/georgia.png'); }
+#shop-doc .flag-bg-colombia { background-image: url('../images/kiosk/countries/bg/colombia.png'); }
+#shop-doc .flag-bg-kazakhstan { background-image: url('../images/kiosk/countries/bg/kazakhstan.png'); }
+#shop-doc .flag-bg-moldova { background-image: url('../images/kiosk/countries/bg/moldova.png'); }
+#shop-doc .flag-bg-paraguay { background-image: url('../images/kiosk/countries/bg/paraguay.png'); }
+#shop-doc .flag-bg-venezuela { background-image: url('../images/kiosk/countries/bg/venezuela.png'); }
+#shop-doc .flag-bg-costa { background-image: url('../images/kiosk/countries/bg/costa.png'); }
+#shop-doc .flag-bg-south { background-image: url('../images/kiosk/countries/bg/south.png'); }
+#shop-doc .flag-bg-armenia { background-image: url('../images/kiosk/countries/bg/armenia.png'); }
+#shop-doc .flag-bg-azerbaijan { background-image: url('../images/kiosk/countries/bg/azerbaijan.png'); }
+#shop-doc .flag-bg-iran { background-image: url('../images/kiosk/countries/bg/iran.png'); }
+#shop-doc .flag-bg-algeria { background-image: url('../images/kiosk/countries/bg/algeria.png'); }
+#shop-doc .flag-bg-saudi { background-image: url('../images/kiosk/countries/bg/saudi.png'); }
+#shop-doc .flag-bg-jordan { background-image: url('../images/kiosk/countries/bg/jordan.png'); }
+#shop-doc .flag-bg-hong { background-image: url('../images/kiosk/countries/bg/hong.png'); }
+#shop-doc .flag-bg-qatar { background-image: url('../images/kiosk/countries/bg/qatar.png'); }
+#shop-doc .flag-bg-guatemala { background-image: url('../images/kiosk/countries/bg/guatemala.png'); }
+#shop-doc .flag-bg-vietnam { background-image: url('../images/kiosk/countries/bg/vietnam.png'); }
+#shop-doc .flag-bg-el { background-image: url('../images/kiosk/countries/bg/el.png'); }
+#shop-doc .flag-bg-tunisia { background-image: url('../images/kiosk/countries/bg/tunisia.png'); }
+#shop-doc .flag-bg-bolivia { background-image: url('../images/kiosk/countries/bg/bolivia.png'); }
+#shop-doc .flag-bg-uzbekistan { background-image: url('../images/kiosk/countries/bg/uzbekistan.png'); }
+#shop-doc .flag-bg-montenegro { background-image: url('../images/kiosk/countries/bg/montenegro.png'); }
+#shop-doc .flag-bg-san { background-image: url('../images/kiosk/countries/bg/san.png'); }
+#shop-doc .flag-bg-canada { background-image: url('../images/kiosk/countries/bg/canada.png'); }
+#shop-doc .flag-bg-cameroon { background-image: url('../images/kiosk/countries/bg/cameroon.png'); }
+#shop-doc .flag-bg-honduras { background-image: url('../images/kiosk/countries/bg/honduras.png'); }
+#shop-doc .flag-bg-thailand { background-image: url('../images/kiosk/countries/bg/thailand.png'); }
+#shop-doc .flag-bg-pakistan { background-image: url('../images/kiosk/countries/bg/pakistan.png'); }
+#shop-doc .flag-bg-northern-ireland { background-image: url('../images/kiosk/countries/bg/northern.png'); }
+
+#shop-doc .flag-bg-germany-amateur { background-image: url('../images/kiosk/countries/bg/germany.png'); }
+
+#shop-doc .flag-bg-formula-1 { background-image: url('../images/kiosk/countries/bg/formula_1.png'); }
+#shop-doc .flag-bg-challenge { background-image: url('../images/kiosk/countries/bg/atp_challenger.png'); }
+#shop-doc .flag-bg-atp { background-image: url('../images/kiosk/countries/bg/atp.png'); }
+
+#shop-panel-content table.report td.sport,
+#shop-panel-content .sport {
+  padding-left: 30px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+#shop-panel-content .yui-skin-sam .yui-button button.sport {
+  padding-left: 20px;
+}
+
+#shop-panel-content .sport-soccer            { background-image: url('../images/admin/sport_soccer.png');  }
+#shop-panel-content .sport-basketball        { background-image: url('../images/admin/sport_basketball.png');  }
+#shop-panel-content .sport-baseball          { background-image: url('../images/admin/sport_baseball.png');  }
+#shop-panel-content .sport-ice-hockey        { background-image: url('../images/admin/sport_ice_hockey.png');  }
+#shop-panel-content .sport-tennis            { background-image: url('../images/admin/sport_tennis.png');  }
+#shop-panel-content .sport-handball          { background-image: url('../images/admin/sport_handball.png');  }
+#shop-panel-content .sport-golf              { background-image: url('../images/admin/sport_golf.png');  }
+#shop-panel-content .sport-motorsport        { background-image: url('../images/admin/sport_motorsport.png');  }
+#shop-panel-content .sport-rugby             { background-image: url('../images/admin/sport_rugby.png');  }
+#shop-panel-content .sport-american-football { background-image: url('../images/admin/sport_american_football.png'); }
+#shop-panel-content .sport-snooker           { background-image: url('../images/admin/sport_snooker.png'); }
+#shop-panel-content .sport-darts             { background-image: url('../images/admin/sport_darts.png'); }
+#shop-panel-content .sport-volleyball        { background-image: url('../images/admin/sport_volleyball.png'); }
+#shop-panel-content .sport-futsal            { background-image: url('../images/admin/sport_futsal.png'); }
+#shop-panel-content .sport-worldcup            { background-image: url('../images/admin/sport_worldcup.png'); }
+
+#shop-panel-content .sport-virtual-football          { background-image: url('../images/admin/sport_soccer.png');  }
+#shop-panel-content .sport-virtual-football-league          { background-image: url('../images/admin/sport_soccer.png');  }
+#shop-panel-content .sport-virtual-horses            { background-image: url('../images/admin/sport_horses.png');  }
+#shop-panel-content .sport-virtual-harness            { background-image: url('../images/admin/sport_harness.png');  }
+#shop-panel-content .sport-virtual-hounds            { background-image: url('../images/admin/sport_hounds.png');  }
+
+#shop-panel-content .sport-horse-racing           { background-image: url('../images/admin/sport_horses.png');  }
+#shop-panel-content .sport-cricket           { background-image: url('../images/admin/sport_cricket.png');  }
+#shop-panel-content .sport-bowls             { background-image: url('../images/admin/sport_bowls.png');  }
+
+#shop-panel-content .sport-prerecorded-horses            { background-image: url('../images/admin/sport_horses.png');  }
+#shop-panel-content .sport-prerecorded-hounds            { background-image: url('../images/admin/sport_hounds.png');  }
+
+#shop-doc .no-bets td div.selection {
+  background-image: url('../images/kiosk/odds_na.png');
+  font-size: 0;
+  text-indent: -2000px;
+}
+#shop-doc .zoom3 .no-bets td div.selection,
+#shop-doc .zoom4 .no-bets td div.selection,
+#shop-doc .zoom5 .no-bets td div.selection {
+  background-image: url('../images/kiosk/odds_na_large.png');
+  font-size: 0;
+  text-indent: -2000px;
+}
+#shop-doc .no-bets td div.selection div.bg {
+  display: none;
+}
+#shop-doc .zoom3 .no-bets td div.selection div.bg,
+#shop-doc .zoom4 .no-bets td div.selection div.bg,
+#shop-doc .zoom5 .no-bets td div.selection div.bg {
+  display: none;
+}
+#shop-doc .no-bets td div.selection-hd,
+#shop-doc .zoom1 .no-bets td div.selection-hd,
+#shop-doc .zoom2 .no-bets td div.selection-hd,
+#shop-doc .zoom3 .no-bets td div.selection-hd,
+#shop-doc .zoom4 .no-bets td div.selection-hd,
+#shop-doc .zoom5 .no-bets td div.selection-hd {
+  background: none;
+}
+
+#shop-doc #slip .content .selections .page .lines {
+  background-color: transparent;
+}
+
+table.betslips td div.slip-handle {
+  color: #888;
+  cursor: pointer;
+  font: bold 24px Verdana;
+  height: 24px;
+  overflow: hidden;
+}
+table.betslips td.betslip div.inline-betslip {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+}
+table.betslips td.betslip div.visible {
+  display: block;
+}
+table.report td.betslip {
+  cursor: pointer;
+}
+table.report td.betslip div.inline-betslip {
+  margin: 4px auto;
+  background-color: #fff;
+}
+table.report td.closed div.inline-betslip {
+  display: none;
+}
+
+table.report td.betslip div.inline-betslip table td {
+  border-left: 0;
+}
+table.report div.inline-betslip tr.totals td {
+  text-align: left;
+}
+
+div.inline-betslip {
+  width: 350px;
+  border: 2px solid #000;
+}
+.yui-panel div.inline-betslip {
+  margin: 0 auto;
+}
+div.inline-betslip table {
+  width: 100%;
+  border-collapse: collapse;
+}
+div.inline-betslip tr.head{
+  background-color: #000;
+}
+div.inline-betslip table tr.head td {
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  font: 12px Verdana;
+}
+div.inline-betslip table tr td.pools-header {
+  text-align: center;
+  font: bold 13px Verdana;
+}
+div.inline-betslip table tr td div.pools-square {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  margin: 2px auto;
+  text-align: center;
+  font: bold 13px/16px Verdana;
+}
+div.inline-betslip table tr.match td {
+  padding: 1px;
+  color: #000;
+  border: 0;
+  border-top: 2px solid #000;
+}
+div.inline-betslip tr.match td.code {
+  padding: 0;
+  text-align: center;
+}
+div.inline-betslip tr.match td.code div.n {
+  background-color: #000;
+  color: #fff;
+  font: 9px Verdana;
+}
+div.inline-betslip tr.match td.code {
+  font: bold 11px Verdana;
+  padding: 2px;
+  text-align: center;
+}
+div.inline-betslip tr.match td.match div.match {
+  position: relative;
+}
+div.inline-betslip tr.match div.banker,
+div.inline-betslip tr.match div.group,
+div.inline-betslip tr.match div.combine{
+  height: 20px;
+  font: 11px/20px Verdana;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  margin: 2px;
+}
+div.inline-betslip tr.match div.group {
+  width: 25px;
+  height: 30px;
+  font: bold 14px/20px Verdana;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+div.inline-betslip tr.match div.banker {
+  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+div.inline-betslip tr.match div.combine {
+  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+div.inline-betslip tr.match div.group div.title{
+  height: 10px;
+  font: 7px/10px Arial;
+}
+div.inline-betslip tr.match td.match {
+  font: bold 10px Arial;
+}
+div.inline-betslip tr.match td.match div.match {
+  min-height: 30px;
+}
+div.inline-betslip tr.match td.match div.date {
+  font: bold 9px Arial;
+}
+div.inline-betslip tr.match td.match div.match-result {
+  display: none;
+}
+div.inline-betslip tr.match td.match div.match div.match-result-ready {
+  display: block;
+}
+div.inline-betslip table td span.original-odds {
+  display: inline !important;
+}
+div.inline-betslip table td span.original-odds span.value {
+  color: #600;
+  text-decoration: line-through;
+}
+div.inline-betslip tr.selection td {
+  font: bold 12px Arial;
+}
+div.inline-betslip tr.selection-won {
+  background-color: #00FF00;
+}
+div.inline-betslip tr.selection-lost {
+  background-color: #FF0000;
+}
+div.inline-betslip tr.selection-void {
+  background-color: #CCCCCC;
+}
+div.inline-betslip tr.selection td.nr div.nr {
+  margin: 1px 3px;
+  background-color: #000;
+  color: #fff;
+  padding: 1px;
+  text-align: center;
+}
+div.inline-betslip tr.selection td.odds {
+  text-align: right;
+  padding-right: 4px;
+}
+div.inline-betslip tr.selection td.group {
+  font: bold 18px Verdana;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+div.inline-betslip table.bets {
+  margin: 10px auto;
+  width: 95%;
+  border-collapse: collapse;
+}
+div.inline-betslip table.bets td {
+  border: 0;
+  padding: 1px 2px;
+  font: 11px Verdana;
+  white-space: nowrap;
+}
+div.inline-betslip table.bets tr.hd td {
+  font-weight: bold;
+  text-align: right;
+}
+div.inline-betslip table table.bets tbody tr td.system,
+div.inline-betslip table table.bets tbody tr td.lines,
+div.inline-betslip table table.bets tbody tr td.odds,
+div.inline-betslip table table.bets tbody tr td.amount {
+  text-align: right;
+}
+div.inline-betslip table.bets tr.totals td {
+  font: bold 12px Verdana;
+  border-top: 1px solid #000;
+}
+div.inline-betslip table table.bets tbody tr.actual-payout {
+  display: none;
+}
+div.inline-betslip table.betslip-settled table.bets tbody tr.actual-payout {
+  display: table-row;
+}
+div.inline-betslip table.betslip-pending tr.actual-payout {
+  display: none;
+}
+div.inline-betslip table.betslip-html tr.actual-payout {
+  background-color: #000;
+  color: #fff;
+  font: bold 13px Verdana;
+}
+div.inline-betslip table.betslip-html table.line-matrix,
+div.inline-betslip table.betslip-html tr.head-lines {
+  display: none;
+}
+div.inline-betslip table.betslip-html tr.keno-stake td {
+  font: bold 15px/16px Verdana;
+  padding: 3px;
+}
+div.inline-betslip table.betslip-html table.keno-payouts {
+  margin: 0 auto;
+  width: auto;
+}
+div.inline-betslip table.betslip-html table.keno-payouts td{
+  text-align: right;
+}
+div.inline-betslip table.betslip-html tr td.keno-numbers {
+  font: bold 14px/18px Arial;
+  text-align: center;
+  padding: 6px 2px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#shop-doc #slip .content .group-a {
+  background: url('../images/kiosk/sprite.png') -250px -50px;
+}
+#shop-doc #slip .content .group-b {
+  background: url('../images/kiosk/sprite.png') -275px -50px;
+}
+#shop-doc #slip .content .group-c {
+  background: url('../images/kiosk/sprite.png') -300px -50px;
+}
+#shop-doc #slip .content .group-d {
+  background: url('../images/kiosk/sprite.png') -325px -50px;
+}
+#shop-doc #slip .content .group-e {
+  background: url('../images/kiosk/sprite.png') -350px -50px;
+}
+#shop-doc #slip .content .group-f {
+  background: url('../images/kiosk/sprite.png') -375px -50px;
+}
+#shop-doc #slip .content .group-g {
+  background: url('../images/kiosk/sprite.png') -400px -50px;
+}
+#shop-doc #slip .content .group-h {
+  background: url('../images/kiosk/sprite.png') -425px -50px;
+}
+#shop-doc #slip .content .group-i {
+  background: url('../images/kiosk/sprite.png') -450px -50px;
+}
+#shop-doc #slip .content .group-j {
+  background: url('../images/kiosk/sprite.png') -475px -50px;
+}
+#shop-doc #slip .content .group-k {
+  background: url('../images/kiosk/sprite.png') -500px -50px;
+}
+#shop-doc #slip .content .group-l {
+  background: url('../images/kiosk/sprite.png') -525px -50px;
+}
+#shop-doc #slip .content .group-m {
+  background: url('../images/kiosk/sprite.png') -550px -50px;
+}
+#shop-doc #slip .content .group-n {
+  background: url('../images/kiosk/sprite.png') -575px -50px;
+}
+#shop-doc #slip .content .group-o {
+  background: url('../images/kiosk/sprite.png') -250px -75px;
+}
+#shop-doc #slip .content .banker-on {
+  background: url('../images/kiosk/sprite.png') -325px -75px;
+}
+#shop-doc #slip .content .combine-on {
+  background: url('../images/kiosk/sprite.png') 0px -100px no-repeat;
+}
+.locale-el #shop-doc #slip .content .bet-line .combine-on {
+  background-position: -624px -568px;
+}
+
+#imageprefetch {
+  width: 2px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  left: 2px;
+  bottom: 2px;
+  opacity: 0.1;
+  filter:alpha(opacity=10);
+}
+
+#shop-panel.no-cancel .cancel {
+  display: none;
+}
+#shop-panel.no-redeem .redeem {
+  display: none;
+}
+#shop-panel.no-reprint .reprint {
+  display: none;
+}
+
+#welcome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0076c0;
+  z-index: 1000;
+}
+#welcome #loading-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 240px;
+  margin-top: -120px;
+  margin-left: -200px;
+  background: url('../images/shop/login_bg.png') center center no-repeat;
+}
+#welcome #loading-panel div.label {
+  font: bold 20px Verdana;
+  color: #000;
+  text-align: center;
+  padding-top: 80px;
+}
+#welcome #loading-panel div.progress {
+  position: absolute;
+  width: 300px;
+  top: 150px;
+  left: 50px;
+  height: 10px;
+  border: 2px solid #008;
+}
+#welcome #loading-panel div.progress div.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #008;
+}
+
+#shop-panel div.country div.outright div.group-winners table.coupon{
+  width: 300px;
+}
+#shop-panel div.country div.outright div.group-winners table.world-cup-content table.col1{
+  margin-right: 10px;
+}
+#shop-panel div.country div.outright div.group-list table.world-cup-content{
+  width: 500px;
+}
+#shop-panel div.country div.outright table.world-cup-content table.wide-group-table {
+  width: 750px;
+}
+#shop-panel div.group-list table.world-cup-content tr td div.label {
+  width: 200px;
+}
+
+a.coupon-download {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 90px;
+}
+a.coupon-download div.image {
+  width: 65px;
+  height: 65px;
+  background: url('../images/shop/excel.png') center center no-repeat;
+  margin: 0 auto;
+}
+.pdf a.coupon-download div.image {
+  background-image: url('../images/shop/pdf.png');
+}
+a.coupon-download div.label {
+  font: bold 12px/25px Verdana;
+  color: #fff;
+  text-align: center;
+}
+#download-iframe {
+  display: none;
+}
+
+.yui-skin-sam .yui-panel table.bets .hd {
+  border: 0;
+  background: none;
+}
+
+.yui-navset .yui-content .yui-hidden {
+  display:none;
+}
+
+#slip .bottom button.reprint-last {
+  display: none;
+  bottom: 2px;
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  right: 98px;
+  width: 120px;
+  font: bold 13px/15px Arial;
+  color: #fff;
+  background: #080;
+  border: 1px solid #030;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#slip.recover .bottom button.reprint-last {
+  display: block;
+}
+#cashier-virtual-jackpot-panel {
+  position: relative;
+  height: 40px;
+  background-color: #e8e8e8;
+  border: 1px solid #484848;
+  border-radius: 4px;
+  margin: 4px 0 8px 0;
+  color: #000;
+}
+#cashier-virtual-jackpot-panel div.jackpot-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  text-align: left;
+  text-indent: 25px;
+  font: 700 14px/40px Tahoma;
+}
+#cashier-virtual-jackpot-panel div.jackpot-amount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  font: 700 18px/40px Tahoma;
+}
+ul.slips-menu li.slips-menu-item-long a {
+  width: 180px;
+}

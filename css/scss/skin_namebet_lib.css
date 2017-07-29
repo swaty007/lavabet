@@ -1,0 +1,90 @@
+html, body {
+  background: none repeat scroll 0 0 #424242;
+}
+#shop-doc div.login {
+  background: url('../images/shop/login_bg_lavabet.png') center center no-repeat;
+}
+body, #shop-doc {
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #424242;
+  color: #fff;
+}
+body div.login {
+  color: #000;
+}
+#welcome {
+  background: none repeat scroll 0 0 #424242;
+}
+#shop-hd div.sale-terminal {
+  padding-left: 125px;
+  background-image: url('../images/kiosk/lavabet/logo_small.png');
+  background-position: 10px 0;
+  background-repeat: no-repeat;
+}
+#shop-panel ul.shop-panel-nav li {
+  background-color: #424242;
+  border-color: #727272 #121212 #121212 #727272;
+}
+#shop-panel ul.shop-panel-nav li.selected {
+  background-color: #323232;
+  border-color: #121212 #727272 #727272 #121212;
+}
+ul.slips-menu li.slips-menu-item {
+  border-color: #eeeeee #111111 #111111 #eeeeee;
+}
+#keysearch.show-search {
+  width: 384px;
+  z-index: 100;
+}
+#keysearch.show-search input.text{
+  width: 250px;
+}
+#shop-keno {
+  z-index: 101;
+}
+
+#slip {
+  color: #000;
+}
+#slip .content .bet-line .group {
+  display: none;
+}
+#slip .content .selection {
+  left: 35px;
+  width: 365px;
+}
+#slip .content .match .title {
+  left: 35px;
+  width: 360px;
+}
+#slip .top {
+  background-color: #626262;
+}
+#slip .content .totals {
+  background-color: #626262;
+}
+
+table.coupon tr.r0,
+table.coupon tbody.r0,
+table.coupon tbody.r0 tr,
+table.report tbody tr.r0 {
+  background-color: #585858;
+}
+table.coupon tr.r1,
+table.coupon tbody.r1,
+table.coupon tbody.r1 tr,
+table.report tbody  tr.r1 {
+  background-color: #484848;
+}
+div.match-coupon div.markets table.coupon tbody td {
+  color: #000;
+}
+div.autocomplete li {
+  color: #000;
+}
+div.yui-panel {
+  color: #000;
+}
+

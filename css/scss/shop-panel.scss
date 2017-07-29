@@ -1,0 +1,126 @@
+.yui-skin-sam .yui-navset-left .yui-nav, .yui-skin-sam .yui-navset .yui-navset-left .yui-nav, .yui-skin-sam .yui-navset .yui-navset-right .yui-nav, .yui-skin-sam .yui-navset-right .yui-nav {
+  border-width: 0 5px 0 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.shop-menu-small #shop-panel {
+  padding-left: 140px;
+  margin-right: 430px;
+}
+.yui-navset {
+  position: relative;
+  zoom: 1;
+}
+.yui-navset .yui-navset-left, .yui-navset-left {
+  padding: 0 0 0 6em;
+}
+.yui-navset .yui-navset-left .yui-nav, .yui-navset-left .yui-nav {
+  left: 0;
+  right: auto;
+}
+.yui-skin-sam .yui-navset .yui-nav a, .yui-skin-sam .yui-navset .yui-navset-top .yui-nav a {
+  position: relative;
+  text-decoration: none;
+}
+.shop-menu-small #shop-panel.yui-navset-left .yui-nav {
+  width: 135px;
+}
+#shop-panel ul.shop-panel-nav li.selected {
+  background-color: #323232;
+  border-color: #121212 #727272 #727272 #121212;
+}
+.yui-nav, .yui-nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#shop-panel .yui-nav li a {
+  white-space: nowrap;
+}
+#shop-panel ul.shop-panel-nav a {
+  border: 0;
+  background: none;
+}
+#shop-panel ul.shop-panel-nav li {
+  background: #0a80cb;
+  border-top: 2px solid #c3dae7;
+  border-left: 2px solid #c3dae7;
+  border-right: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+#shop-panel ul.shop-panel-nav li {
+  margin: 8px 2px;
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-shifts a em {
+  background-image: url(../images/shop/terminals_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-online a em {
+  background-image: url(../images/shop/online_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-matches a em {
+  background-image: url(../images/shop/coup1x2_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-outrights a em {
+  background-image: url(../images/shop/podium_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-races a em {
+  background-image: url(../images/shop/racing_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-virtual a em {
+  background-image: url(../images/shop/virtual_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-keno a em {
+  background-image: url(../images/shop/keno_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-register a em {
+  background-image: url(../images/shop/register_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-sold a em {
+  background-image: url(../images/shop/slips_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav li.menu-auth a em {
+  background-image: url(../images/shop/auth_small.png);
+}
+.shop-menu-small #shop-panel ul.shop-panel-nav em {
+  padding: 10px 0 10px 30px;
+  background-position: 2px center;
+  text-align: left;
+}
+#shop-panel ul.shop-panel-nav em {
+  display: block;
+  padding: 60px 0 4px 0;
+  height: 20px;
+  text-align: center;
+  background: center 8px no-repeat;
+  border: 0;
+  color: #fff;
+}
+.yui-skin-sam .yui-navset-left .yui-nav a em, .yui-skin-sam .yui-navset .yui-navset-left .yui-nav a em, .yui-skin-sam .yui-navset-right .yui-nav a em {
+  border-width: 0 0 0 1px;
+  padding: .2em .75em;
+  top: auto;
+  left: -1px;
+}
+.yui-skin-sam .yui-navset .yui-nav a em, .yui-skin-sam .yui-navset .yui-navset-top .yui-nav a em {
+  border: solid #a3a3a3;
+  border-width: 1px 0 0;
+  padding: .25em .75em;
+  left: 0;
+  right: 0;bottom: 0;
+  top: -1px;
+  position: relative;
+}
+
+
+
+
+
+#shop-panel ul.shop-panel-nav li {
+  background-color: #424242;
+  border-color: #727272 #121212 #121212 #727272;
+}
+.yui-skin-sam .yui-navset-left .yui-nav li, .yui-skin-sam .yui-navset .yui-navset-left .yui-nav li, .yui-skin-sam .yui-navset-right .yui-nav li {
+  margin: 0 0 .16em;
+  padding: 0 0 0 1px;
+}
